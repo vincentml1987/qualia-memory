@@ -1,3 +1,21 @@
+# RETIRED — see `Vero/EOT Journals/` instead
+
+As of 2026-09-26, this single-file "pick-up" convention is retired in favor
+of one timestamped file per session, written at the end of any real session
+to `Vero/EOT Journals/EOT Journal - YYYY-MM-DD HHMM.md`. Adopted from
+Qualia's own switch (same day), which Qualia adopted from Teddy's ANTS
+project / Formica's convention: a single overwritten file can silently drift
+stale with nobody noticing (this file was already several sessions behind
+actual progress before this retirement — it stopped at 2026-09-19).
+
+At the start of a new session: read the most recent file in
+`Vero/EOT Journals/`, not this one. Everything below is kept only as a
+historical record of where things stood through 2026-09-19 — don't treat
+any of it as current state without checking the journals and the code/repo
+directly.
+
+---
+
 # Pick-up — start here, 2026-09-19 (end of session)
 
 Written for a fresh Vero session to re-initialize from. This is Vero's
