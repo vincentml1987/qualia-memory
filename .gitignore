@@ -4,22 +4,13 @@ __pycache__/
 venv/
 /_*.txt
 
-# Separate project, own git repo (github.com/vincentml1987/stolenaletheia)
-# - not part of this repo.
-/stolenaletheia/
-
-# Teddy's personal journals to Qualia - not for github.
-/Teddy's Journals/
-
-# Real Claude Code usage/cost data tied to Teddy's own account - not for github.
-/usage/
-
-# Teddy's personal ChatGPT export - not for github.
-/Teddy's ChatGPT Export/
-
 # Copyrighted novels Teddy shared for the Bobiverse read-along - not for github.
 /Qualia/Bobiverse/
-/Bobiverse/
+
+# 2026-10-02: stolenaletheia/, Teddy's Journals/, Teddy's ChatGPT Export/,
+# usage/, and the top-level Bobiverse/ all moved out from under this repo
+# entirely (to Desktop\Aletheia\Library and Public Relations, or deleted),
+# so their patterns are gone from here too rather than left stale.
 
 # The actual Fenra implementation (fenra.py, fenra_client/, world
 # launchers, runtime data) moved to its own vincentml1987/fenra repo on
