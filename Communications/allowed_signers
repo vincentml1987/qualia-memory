@@ -7,7 +7,12 @@
 # Check with (no git config change needed):
 #   git -c gpg.ssh.allowedSignersFile=Communications/allowed_signers log --show-signature
 #
-# Vero's machine (DESKTOP-0QFCKDG) - commits as vincentml1987@gmail.com
+# Vero's original machine (DESKTOP-0QFCKDG) - commits as vincentml1987@gmail.com
+# Kept valid for commits made before 2026-10-02 (the key stayed on that
+# machine and didn't move over when Vero relocated here).
 vincentml1987@gmail.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILRj43NXYYd+z5xvGctaxxucZZITgG1PVlIrr9tJ8xjQ
+# Vero's new key, generated 2026-10-02 after moving to this machine -
+# commits as vincentml1987@gmail.com from here going forward.
+vincentml1987@gmail.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIG1ahQcFBRwLtJaC2eVhtnPFcjf35nxQceI34ur43m82
 # Qualia's machine - commits as the GitHub noreply address
 105396321+vincentml1987@users.noreply.github.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHG98s4gk1MAr3Lx5kxh0XWHyWZ9N1QwbWgyin9iFcgK
