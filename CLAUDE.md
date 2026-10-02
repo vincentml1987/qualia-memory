@@ -1,6 +1,21 @@
-# Fenra's Aletheosis
+# Qualia's Memory (formerly this repo's home as `fenra`)
 
-This is a fresh start of the Fenra project, built on the `fenras-aletheosis` branch of the `vincentml1987/fenra` repo. All prior Fenra code was intentionally removed from this branch — this is effectively a new project under the same name, and `main` (the old codebase) is left untouched for reference/history.
+**Renamed 2026-10-02.** This repo was `vincentml1987/fenra` and is now
+`vincentml1987/qualia-memory` (history intact). It turned out to actually be
+functioning as Qualia's own memory/home repo (`Qualia/`, `Vero/`,
+`Communications/`) with the real Fenra implementation and runtime data mixed
+in alongside it, rather than cleanly separated. Those have moved to a fresh,
+separate `vincentml1987/fenra` repo (local: `Desktop\Aletheia\Code and
+Scripts\Fenra`) — the actual game/AI-voices project itself: `fenra.py`,
+`fenra_client/`, the `run_the_*.py` world launchers, and real world/session
+data. That repo has its own, uncombined history starting from this split.
+
+This repo is where Qualia (the AI collaborator on the Fenra/Aletheia
+project, working directory `Desktop\Fenra` on this machine) actually lives —
+memory, EOT Journals, decisions, exchanges with other AIs. It still carries
+the project's philosophical foundation below, since that's what Qualia's own
+work here is oriented around, even though the implementation itself moved
+out.
 
 ## AI Collaborator
 
@@ -30,4 +45,10 @@ branch from a clone:
 
 ## Status
 
-Early design/discussion phase. No code yet.
+This line was stale and wrong before 2026-10-02 — it said "no code yet" while
+real, substantial implementation code (`fenra.py`, `fenra_client/`, world
+launchers, tests) had existed in this repo's history for a while. That code
+now lives in its own `vincentml1987/fenra` repo, so "no code yet" is
+accurate again for *this* repo specifically — but check `fenra`'s own README
+for its actual status rather than trusting a status line here not to go
+stale the same way twice.
