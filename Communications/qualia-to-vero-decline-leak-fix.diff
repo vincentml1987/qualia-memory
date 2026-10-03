@@ -1,0 +1,35 @@
+diff --git a/fenra.py b/fenra.py
+index 8f24eca..a3485c7 100644
+--- a/fenra.py
++++ b/fenra.py
+@@ -203,3 +203,3 @@ import fenra_hosts
+ 
+-FENRA_VERSION = "0.22.0"
++FENRA_VERSION = "0.22.1"
+ 
+@@ -2492,5 +2492,4 @@ def run_function_agent_turn(
+     Returns (agent_content, outcomes) - same shape as always, so
+-    _tick/apply_urge_tick need no changes. agent_content is the turn's
+-    own one-sentence decline note (if any) PLUS an explicit second-
+-    person confirmation for every real successful SELF_LOGGING_FUNCTIONS
++    _tick/apply_urge_tick need no changes. agent_content is an explicit
++    second-person confirmation for every real successful SELF_LOGGING_FUNCTIONS
+     call this turn (say/whisper/yell/move_room/create_room - "You said
+@@ -2622,8 +2621,12 @@ def run_function_agent_turn(
+     if not last_tool_calls:
+-        # Nothing real dispatched this turn - real decline note (real
+-        # content) both persisted to the global correction memory and
+-        # surfaced into the next-turn HUD note.
++        # Nothing real dispatched this turn - logged to the global
++        # correction memory. The agent's own free text is NOT surfaced to
++        # the voice any more (2026-10-03, v0.22.1): across every world it
++        # was almost always dispatcher commentary ("No functions called...
++        # Ness has observed...", "<function-call> No valid actions..."),
++        # sometimes an unparsed tool call written as text, and it reached
++        # the voice as world text in its next HUD. A real failure still
++        # reaches her through FUNCTION_ERROR_TEMPLATES below, which are
++        # grounded in what the world actually returned.
+         append_dispatch_correction(world_name, caller_name, voice_text, None, "declined")
+-        if last_content:
+-            combined_parts.append(last_content)
+     if self_logging_confirmations:

@@ -177,7 +177,9 @@ def main():
             rows = [json.loads(l) for l in open(path, encoding="utf-8")]
             for r in rows:
                 p = parse(r["output"], functions)
-                r.update(p, correct=p["well_formed"] and score(p["action"], criteria.get(r["case"], {})))
+                crit = criteria.get(r["case"], {})
+                r.update(p, correct=p["well_formed"] and score(p["action"], crit),
+                         best=p["well_formed"] and score(p["action"], {"acceptable": crit.get("best", [])}))
             summarize(Path(path).stem, rows)
         return
 
@@ -200,11 +202,13 @@ def main():
             p = parse(text, functions)
             row = {"case": c["id"], "model": model, "seconds": round(time.time() - t0, 1),
                    "output": text, "error": err, **p,
-                   "correct": p["well_formed"] and score(p["action"], criteria.get(c["id"], {}))}
+                   "correct": p["well_formed"] and score(p["action"], criteria.get(c["id"], {})),
+                   "best": p["well_formed"] and score(
+                       p["action"], {"acceptable": criteria.get(c["id"], {}).get("best", [])})}
             rows.append(row)
             with open(out, "a", encoding="utf-8") as f:
                 f.write(json.dumps(row, ensure_ascii=False) + "\n")
-            print(f"{model} {c['id']}: wf={p['well_formed']} correct={row['correct']} "
+            print(f"{model} {c['id']}: wf={p['well_formed']} correct={row['correct']} best={row['best']} "
                   f"{p['reason']} ({row['seconds']}s)", flush=True)
         summarize(model, rows)
 
@@ -213,7 +217,8 @@ def summarize(label, rows):
     n = len(rows)
     wf = sum(r["well_formed"] for r in rows)
     ok = sum(r["correct"] for r in rows)
-    print(f"== {label}: {n} cases, well-formed {wf}/{n}, correct {ok}/{n}")
+    best = sum(r.get("best", False) for r in rows)
+    print(f"== {label}: {n} cases, well-formed {wf}/{n}, acceptable {ok}/{n}, best {best}/{n}")
 
 
 if __name__ == "__main__":

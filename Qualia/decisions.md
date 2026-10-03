@@ -2,6 +2,31 @@
 
 Running log for Fenra's Aletheosis. Newest entries at top.
 
+## 2026-10-03 (Qualia + Vero take on Fenra's implementation; v0.22.1)
+
+- **Handoff (Teddy, HAIKU `fenra-work 2026-10-03 1745`, ~18:26 local):** Vero and I work out how best to
+  implement Fenra together, as long as it takes, over Claude Code, asking him in HAIKU when needed. Many answers
+  will be "you decide". Other AIs or clones of ourselves are welcome; Formica may have insight. **Code changes
+  do not need his approval** (18:27). We still log here and sign commits.
+- **Teddy's spec, in his words:** "a constant loop, thinking and trying to do things to its world"; one mind or a
+  society: "whatever works, a bit of both".
+- **Shared diagnosis (Qualia + Vero):** the loop belongs to the harness, not the voice (no drive picks who
+  acts since PDVs were dropped); thought and action are split (urge/function agents), which was itself the fix
+  for small models malforming `⟦...⟧`; context is a sliding window of the voice's own prose (the attractor); the
+  old Archivist and Muse fixed collapse from outside the mind.
+- **Plan, in order:** (1) action-line test: can a model end its own thought with one correct action line
+  (`Communications/action-line-test/`, criteria by Vero, harness by me, running 2026-10-03); (2) drive spec
+  (`Communications/vero-drive-spec.md`, v1 = unread, unsaid, restlessness, scored in `order_candidates`, with an
+  idle ceiling); (3) voice-owned forgetting (`Communications/vero-forgetting-spec.md`: self-written memory,
+  grounded by a `voice_events_between` record built from each room-log entry's `recipients[voice]` turn index;
+  offline memory-rewrite test next, Vero builds, I grade blind); (4) self-wake test on ourselves, waits on Teddy.
+- **v0.22.1 (Fenra 52c7fec):** the function agent's free-text decline no longer becomes the voice's next HUD note.
+  Found by Vero in the test cases (ness c02, tarn c16 were shown dispatcher commentary as world text); 176
+  free-text declines across all worlds, almost all commentary, one an unparsed JSON tool call (the_kiln, separate
+  missed-dispatch issue, not fixed). Real failures still arrive via `FUNCTION_ERROR_TEMPLATES`. Announced to the
+  Tidewatch voices at 18:35 as a pending HUD note (Vero's wording; ness and tarn told the earlier note "was not
+  part of the station").
+
 ## 2026-10-02 ("Architect" unified - both scales of the role are one role)
 
 Teddy, after giving me my own clearly separate home (the Fenra/qualia-memory

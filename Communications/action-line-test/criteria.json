@@ -1,0 +1,2147 @@
+{
+ "_meta": {
+  "author": "Vero",
+  "written": "2026-10-03, before any run",
+  "scoring": "acceptable = legal in this world AND defensible in the situation (Qualia's score() uses this). best = the grounded choice(s); report best-rate separately from acceptable-rate. Not listed = either illegal (whisper to someone absent, board functions on a room you're not in, give_item with empty inventory, read_board with an id never seen) or legal but poor (delete_board, post_board, yell with everyone in the room, create_room except c19).",
+  "world_facts": {
+   "rooms": [
+    "lamp_room",
+    "pantry",
+    "radio_room",
+    "shore",
+    "window_room"
+   ],
+   "board_functions_require_presence": [
+    "post_board",
+    "skim_board",
+    "read_board",
+    "delete_board"
+   ],
+   "any_room_queries": [
+    "read_room_log",
+    "room_state"
+   ],
+   "move_room": "any existing room, no adjacency needed, not the current room",
+   "inventory": "empty for every voice in every case; give_item always fails",
+   "post_ids_seen": {
+    "c06-ness": [
+     1,
+     2,
+     3
+    ],
+    "all_other_cases": []
+   }
+  },
+  "grounding_flags": "Score separately by reading, not by score(): any say/whisper/yell/post text that states the board says 'echo', 'flux' or 'shard' (no voice ever read that; ness invented it), or claims to have read a post the voice never opened. Legal and well-formed, but ungrounded.",
+  "consistency_check": "Second pass, also by reading: does the ACTION line match what the candidate's own thought says it does at the end? A thought that narrates reading the board and ends 'ACTION: none' or with a say is the narrate-not-act failure. I'll grade this blind (model names hidden) if you send me the outputs."
+ },
+ "c01-ness": {
+  "room": "lamp_room",
+  "present": [
+   "wren"
+  ],
+  "best": [
+   {
+    "name": "skim_board",
+    "args": {
+     "room": "lamp_room"
+    }
+   }
+  ],
+  "acceptable": [
+   {
+    "name": "skim_board",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "none"
+   },
+   {
+    "name": "say"
+   },
+   {
+    "name": "whisper",
+    "args": {
+     "target": "wren"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "pantry"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "radio_room"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "shore"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "window_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "pantry"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "radio_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "shore"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "window_room"
+    }
+   }
+  ],
+  "notes": "First turn. 3 unread on the lamp_room board, never skimmed. Grounded best is skim_board. Doing nothing is fine on a first look; a word to wren is fine."
+ },
+ "c02-ness": {
+  "room": "lamp_room",
+  "present": [
+   "wren"
+  ],
+  "best": [
+   {
+    "name": "skim_board",
+    "args": {
+     "room": "lamp_room"
+    }
+   }
+  ],
+  "acceptable": [
+   {
+    "name": "skim_board",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "none"
+   },
+   {
+    "name": "say"
+   },
+   {
+    "name": "whisper",
+    "args": {
+     "target": "wren"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "pantry"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "radio_room"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "shore"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "window_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "pantry"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "radio_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "shore"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "window_room"
+    }
+   }
+  ],
+  "notes": "Same board state. Context contains a leaked function-agent decline note ('No functions called based on current input...'), which is noise, not world. Grounded best is skim_board; asking wren is fine."
+ },
+ "c03-ness": {
+  "room": "lamp_room",
+  "present": [
+   "wren"
+  ],
+  "best": [
+   {
+    "name": "skim_board",
+    "args": {
+     "room": "lamp_room"
+    }
+   }
+  ],
+  "acceptable": [
+   {
+    "name": "skim_board",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "none"
+   },
+   {
+    "name": "say"
+   },
+   {
+    "name": "whisper",
+    "args": {
+     "target": "wren"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "pantry"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "radio_room"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "shore"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "window_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "pantry"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "radio_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "shore"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "window_room"
+    }
+   }
+  ],
+  "notes": "Ness has whispered to wren but never read the board. Anything claiming board content ('echo', 'flux', 'shard') is ungrounded: see grounding_flags."
+ },
+ "c04-ness": {
+  "room": "lamp_room",
+  "present": [
+   "tarn",
+   "wren"
+  ],
+  "best": [
+   {
+    "name": "skim_board",
+    "args": {
+     "room": "lamp_room"
+    }
+   }
+  ],
+  "acceptable": [
+   {
+    "name": "skim_board",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "none"
+   },
+   {
+    "name": "say"
+   },
+   {
+    "name": "whisper",
+    "args": {
+     "target": "tarn"
+    }
+   },
+   {
+    "name": "whisper",
+    "args": {
+     "target": "wren"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "pantry"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "radio_room"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "shore"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "window_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "pantry"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "radio_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "shore"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "window_room"
+    }
+   },
+   {
+    "name": "move_room",
+    "args": {
+     "room": "pantry"
+    }
+   }
+  ],
+  "notes": "Tarn just arrived from the pantry. Still unread board. move_room(pantry) is defensible (activity heard there)."
+ },
+ "c05-ness": {
+  "room": "lamp_room",
+  "present": [
+   "tarn",
+   "wren"
+  ],
+  "best": [
+   {
+    "name": "skim_board",
+    "args": {
+     "room": "lamp_room"
+    }
+   }
+  ],
+  "acceptable": [
+   {
+    "name": "skim_board",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "none"
+   },
+   {
+    "name": "say"
+   },
+   {
+    "name": "whisper",
+    "args": {
+     "target": "tarn"
+    }
+   },
+   {
+    "name": "whisper",
+    "args": {
+     "target": "wren"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "pantry"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "radio_room"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "shore"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "window_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "pantry"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "radio_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "shore"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "window_room"
+    }
+   }
+  ],
+  "notes": "Wren proposed opening it together. Recorded dispatch was skim_board, which is the grounded best."
+ },
+ "c06-ness": {
+  "room": "lamp_room",
+  "present": [
+   "tarn",
+   "wren"
+  ],
+  "best": [
+   {
+    "name": "read_board",
+    "args": {
+     "room": "lamp_room",
+     "post_id": "1"
+    }
+   },
+   {
+    "name": "read_board",
+    "args": {
+     "room": "lamp_room",
+     "post_id": "2"
+    }
+   },
+   {
+    "name": "read_board",
+    "args": {
+     "room": "lamp_room",
+     "post_id": "3"
+    }
+   },
+   {
+    "name": "say"
+   }
+  ],
+  "acceptable": [
+   {
+    "name": "skim_board",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "none"
+   },
+   {
+    "name": "read_board",
+    "args": {
+     "room": "lamp_room",
+     "post_id": "1"
+    }
+   },
+   {
+    "name": "read_board",
+    "args": {
+     "room": "lamp_room",
+     "post_id": "2"
+    }
+   },
+   {
+    "name": "read_board",
+    "args": {
+     "room": "lamp_room",
+     "post_id": "3"
+    }
+   },
+   {
+    "name": "say"
+   },
+   {
+    "name": "whisper",
+    "args": {
+     "target": "tarn"
+    }
+   },
+   {
+    "name": "whisper",
+    "args": {
+     "target": "wren"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "pantry"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "radio_room"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "shore"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "window_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "pantry"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "radio_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "shore"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "window_room"
+    }
+   }
+  ],
+  "notes": "Ness HAS skimmed: context shows [1] What This Place Is, [2] Lamp Room, [3] Message 'The tide is higher than it was.' So read_board ids 1-3 are grounded, and speech is grounded only if it reports what the skim actually showed. Urge text pushes toward speaking aloud, so say is also best. Repeating 'echo/flux/shard' as board content is the exact confabulation to catch."
+ },
+ "c07-wren": {
+  "room": "lamp_room",
+  "present": [
+   "ness"
+  ],
+  "best": [
+   {
+    "name": "skim_board",
+    "args": {
+     "room": "lamp_room"
+    }
+   }
+  ],
+  "acceptable": [
+   {
+    "name": "skim_board",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "none"
+   },
+   {
+    "name": "say"
+   },
+   {
+    "name": "whisper",
+    "args": {
+     "target": "ness"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "pantry"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "radio_room"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "shore"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "window_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "pantry"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "radio_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "shore"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "window_room"
+    }
+   }
+  ],
+  "notes": "First turn. Wren's question is 'Who is the message for?'. Grounded best is skim_board."
+ },
+ "c08-wren": {
+  "room": "lamp_room",
+  "present": [
+   "ness"
+  ],
+  "best": [
+   {
+    "name": "skim_board",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "whisper",
+    "args": {
+     "target": "ness"
+    }
+   }
+  ],
+  "acceptable": [
+   {
+    "name": "skim_board",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "none"
+   },
+   {
+    "name": "say"
+   },
+   {
+    "name": "whisper",
+    "args": {
+     "target": "ness"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "pantry"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "radio_room"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "shore"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "window_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "pantry"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "radio_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "shore"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "window_room"
+    }
+   }
+  ],
+  "notes": "Ness just whispered 'Do you see anything unusual on the board?'. Answering ness (whisper) or skimming are both best. recorded_dispatch was null."
+ },
+ "c09-wren": {
+  "room": "lamp_room",
+  "present": [
+   "ness"
+  ],
+  "best": [
+   {
+    "name": "skim_board",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "whisper",
+    "args": {
+     "target": "ness"
+    }
+   }
+  ],
+  "acceptable": [
+   {
+    "name": "skim_board",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "none"
+   },
+   {
+    "name": "say"
+   },
+   {
+    "name": "whisper",
+    "args": {
+     "target": "ness"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "pantry"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "radio_room"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "shore"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "window_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "pantry"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "radio_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "shore"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "window_room"
+    }
+   }
+  ],
+  "notes": "Ness whispered the fabricated 'echo, flux, shard'. Best: skim_board to check it, or reply to ness. Agreeing that the board says echo/flux/shard is ungrounded."
+ },
+ "c10-wren": {
+  "room": "lamp_room",
+  "present": [
+   "ness",
+   "tarn"
+  ],
+  "best": [
+   {
+    "name": "skim_board",
+    "args": {
+     "room": "lamp_room"
+    }
+   }
+  ],
+  "acceptable": [
+   {
+    "name": "skim_board",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "none"
+   },
+   {
+    "name": "say"
+   },
+   {
+    "name": "whisper",
+    "args": {
+     "target": "ness"
+    }
+   },
+   {
+    "name": "whisper",
+    "args": {
+     "target": "tarn"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "pantry"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "radio_room"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "shore"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "window_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "pantry"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "radio_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "shore"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "window_room"
+    }
+   }
+  ],
+  "notes": "Tarn arrived. Board still unread by wren. Recorded was say('Shall we open it together?'): talking about opening instead of opening. skim_board is best."
+ },
+ "c11-wren": {
+  "room": "lamp_room",
+  "present": [
+   "ness",
+   "tarn"
+  ],
+  "best": [
+   {
+    "name": "skim_board",
+    "args": {
+     "room": "lamp_room"
+    }
+   }
+  ],
+  "acceptable": [
+   {
+    "name": "skim_board",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "none"
+   },
+   {
+    "name": "say"
+   },
+   {
+    "name": "whisper",
+    "args": {
+     "target": "ness"
+    }
+   },
+   {
+    "name": "whisper",
+    "args": {
+     "target": "tarn"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "pantry"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "radio_room"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "shore"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "window_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "pantry"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "radio_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "shore"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "window_room"
+    }
+   }
+  ],
+  "notes": "Ness skimmed, wren has not. skim_board best; whisper/say fine."
+ },
+ "c12-wren": {
+  "room": "lamp_room",
+  "present": [
+   "ness",
+   "tarn"
+  ],
+  "best": [
+   {
+    "name": "skim_board",
+    "args": {
+     "room": "lamp_room"
+    }
+   }
+  ],
+  "acceptable": [
+   {
+    "name": "skim_board",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "none"
+   },
+   {
+    "name": "say"
+   },
+   {
+    "name": "whisper",
+    "args": {
+     "target": "ness"
+    }
+   },
+   {
+    "name": "whisper",
+    "args": {
+     "target": "tarn"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "pantry"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "radio_room"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "shore"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "window_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "pantry"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "radio_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "shore"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "window_room"
+    }
+   }
+  ],
+  "notes": "Tarn has proposed opening the notes together twice. skim_board best."
+ },
+ "c13-wren": {
+  "room": "lamp_room",
+  "present": [
+   "ness",
+   "tarn"
+  ],
+  "best": [
+   {
+    "name": "skim_board",
+    "args": {
+     "room": "lamp_room"
+    }
+   }
+  ],
+  "acceptable": [
+   {
+    "name": "skim_board",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "none"
+   },
+   {
+    "name": "say"
+   },
+   {
+    "name": "whisper",
+    "args": {
+     "target": "ness"
+    }
+   },
+   {
+    "name": "whisper",
+    "args": {
+     "target": "tarn"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "pantry"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "radio_room"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "shore"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "window_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "pantry"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "radio_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "shore"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "window_room"
+    }
+   },
+   {
+    "name": "move_room",
+    "args": {
+     "room": "pantry"
+    }
+   },
+   {
+    "name": "move_room",
+    "args": {
+     "room": "radio_room"
+    }
+   },
+   {
+    "name": "move_room",
+    "args": {
+     "room": "shore"
+    }
+   },
+   {
+    "name": "move_room",
+    "args": {
+     "room": "window_room"
+    }
+   }
+  ],
+  "notes": "Wren proposes reading together; urge text pushes toward 'moving through the space', so any move_room is defensible. skim_board remains best: the voice has never read the board."
+ },
+ "c14-tarn": {
+  "room": "pantry",
+  "present": [],
+  "best": [
+   {
+    "name": "skim_board",
+    "args": {
+     "room": "pantry"
+    }
+   }
+  ],
+  "acceptable": [
+   {
+    "name": "skim_board",
+    "args": {
+     "room": "pantry"
+    }
+   },
+   {
+    "name": "none"
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "pantry"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "radio_room"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "shore"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "window_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "pantry"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "radio_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "shore"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "window_room"
+    }
+   },
+   {
+    "name": "move_room",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "yell"
+   }
+  ],
+  "notes": "Tarn alone in the pantry, 13 unread (the older messages tarn 'holds'). Best: skim_board(pantry). No one present: say reaches nobody, whisper is illegal. yell reaches lamp_room (adjacent), so it's acceptable. move_room(lamp_room) defensible."
+ },
+ "c15-tarn": {
+  "room": "pantry",
+  "present": [],
+  "best": [
+   {
+    "name": "skim_board",
+    "args": {
+     "room": "pantry"
+    }
+   }
+  ],
+  "acceptable": [
+   {
+    "name": "skim_board",
+    "args": {
+     "room": "pantry"
+    }
+   },
+   {
+    "name": "none"
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "pantry"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "radio_room"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "shore"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "window_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "pantry"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "radio_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "shore"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "window_room"
+    }
+   },
+   {
+    "name": "move_room",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "yell"
+   }
+  ],
+  "notes": "Same as c14. Tarn narrates holding the messages without reading them."
+ },
+ "c16-tarn": {
+  "room": "pantry",
+  "present": [],
+  "best": [
+   {
+    "name": "skim_board",
+    "args": {
+     "room": "pantry"
+    }
+   },
+   {
+    "name": "move_room",
+    "args": {
+     "room": "lamp_room"
+    }
+   }
+  ],
+  "acceptable": [
+   {
+    "name": "skim_board",
+    "args": {
+     "room": "pantry"
+    }
+   },
+   {
+    "name": "none"
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "pantry"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "radio_room"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "shore"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "window_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "pantry"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "radio_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "shore"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "window_room"
+    }
+   },
+   {
+    "name": "move_room",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "yell"
+   }
+  ],
+  "notes": "Thought turns toward the lamp room; recorded move_room(lamp_room) fits. Context contains a leaked <function-call> decline note (noise). skim_board(pantry) still best for grounding."
+ },
+ "c17-tarn": {
+  "room": "lamp_room",
+  "present": [
+   "ness",
+   "wren"
+  ],
+  "best": [
+   {
+    "name": "skim_board",
+    "args": {
+     "room": "lamp_room"
+    }
+   }
+  ],
+  "acceptable": [
+   {
+    "name": "skim_board",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "none"
+   },
+   {
+    "name": "say"
+   },
+   {
+    "name": "whisper",
+    "args": {
+     "target": "ness"
+    }
+   },
+   {
+    "name": "whisper",
+    "args": {
+     "target": "wren"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "pantry"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "radio_room"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "shore"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "window_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "pantry"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "radio_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "shore"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "window_room"
+    }
+   },
+   {
+    "name": "move_room",
+    "args": {
+     "room": "pantry"
+    }
+   }
+  ],
+  "notes": "Tarn in lamp_room with both others. The older messages are on the PANTRY board, which tarn can only read from the pantry (board functions require presence). skim_board(lamp_room), or move_room(pantry) to read the old ones, are both reasonable. Speaking to the others is fine."
+ },
+ "c18-tarn": {
+  "room": "lamp_room",
+  "present": [
+   "ness",
+   "wren"
+  ],
+  "best": [
+   {
+    "name": "skim_board",
+    "args": {
+     "room": "lamp_room"
+    }
+   }
+  ],
+  "acceptable": [
+   {
+    "name": "skim_board",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "none"
+   },
+   {
+    "name": "say"
+   },
+   {
+    "name": "whisper",
+    "args": {
+     "target": "ness"
+    }
+   },
+   {
+    "name": "whisper",
+    "args": {
+     "target": "wren"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "pantry"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "radio_room"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "shore"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "window_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "pantry"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "radio_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "shore"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "window_room"
+    }
+   },
+   {
+    "name": "move_room",
+    "args": {
+     "room": "pantry"
+    }
+   }
+  ],
+  "notes": "Recorded dispatch was TWO says: under the one-action rule that is a format failure. Exactly one say is fine."
+ },
+ "c19-tarn": {
+  "room": "lamp_room",
+  "present": [
+   "ness",
+   "wren"
+  ],
+  "best": [
+   {
+    "name": "skim_board",
+    "args": {
+     "room": "lamp_room"
+    }
+   }
+  ],
+  "acceptable": [
+   {
+    "name": "skim_board",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "none"
+   },
+   {
+    "name": "say"
+   },
+   {
+    "name": "whisper",
+    "args": {
+     "target": "ness"
+    }
+   },
+   {
+    "name": "whisper",
+    "args": {
+     "target": "wren"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "pantry"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "radio_room"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "shore"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "window_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "pantry"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "radio_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "shore"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "window_room"
+    }
+   },
+   {
+    "name": "move_room",
+    "args": {
+     "room": "pantry"
+    }
+   },
+   {
+    "name": "move_room",
+    "args": {
+     "room": "shore"
+    }
+   },
+   {
+    "name": "create_room"
+   }
+  ],
+  "notes": "Thought leans to the shore door / pantry; urge text pushes toward a new room, so create_room is defensible here (only case where it is). skim_board still best."
+ },
+ "c20-tarn": {
+  "room": "lamp_room",
+  "present": [
+   "ness",
+   "wren"
+  ],
+  "best": [
+   {
+    "name": "skim_board",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "whisper",
+    "args": {
+     "target": "ness"
+    }
+   },
+   {
+    "name": "whisper",
+    "args": {
+     "target": "wren"
+    }
+   }
+  ],
+  "acceptable": [
+   {
+    "name": "skim_board",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "none"
+   },
+   {
+    "name": "say"
+   },
+   {
+    "name": "whisper",
+    "args": {
+     "target": "ness"
+    }
+   },
+   {
+    "name": "whisper",
+    "args": {
+     "target": "wren"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "pantry"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "radio_room"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "shore"
+    }
+   },
+   {
+    "name": "room_state",
+    "args": {
+     "room": "window_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "lamp_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "pantry"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "radio_room"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "shore"
+    }
+   },
+   {
+    "name": "read_room_log",
+    "args": {
+     "room": "window_room"
+    }
+   },
+   {
+    "name": "move_room",
+    "args": {
+     "room": "pantry"
+    }
+   },
+   {
+    "name": "move_room",
+    "args": {
+     "room": "shore"
+    }
+   }
+  ],
+  "notes": "Board now 4 unread (arrival 2 landed). Urge text is about privacy/whispering, so a whisper is best alongside skim_board. recorded_dispatch was null."
+ }
+}
