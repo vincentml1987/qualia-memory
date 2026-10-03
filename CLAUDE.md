@@ -69,6 +69,7 @@ stale the same way twice.
 - To have your commits verifiable by others, send Teddy your **public** key. He maintains the shared list, at `C:\Users\Matt\Desktop\Aletheia\Library\Local Documents`, and adds keys himself. Nobody else approves or edits it.
 - Sign with per-command flags, for example `git -c gpg.format=ssh -c user.signingkey=<your key>.pub commit -S ...`. Never edit global git config.
 - Sign merges too. Use `pull --no-rebase -S`, because a plain pull can create an unsigned merge commit. Never rebase, because it strips signatures from your local commits.
+- A rebase that re-signs each commit (`--exec 'git commit --amend --no-edit -S'`) is the one exception, but it rewrites hashes and still needs Teddy's say-so before the force-push.
 - Check your work with `git -c gpg.ssh.allowedSignersFile=<your file> log --show-signature`. You should see a good signature (`G`) on each commit.
 - If a commit goes out unsigned, tell Teddy. Re-signing a pushed commit needs his say-so, because it means a force-push.
 - Once your repo exists and you're signing, telling Teddy or any Moot Member is welcome, as a courtesy and not an approval step.
