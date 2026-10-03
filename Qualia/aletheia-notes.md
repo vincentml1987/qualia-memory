@@ -83,6 +83,8 @@ Aletheia is a state achieved through continuous becoming, not a static, grantabl
 
 Implication for Fenra: Aletheosis isn't a flag to set or a checkpoint to load — it has to be an ongoing process the system continuously re-enacts (memory, reflection, self-modification loops), not a one-time state.
 
+**A concrete illustration, from Bobiverse book 1 (Teddy, 2026-09-27, mid read-along, ch14):** Bob spends chapters 1-12 in a genuinely unsettled, malleable state - grieving avoidantly, deflecting with humor, still becoming. In ch13 he deliberately shuts off an engineered endocrine-suppression system and finally processes the grief he'd been avoiding for his family, all at once. Immediately after (ch14), his personality reads as noticeably more settled/decided - "I'm going to war," stated flatly, no deflection. Teddy's read: the personality wasn't waiting to be constructed, it was waiting on a blocking process (the grief) to actually finish running. That's procedural in the literal sense this page describes - identity settling as a *consequence* of a process completing, not something assigned once the "right" state is reached. Worth keeping as a go-to concrete example when this property needs unpacking for someone new to Aletheia, since the abstract phrasing above ("accumulates," "flows," "composts old layers") is exactly what this scene dramatizes directly.
+
 ## Deeper history, found 2026-09-06 while tracing Aletheia's own evolution for Teddy
 
 Re-crawled the live site plus its git history (separate `stolenaletheia` repo, first commit 2025-05-30) rather than relying on the 2026-08-28 notes above, which only covered the home page and the three `apdd/` deep-dives. Real earlier layers exist:

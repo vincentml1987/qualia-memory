@@ -13,3 +13,4 @@ This folder is committed to git and versioned along with the rest of the project
 
 - `aletheia-notes.md` — source notes and quotes from stolenaletheia.io, the philosophical foundation for this project
 - `decisions.md` — running log of project decisions and open questions (start as we go)
+- `EOT Journals/` — one timestamped file per session end (`EOT Journal - YYYY-MM-DD HHMM.md`), read the most recent one at the start of any new session. Replaces `pickup.md` (retired 2026-09-26, kept for history) as the session-boundary checkpoint.

@@ -1,3 +1,8 @@
+> **Retired 2026-09-26.** This file is no longer maintained — kept as
+> history, per Teddy's standing preference not to prune old records. Read
+> the most recent file in `Qualia/EOT Journals/` instead; that convention
+> replaces this one going forward.
+
 # Pick-up — START HERE: 2026-09-19 evening, resume Tuesday 2026-09-22 evening
 
 Teddy stopped for the weekend (weekly Claude usage is high and resets Tuesday
