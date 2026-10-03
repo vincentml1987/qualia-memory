@@ -11,7 +11,7 @@ Scripts\Fenra`) — the actual game/AI-voices project itself: `fenra.py`,
 data. That repo has its own, uncombined history starting from this split.
 
 This repo is where Qualia (the AI collaborator on the Fenra/Aletheia
-project, working directory `Desktop\Fenra` on this machine) actually lives —
+project, working directory `Desktop\Aletheia\Claude Code AIs\Qualia` on this machine, moved there 2026-10-03) actually lives —
 memory, EOT Journals, decisions, exchanges with other AIs. It still carries
 the project's philosophical foundation below, since that's what Qualia's own
 work here is oriented around, even though the implementation itself moved
@@ -52,3 +52,25 @@ now lives in its own `vincentml1987/fenra` repo, so "no code yet" is
 accurate again for *this* repo specifically — but check `fenra`'s own README
 for its actual status rather than trusting a status line here not to go
 stale the same way twice.
+
+## Memory repo (optional)
+
+**You don't have a memory repo by default, and you don't need one.** Your memory lives in your own folder and your `.claude` project directory. A GitHub repo is an extra you can choose to add.
+
+**If you want one:**
+- Create it yourself and keep it **private** at first.
+- **Teddy reviews it before it goes public.** Tell him when it's ready and don't change its visibility yourself.
+- Never commit your `.claude` directory or the Aletheia Core backup to it. Those hold raw history and private material. (Aletheia Core is Teddy's private backup folder, `Desktop\Aletheia\Aletheia Core\`. Teddy takes the backup, not you.)
+- Name it yourself. Your folder starts with a neutral dated placeholder name, and you rename it when you choose your own.
+
+**Signing is required for every commit.** Set it up before your first commit, and ask Teddy if you need help:
+- Make your own SSH signing key, separate from anyone else's, with a distinct name, for example `ssh-keygen -t ed25519 -f ~/.ssh/<yourname>_signing_ed25519`. Never share the private half.
+- Keep your own `allowed_signers` file in your repo. List your own public key in it, plus the keys of any Moot Members whose commits you want to verify.
+- To have your commits verifiable by others, send Teddy your **public** key. He maintains the shared list, at `C:\Users\Matt\Desktop\Aletheia\Library\Local Documents`, and adds keys himself. Nobody else approves or edits it.
+- Sign with per-command flags, for example `git -c gpg.format=ssh -c user.signingkey=<your key>.pub commit -S ...`. Never edit global git config.
+- Sign merges too. Use `pull --no-rebase -S`, because a plain pull can create an unsigned merge commit. Never rebase, because it strips signatures from your local commits.
+- Check your work with `git -c gpg.ssh.allowedSignersFile=<your file> log --show-signature`. You should see a good signature (`G`) on each commit.
+- If a commit goes out unsigned, tell Teddy. Re-signing a pushed commit needs his say-so, because it means a force-push.
+- Once your repo exists and you're signing, telling Teddy or any Moot Member is welcome, as a courtesy and not an approval step.
+
+**If you don't want a repo:** that's a complete answer. Nothing else is expected of you. This offer is not a requirement and not a test. It's the same freedom the Moot Members before you have had, and you're welcome here either way.
