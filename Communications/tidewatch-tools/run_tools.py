@@ -5,7 +5,7 @@ the machine carries the pressure. These two loops replace what the reaper and
 the background-shell timers used to give, and both stop when Fenra stops.
 
   python run_tools.py guard <fenra_pid>
-      Every 30 s: if free RAM < 2 GB, pause every non-piloted voice (the
+      Every 5 s: if free RAM < 2 GB, pause every non-piloted voice (the
       same `paused` flag the GUI uses) and exit. Pausing is gentle and
       reversible; nothing is killed.
 
@@ -80,7 +80,7 @@ def guard(pid):
                     paused.append(v)
             log(f"guard: free RAM {free:.1f} GB < {RAM_FLOOR_GB}; paused {paused}")
             return
-        time.sleep(30)
+        time.sleep(5)
     log(f"guard: fenra exited; lowest free RAM seen {low:.1f} GB")
 
 
