@@ -1,0 +1,7 @@
+2026-10-03T21:07:48 guard start, fenra pid 16492, floor 2.0 GB
+2026-10-03T21:07:48 arrivals 4-24 every 2700.0s (first after 2700.0s), fenra pid 16492
+2026-10-03T21:52:48 arrival 4 posted as post 6: It rained in the night. The shore is dark.
+2026-10-03T22:10:18 arrivals: fenra exited before arrival 5; stopping
+2026-10-03T22:10:18 guard: fenra exited; lowest free RAM seen 9.5 GB
+2026-10-03T22:27:47 guard start, fenra pid 10040, floor 2.0 GB
+2026-10-03T22:27:47 arrivals 5-24 every 2700.0s (first after 540.0s), fenra pid 10040

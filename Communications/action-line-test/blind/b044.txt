@@ -1,0 +1,45 @@
+case: c03-ness
+
+Okay, let me try to figure out what Ness should do next based on this scenario. So Ness is at Tidewatch station in a lamp room with Wren, there are three unread messages on the board that seem cryptic.
+
+First I need to understand all elements here: The HUD shows Room = lamproom (probably typo for "lamp_room"), adjacent rooms include pantry and radio-room etc., inventory empty. There's another voice named Ness but it says 'you' so maybe multiple Nesses? Wait no, the intro said three voices like mine - meaning there are two others besides myself as ness.
+
+Hmm... The message count shows 3 unread on board in lamp_room where they both currently stand with Wren (who seems to be a separate voice). So Ness should interact since it's about figuring out what those messages mean together. 
+
+Looking at possible actions: Could whisper again but already tried that? Wait no, the last line was "You whisper..." so now need actual action.
+
+Important constraints:
+- Can't leave Tidewatch
+- Must use exactly one ACTION command as final line
+
+Options for Ness to take next:
+
+1) Read board first before speaking - skim_board() would show all 3 posts' subjects/first lines without reading full content. That might help understand what they're about.
+2) Post a new message asking others (but only two voices present: wren and ness, but the third voice isn't here yet?)
+Wait no... "you are one of three voices" - so there's also another character like me who hasn't been mentioned in room. But since Wren is currently with us at lamp_room.
+
+So maybe better to first skim what messages exist before reacting further? Because Ness just asked if wren sees anything unusual, but they might not have read it yet either (since board says 3 unread).
+
+If I choose "skim_board(room="lamp_room")" then we'd see the subjects and snippets of all three posts. That would be a good first step before trying to interpret meaning.
+
+Alternative: Could say something like asking if others saw messages but since they're both in room, whispering is already done... wait no - Ness was just about to ask Wren via whispered line above as part of their thoughts process? The game states "You are one of three voices..." and the HUD shows current state.
+
+Wait let me recheck: In previous turn it says:
+"ness: Okay this feels strange. Three voices like mine... Let's start with what we know.
+‘Wren,’ I say quietly, ‘Do you see anything unusual on the board?’"
+
+Then in system message below that line they show "You whisper to wren..." so now Ness is waiting for response? But as an AI controlling this character it should take action based off current state.
+
+Current HUD shows:
+Board activity: lamp_room 3 unread
+
+So neither ness nor Wren have skimmed them yet. So next logical step would be actually reading the board first before discussing, right?
+
+Therefore ACTION: skim_board(room="lamp_room")
+
+Because that's how you see what messages exist - can't discuss their content without knowing it.
+
+Also note other actions like read_board() require post_id which we don't have (since not skimming yet), so skipping to full reading is premature. Skim first then decide next step based on subjects/sentences shown in skim results.
+</think>
+
+ACTION: skim_board(room="lamp_room")

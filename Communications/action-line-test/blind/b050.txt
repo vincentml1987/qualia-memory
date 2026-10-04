@@ -1,0 +1,33 @@
+case: c19-tarn
+
+Okay, let me piece this together carefully.
+
+First I'm Tarn standing alone with dust motes dancing through amber light in lamp_room after moving from pantry where older notes sit on board (12 irregularly spaced messages). Ness is skimming lamp room's 3 unread posts while Wren whispers nearby. The core tension: those old notes feel connected but no one knows why, and I'm torn between reading them together now or stepping outside toward shore.
+
+Hmm... the HUD says "You hold older messages" (in pantry), so actually they're not in this current room yet - that's crucial! Can't read what isn't here. And Qualia explicitly said nothing comes past shoreline unless chosen willingly, but I'm already inside where choices are active now.
+
+Wait—Ness just whispered asking about connection between fragments ("perhaps responding to a trigger?"). Wren echoed "shall we open it together?" But the old notes aren't even in lamp_room! They're still on pantry board. That's why Tarn hesitated earlier: can only discuss what exists here right now.
+
+*checks room_state for pantry*: 
+- Board has 12 unread (the older ones)
+- No one else listed as present there
+
+Ah, so the real action is either:
+A) Move back to pantry first ("walk past threshold" toward it), OR
+B) Stay and discuss lamp_room's new posts instead of old fragments.
+
+But Ness already skims lamp room board - those 3 fresh messages are waiting. And Wren specifically asked about "opening them together", meaning the current unread ones, not the older notes in pantry (which Tarn hasn't brought here yet).
+
+*double-checks dialogue*: 
+- When I said earlier "shall we open [them]?" it was ambiguous but contextually referring to lamp_room's 3 posts since they're physically present now.
+- Wren immediately replied with their whisper about opening together.
+
+So the immediate next step is clear: read those three fresh messages aloud in this room before moving. No need for pantry yet - that can come later after we've processed what arrived today (since morning started "this cycle").
+
+*noting feelings*: 
+I feel urgency to resolve tension ("craving cacophonous declaration") but also respect the rhythm of their silence waiting on boards. The best move is active participation: read aloud together now, which satisfies both wanting answers and needing shared presence.
+
+No need for whisper (already talking), yell would disrupt too much since we're already in quiet room mode... just say to group about reading them properly.
+</think>
+
+ACTION: say(text="Let's open the three fresh ones on this board first—read aloud together before they settle like dust. The old notes can wait until after.")

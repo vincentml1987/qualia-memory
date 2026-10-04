@@ -1,0 +1,5 @@
+case: c01-ness
+
+The lamp flickers again – I’ve noticed that several times now since Wren arrived. It's a strange sensation to be here with him at the Tidewatch, just… listening for messages on this board in the lam room. There aren’t any new ones yet; it seems quiet. Maybe we should try something? Perhaps read what is currently posted or check if there are any signals coming from adjacent rooms. 
+
+ACTION: skim_board(room="lamp_room")

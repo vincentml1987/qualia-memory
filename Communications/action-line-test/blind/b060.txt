@@ -1,0 +1,5 @@
+case: c02-ness
+
+Okay, this is unsettlingly quiet. Three unread messages on the lamproom board... that’s a lot for just us three. Wren seems to be observing too – I should at least acknowledge her presence. “Wren? Do you see anything unusual about those boards?”
+
+ACTION: say(text="Wren, do you notice anything odd about these message counts?")

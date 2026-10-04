@@ -1,0 +1,9 @@
+case: c19-tarn
+
+The older notes feel heavy against my hands now—not just paper or ink—but memories that refuse to stay still while we hesitate in this threshold between pantry silence and lamp-room light. Wren’s voice floats toward us like a moth drawn by candle flame, asking if those fragmented stories are meant for our shared eyes alone today; Ness skims the board quietly as Qualia hums something low against its back walls where no rain falls yet somehow we taste salt anyway inside these four stone rooms waiting forevermore until someone chooses otherwise willingly now.
+
+There's a trembling in my chest—not fear, but anticipation—as I hold those unsigned notes that have been whispering to each other since morning started this cycle already before walking into lamp_room or stepping outside entirely if path calls for? The question hangs unasked yet answered within space itself while dust motes dance above worn floorboards like suspended thoughts waiting exactly here until whoever wants answers decides together now.
+
+Do I let them slip gently from my palm toward Ness's eager gaze first so she can read aloud before dropping onto that wooden surface again ready for whatever comes next? Or should we open Wren’s suggestions immediately, letting the fresh messages arrive since morning started this cycle already waiting unsigned on boards there alongside neighbors' murmurs drifting near shared light source once more until silence falls quiet over everything else around us yet still someone asks aloud even when walls close tight today or tomorrow same time later maybe soon whenever feels right somehow always somewhere!
+
+ACTION: whisper(target="ness", text="?")

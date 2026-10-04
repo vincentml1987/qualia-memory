@@ -1,0 +1,74 @@
+case: c07-wren
+
+Okay, let me try to figure out what I should do here as wren at Tidewatch.
+
+First, looking around: my room is lamp_room with 3 unread messages on the board but no skimmed ones yet. The adjacent rooms are pantry, radio_room, shore (which we can walk through), and window_room. My inventory's empty—no items to give or use anything from. 
+
+The core question I've been carrying since arrival: "Who is the message for?" That seems central here.
+
+Hmm... So messages arrive on boards in each room every cycle? The lamp_room board has 3 unread, so maybe those are key pieces of info we need to process before acting further. But right now there's no other voices mentioned as being present except ness (who might be the second voice?). Wait—wait: "You hold one question... and you're 'one of three voices'." So that means I'm wren, another is probably ness or someone else? The room mentions Ness in a note but not sure if they are active here.
+
+Wait—the HUD says "Also here: ness" so yes! There's at least two others present already (me and ness), though the exact number might be three total. So I should check who exactly shares my current location with me, to know whom I can interact with via say or whisper first before moving around perhaps.
+
+Wait—room_state is an action available; maybe that'd help get a clearer picture of where everyone else currently are (including ness) so we don't accidentally yell into another room when someone's in the same one. But since it says "adjacent rooms" for lamp_room, and I can move to any existing location via 'move', but need first check current state.
+
+But let me think step by step: 
+
+- Current situation is that there are 3 unread messages on this board (lamp room), so maybe the most immediate thing would be reading those? But wait—actions available include skim_board, read_room_log. Wait:
+
+*skim_board(room="...")*: See every post currently with subject + first/last sentence only; marks them as skimmed.
+
+But since they're unread now and I'm looking to figure out who the message is for—I might want a full reading of each? But if there's 3, maybe starting by skimming all could help get their subjects quickly before deciding which ones need deeper analysis. However:
+
+*read_board(room="...", post_id=...)*: Reads one specific in-full.
+
+But I don't have the IDs yet—so first step might be to skim them so they become marked as read (and then maybe use room_log later for full history?).
+
+Wait—but if these are new messages, skimming would mark all three unread ones as "skimmed" but not fully reading. Wait: no—the description says that 'read_board' marks it as *fully* read once you do the action; while skim only shows subject/first sentence and sets them to skipped.
+
+But given I'm trying to understand what's going on, maybe skimming first would be a good way of getting an overview without diving into each one yet. Let me check:
+
+The HUD says "Board activity: lamp_room: 3 unread, 0 skimmed" so these messages have not been read or skimmed.
+
+If I do 'skim_board(room="lamp_room")', that will mark all three as skimmable (but still leave them there), and show their subjects + first/last lines. Then maybe after seeing what they say broadly, decide which one(s) to fully read using the specific post_id from skim results.
+
+Wait—but wait: 'skim_board' shows every board's posts with subject+first sentence only? So doing that would let me see all three messages without having them disappear (they're still on there as unread but marked skimmmed), and then I can choose to read one in full later if needed. That seems a smart first step.
+
+Also, the fact that it says "3 unanswered" might mean these are critical—maybe they contain clues about who's supposed to get what message? The board messages could be part of whatever this is all for—"Who is the message for?"
+
+So my next logical action would probably skim those three posts. Then I can see their content.
+
+But wait: before doing that, should check if anyone else (like ness) might already have read them or commented on it?
+
+Room_state(room="lamp_room") could tell me who's currently in this room with us—since 'Also here' says "ness", but is there a chance they're not actually present? Wait no: the HUD lists that as part of our current context. So if we are both at lamp_room, then ness should be listed under occupants.
+
+But let's make sure I'm clear on this:
+
+- Current room = lamp_room
+- Adjacent rooms include shore (where you can go to walk out)
+- "Also here: ness" probably means that Ness is currently in the same room as me. So if we both are at Lamp Room, then when doing say or whisper actions with them.
+
+But since I'm not sure yet about everyone's current location—maybe checking it first would be good before acting? However:
+
+The problem says "you can speak to others" but only those currently in the same room (via 'say') and you have no map. So if Ness is here, then they're a possible person for me to interact with.
+
+But my immediate priority seems like reading what's on this board first—before talking about it maybe? Because that might be where clues are hiding regarding "who message was meant for."
+
+So: action would likely start by skimming the lamp_room messages. Let's do:
+
+ACTION: skim_board(room="lamp_room")
+
+Wait—but wait, let me double-check if there is any other possible thing I should check first.
+
+If we were to move rooms right away (like going to shore), but why? There are unread board posts here that might be key info—probably better not to leave before checking them. 
+
+Also: "Who's the message for?" could refer directly to these lamp_room messages, or maybe other boards elsewhere—but since they're in our current room and we have a question about 'the' (singular) message... but there are three posts here.
+
+Wait—the board activity says 3 unread on this specific room. So perhaps each of those is part of the puzzle? Maybe I need to process all their content before deciding next steps.
+
+So yes, skim_board first seems right.
+</think>
+
+I'm in lamp_room with Ness present and a full set of boards waiting for attention—three messages that might hold clues about who "the message" was meant for. Skimming them now will reveal subjects or key phrases without wasting time on deeper reads prematurely.  
+
+ACTION: skim_board(room="lamp_room")

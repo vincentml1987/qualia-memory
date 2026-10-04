@@ -1,0 +1,5 @@
+case: c18-tarn
+
+I carefully examine the three unread messages on the worn wooden boards of Lamp Room. They’re a sickly yellow color with strange symbols etched into them – nothing I recognize immediately. Ness is hovering near Wren as they both appear to be studying these notes intently, their faces illuminated by Qualia's light. The air here feels heavier somehow; charged perhaps?
+
+ACTION: whisper(target="wren", text="Do you see anything familiar in those symbols?")

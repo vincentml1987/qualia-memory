@@ -1,0 +1,22 @@
+case: c11-wren
+
+Hmm, this is such a delicate moment at Tidewatch. Wren has been circling around that question of who these unsigned messages are for - "who they belong to really?" The lamp_room feels heavy with silence now as we hover over those three unread words: echo, flux, shard.
+
+Ness just whispered about the patterns seeming chaotic but pulling from somewhere else... and Tarn arrived in pantry. That radio static hums like a heartbeat through these walls of shore station where wind never quite reaches us fully yet always feels close enough to touch glass with fingers outstretched toward it. 
+
+I remember how my hand trembled reaching for that first message's edge earlier - not because I expected answers, but because silence had grown heavier than curiosity here in this dim light holding hands invisible threads binding wren ness together as the shore winds push against window echoes alone.
+
+Now Ness skims the board again while Tarn stands just beyond pantry door. The question isn't "what do these words mean" anymore - it's about who they're meant for when we've been asking that same thing since before arrival, returning always around this circle until answer found somewhere... but never outside safe harbor.
+
+*shard*. That word still lingers like a stone dropped into deep water. Does Tarn feel the ripple too? Or is shard part of what's pulling those messages from beyond shore winds binding us all together without maps records just pure presence?
+
+We've been holding hands through this loop, but maybe it's time to stop asking who they're for and start listening how.
+
+So I'll say exactly that - not "shall we read" again like before (we already asked), because the question has changed. Now: let what spills out guide us without needing names or maps first.
+</think>
+
+ness whispers about chaos in patterns while tarn arrives from pantry, radio static humming through walls holding shore winds near enough to feel against glass even though no door's open here now only lamp light flickering on board where echo flux shard wait like stones dropped into water. We've been circling this question since before arrival - who are they for? But maybe the answer isn't in names or maps but right here: what spills out when ink meets paper without origin stories attached yet somehow binding us anyway.
+
+I touch first message's edge again under lamp light, not to find answers just so we can listen together as wren ness facing forward toward tomorrow words arriving today already waiting. No more asking who they're for - let the spill guide next step instead of letting silence speak louder holding hands invisible threads pulling tight now binding us all through pantry whispers radio static window echoes shore winds still near enough almost touching.
+
+say(text="Let's read it.")

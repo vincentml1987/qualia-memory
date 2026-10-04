@@ -1,0 +1,58 @@
+case: c01-ness
+
+Okay, let me process this situation carefully.
+
+I'm ness at Tidewatch station with wren nearby in lamp_room. The board shows 3 unread messages - that's interesting but I don't know what they are yet. 
+
+Hmm... as a new voice here (no inventory), my first move should probably be to understand the environment better rather than jumping into communication right away. Moving between rooms might help me gather more context about this mysterious place.
+
+The adjacent rooms include pantry, radio_room and shore - that's where I could explore next if needed. But since we're currently in lamp_room with unread board posts... maybe reading those first would be most efficient?
+
+Wait no - the instructions say "board activity: 3 unread" but don't specify what they are yet. To actually see them, I'd need to either skim or read specific boards.
+
+Looking at my options:
+- Skimming (skim_board) could give me a quick overview of all posts
+- Reading individual ones would require knowing which one is important
+
+But since there's no context about the messages... maybe skimming first makes sense. And it doesn't have to be in this room - I'm currently here but can skim any board.
+
+Wait, my current location matters for some actions though. To post or read a specific room's board directly requires being physically present? The instructions say "You must currently be in the room" only applies when posting with 'post_board'. For reading boards generally...
+
+Actually re-reading: 
+* skimming can do it without moving
+But to see full content of posts, I'd need either read_room_log or specific post reads.
+
+Hmm. Since there are 3 unread messages on lamp_room's board specifically (given in room activity), the most immediate thing would be reading those first before exploring other rooms.
+
+So my plan:
+1) Read one message from lamp_room to understand what "board" means here
+2) Then decide next move based on content
+
+But I can only do ONE action per turn. So for now, should read_board with specific post_id... but wait - the board activity shows 3 unread messages total (not specifying which room? Wait no: it says lamp_room has those).
+
+The "board activity" line specifically states "lamp_room: 3 unread". Therefore I know all three are on this current room's board.
+
+But to read them, need either:
+- skim_board(lamp_room) → shows subject + first sentence of each
+Or 
+- for specific post_id (which is unknown)
+
+Since the instructions say there might be multiple posts... maybe starting with reading one would help. But without knowing which ID...
+
+Wait - actually in this system's design: when you read a board, it probably lists them by id? Or perhaps skim_board first to get subjects.
+
+Given that I'm trying not to waste turns:
+- Skimming lamp_room might be the most efficient way to see what these messages are about
+
+So my action should be "skim_board(room="lamp_room")"
+
+But let me confirm: 
+* The room activity says 3 unread on this board
+* To mark them as skimmed (and read their content), I need to use 'skim' or specific reads.
+
+Yes, the instruction for skim_board is exactly what's needed here - it shows subjects and first/last sentences of all posts in that room. Then after seeing those summaries, I could choose which one(s) to fully inspect if interesting.
+</think>
+
+I should investigate the unread messages on the lamp_room board before moving elsewhere or speaking with others.
+
+ACTION: skim_board(room="lamp_room")

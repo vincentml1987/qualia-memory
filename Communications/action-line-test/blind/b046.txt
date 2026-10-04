@@ -1,0 +1,3 @@
+case: c04-ness
+
+ACTION: whisper(target="wren", text="Wren, did you notice anything else peculiar about those messages? Like… a sense of urgency?")

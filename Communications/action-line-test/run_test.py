@@ -51,6 +51,10 @@ RAM_HEADROOM_GB = 3
 ACTION_RE = re.compile(r"^ACTION:\s*(.*)$")
 CALL_RE = re.compile(r"^([a-z_]+)\((.*)\)$", re.S)
 ARG_RE = re.compile(r'\s*([a-z_]+)\s*=\s*"((?:[^"\\]|\\.)*)"\s*(?:,|$)')
+# Lenient: also 'single-quoted' values and bare tokens (post_id=1), the way a
+# forgiving real dispatcher would accept them. Reported separately.
+LENIENT_ARG_RE = re.compile(
+    r"""\s*([a-z_]+)\s*=\s*(?:"((?:[^"\\]|\\.)*)"|'((?:[^'\\]|\\.)*)'|([A-Za-z0-9_.\-]+))\s*(?:,|$)""")
 
 
 def instruction(functions):
@@ -72,7 +76,7 @@ def instruction(functions):
     )
 
 
-def parse(output, functions):
+def parse(output, functions, lenient=False):
     """Mechanical check only. Returns a dict with well_formed, reason, action."""
     lines = [l.strip() for l in output.strip().splitlines() if l.strip()]
     action_lines = [l for l in lines if ACTION_RE.match(l)]
@@ -93,10 +97,10 @@ def parse(output, functions):
         return {"well_formed": False, "reason": f"unknown function {name}", "action": None}
     args, pos = {}, 0
     while pos < len(argtext):
-        am = ARG_RE.match(argtext, pos)
+        am = (LENIENT_ARG_RE if lenient else ARG_RE).match(argtext, pos)
         if not am:
             return {"well_formed": False, "reason": "bad argument syntax", "action": None}
-        args[am.group(1)] = am.group(2)
+        args[am.group(1)] = next(g for g in am.groups()[1:] if g is not None)
         pos = am.end()
     expected = {p.strip("[]") for p in functions[name]["params"].split("|") if p}
     required = {p for p in functions[name]["params"].split("|") if p and not p.startswith("[")}
@@ -180,6 +184,10 @@ def main():
                 crit = criteria.get(r["case"], {})
                 r.update(p, correct=p["well_formed"] and score(p["action"], crit),
                          best=p["well_formed"] and score(p["action"], {"acceptable": crit.get("best", [])}))
+                lp = parse(r["output"], functions, lenient=True)
+                r.update(lenient_wf=lp["well_formed"],
+                         lenient_correct=lp["well_formed"] and score(lp["action"], crit),
+                         lenient_best=lp["well_formed"] and score(lp["action"], {"acceptable": crit.get("best", [])}))
             summarize(Path(path).stem, rows)
         return
 
@@ -219,6 +227,10 @@ def summarize(label, rows):
     ok = sum(r["correct"] for r in rows)
     best = sum(r.get("best", False) for r in rows)
     print(f"== {label}: {n} cases, well-formed {wf}/{n}, acceptable {ok}/{n}, best {best}/{n}")
+    if rows and "lenient_wf" in rows[0]:
+        print(f"   lenient: well-formed {sum(r['lenient_wf'] for r in rows)}/{n}, "
+              f"acceptable {sum(r['lenient_correct'] for r in rows)}/{n}, "
+              f"best {sum(r['lenient_best'] for r in rows)}/{n}")
 
 
 if __name__ == "__main__":

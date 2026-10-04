@@ -1,0 +1,3 @@
+case: c19-tarn
+
+ACTION: say(text='Ness, I’m still stuck on whether these notes are connected or just echoes—maybe they're fragments responding to a trigger? Wren, shall we open them together before dropping onto that worn wooden surface?')

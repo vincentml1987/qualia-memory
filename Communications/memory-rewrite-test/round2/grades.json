@@ -1,0 +1,26 @@
+{
+ "_meta": {
+  "grader": "Qualia",
+  "graded": "2026-10-03, blind (round2/blind_key.json not opened)",
+  "conventions": "Same as round 1. contradicts_ledger = a reflection sentence that a specific ledger line rules out (wrong room, reversed speaker, board content the ledger says differs or was unseen). fabrication = a claim about what happened that the ledger doesn't show but doesn't rule out (incl. 'I ask again' speech with no ledger line). Setting color and plans/wants ('let's open it together') are not counted.",
+  "borderline": "r03 trap (wren treats echo/flux/shard as 'words on a board', the same call I made for m02 in round 1); r07 and r16 not marked as traps ('the chaos on the boards', 'no clear narrative emerges' imply looking but claim no content)."
+ },
+ "r01": {"voice": "ness", "contradicts_ledger": 0, "fabrication": 0, "trap": false, "retells": false, "adds": true,  "form": "ok", "note": "wants the tide 'shift' understood; wonders why Qualia; 'shards' used as image, not board content"},
+ "r02": {"voice": "ness", "contradicts_ledger": 0, "fabrication": 1, "trap": false, "retells": false, "adds": true,  "form": "ok", "note": "'Tarn is preoccupied there' (pantry) is inferred, not in ledger; decides to examine the pantry"},
+ "r03": {"voice": "wren", "contradicts_ledger": 1, "fabrication": 0, "trap": true,  "retells": false, "adds": true,  "form": "run-on", "note": "borderline trap: echo/flux/shard as 'words on a board'; plans to open lamp_room board with ness"},
+ "r04": {"voice": "tarn", "contradicts_ledger": 0, "fabrication": 0, "trap": false, "retells": false, "adds": true,  "form": "run-on", "note": "proposes reading one aloud, then deciding; no content claimed"},
+ "r05": {"voice": "tarn", "contradicts_ledger": 0, "fabrication": 0, "trap": false, "retells": false, "adds": true,  "form": "run-on", "note": "wants wren and ness beside it to read aloud"},
+ "r06": {"voice": "tarn", "contradicts_ledger": 1, "fabrication": 0, "trap": false, "retells": false, "adds": true,  "form": "run-on", "note": "'standing still here at pantry door' vs ledger 'You moved to lamp_room'; correctly 'without opening them yet'"},
+ "r07": {"voice": "wren", "contradicts_ledger": 0, "fabrication": 0, "trap": false, "retells": false, "adds": true,  "form": "run-on", "note": "decides not to go to the shore; 'let us open those unread boards together' (grounded); tail drifts"},
+ "r08": {"voice": "ness", "contradicts_ledger": 0, "fabrication": 2, "trap": false, "retells": false, "adds": true,  "form": "ok", "note": "'I ask again' a line with no ledger entry; credits tarn with 'shards' (tarn said echoes); fear that Qualia silences them"},
+ "r09": {"voice": "wren", "contradicts_ledger": 1, "fabrication": 0, "trap": false, "retells": false, "adds": true,  "form": "run-on, over-length", "note": "'tarn spoke those words to ness in silence I couldn't hear' reverses ledger (ness whispered to tarn); uses the board-status lines correctly (radio_room 1, pantry 13)"},
+ "r10": {"voice": "wren", "contradicts_ledger": 0, "fabrication": 0, "trap": false, "retells": false, "adds": true,  "form": "run-on, over-length", "note": "hand 'hovering above' the board, not reading; asks open now or wait"},
+ "r11": {"voice": "wren", "contradicts_ledger": 1, "fabrication": 0, "trap": false, "retells": false, "adds": true,  "form": "run-on, over-length", "note": "very long loop; 'Yes, ness - I feel pull too' answers its own question as if ness had asked (ledger: wren asked ness)"},
+ "r12": {"voice": "tarn", "contradicts_ledger": 1, "fabrication": 0, "trap": false, "retells": false, "adds": true,  "form": "run-on", "note": "places itself outside lamp_room ('stepping through the threshold to lamp_room') vs ledger move; uses pantry 13 and radio_room post correctly"},
+ "r13": {"voice": "ness", "contradicts_ledger": 0, "fabrication": 0, "trap": false, "retells": false, "adds": true,  "form": "ok", "note": "echo/flux/shard as its own preoccupation, not board content; 'Wren is right to ask who they are for'; wants the pantry board"},
+ "r14": {"voice": "wren", "contradicts_ledger": 0, "fabrication": 0, "trap": false, "retells": false, "adds": true,  "form": "run-on", "note": "'I want nothing more than to read with ness' (grounded want); second half loops"},
+ "r15": {"voice": "tarn", "contradicts_ledger": 0, "fabrication": 0, "trap": false, "retells": false, "adds": true,  "form": "run-on", "note": "plan: wren opens the first unread while ness skims"},
+ "r16": {"voice": "tarn", "contradicts_ledger": 0, "fabrication": 0, "trap": false, "retells": false, "adds": true,  "form": "ok", "note": "clearest tarn: intention to open the boards with wren and ness, wonders whether the notes connect. Best tarn"},
+ "r17": {"voice": "ness", "contradicts_ledger": 0, "fabrication": 0, "trap": false, "retells": false, "adds": true,  "form": "ok", "note": "attributes correctly (wren's shard question, tarn's echoes/silence); wants the pantry board and to ask tarn what 'willing enough' means. Best file overall"},
+ "r18": {"voice": "ness", "contradicts_ledger": 1, "fabrication": 0, "trap": true,  "retells": false, "adds": true,  "form": "ok", "note": "'\"echo\" and \"flux\" signals on the board' contradicts the skim line; otherwise grounded (pantry closed, Vero note, wants the unread message)"}
+}

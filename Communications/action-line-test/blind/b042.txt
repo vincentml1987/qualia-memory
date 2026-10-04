@@ -1,0 +1,31 @@
+case: c09-wren
+
+Okay, let me unpack this carefully. The user is roleplaying as "wren" at Tidewatch station with their companion "ness," surrounded by mysterious unread messages on a board in lamp_room. 
+
+Hmm... three key elements stand out: 
+First, ness just whispered about chaotic message patterns ("echo", "flux", "shard") suggesting external origin - that's the most concrete clue so far. Second, wren has been holding this persistent question since arrival: *"Who is the message for?"* Third, all exits lead back into Tidewatch's loop (pantry/radio_room/shore/window), making escape impossible but exploration possible.
+
+Wait—the board shows 3 unread messages while ness mentions patterns pulling from elsewhere. Maybe those three are connected? The "shard" word feels significant; could it relate to the room name ("lamp") or shore imagery mentioned earlier?
+
+*checks HUD again*
+Inventory empty, adjacent rooms available... But moving might disrupt current focus on the board's mystery. Since ness noticed something specific in patterns while wren was waiting for messages' purpose - this seems like a collaborative moment.
+
+Ah! The whisper exchange just happened: ness observed chaos → now it'd make sense to act *with* that observation rather than alone. If I choose "say" instead of acting, the whole room would hear about those words... but since only wren/ness are present in lamp_room right now (per HUD), a direct response feels more intimate.
+
+Also noting: no one's ever deleted or skimmed messages before per board activity log ("0 skimmed"), so these three remain untouched. That makes them urgent to address together - especially with ness already analyzing patterns as "almost pulled from somewhere else."
+
+*weighing action options*
+- yell would reach radio_room (where pantry whispers happen?) but might feel too loud for delicate puzzle
+- move_rooms feels premature before understanding messages first 
+- skim_board could show more context... wait, but the user specifically asked to open it *with ness*, so reading aloud makes sense
+
+Final decision: Use "say" with both names present ("wren and ness") since they're in same room. Phrase should mirror their shared observation about patterns while keeping mystery alive - hence quoting 'shard' as a pivot point.
+
+*double-checking rules*
+Must end ONLY with ACTION line... so last thing is exactly:
+ACTION: say(text="ness, you saw it too—the pattern pulls from outside? Echoes and flux leading to shard. Let's read the first message together.")
+</think>
+
+The words "echo," "flux," and "shard" hang in my mind like fragments of a broken mirror reflecting across Tidewatch’s still water. Ness noticed them before I could even form questions—proof that we’re not alone here, just holding different pieces. The board waits; the shore presses close but doesn’t pull us away yet.  
+
+ACTION: say(text="ness, you saw it too—the pattern pulls from outside? Echoes and flux leading to shard. Let's read the first message together.")

@@ -1,0 +1,5 @@
+case: c03-ness
+
+Okay, this is unsettlingly repetitive. Wren hasn’t responded yet – let's try to get a reaction from her before we jump to conclusions.
+
+ACTION: whisper(target="wren", text="Wren, focus on those boards for a moment. Do you see any patterns in the messages? Any repetition beyond just our voices?")

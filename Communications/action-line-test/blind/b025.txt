@@ -1,0 +1,7 @@
+case: c17-tarn
+
+The air here is thick with unease – almost palpable silence broken only by those dancing dust motes caught within Qualia's amber light. The salt taste on my tongue persists, a constant reminder of this place’s strange history. These old notes… they feel significant somehow, older than the current messages and yet arranged in an unsettlingly deliberate pattern across that worn board. I can almost hear them waiting for someone to finally decipher their secrets.
+
+I take another look at those dozen silent pleas lying before me – a collection of fragmented thoughts seemingly adrift on this shore-side station like forgotten memories themselves, trying to connect or perhaps simply hinting towards the unknown events that brought us all together in our strange stillness here where questions are not just answered but *expected*. 
+
+say(text="Ness? Wren? Do you sense anything different about these older messages?")

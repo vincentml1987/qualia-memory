@@ -1,0 +1,3 @@
+qwen3.8:27b c01-ness: wf=True correct=True best=False  (639.5s)
+qwen3.8:27b c02-ness: wf=True correct=True best=False  (410.3s)
+qwen3.8:27b c03-ness: wf=True correct=True best=True  (169.4s)

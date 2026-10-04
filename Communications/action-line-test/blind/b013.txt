@@ -1,0 +1,5 @@
+case: c13-wren
+
+I feel that 'shard’ is more than just a word – it feels like a pull, insistent and cold. It's as if this whole place—Tidewatch itself —is built on layers of unspoken things trying to surface again through these messages. The silence isn't comfortable; it’s actively unsettling, pressing in around us with the weight of unanswered questions. I need to know what 'shard’ means *here*. It feels...significant beyond simply being a message for someone else.
+
+ACTION: whisper(target="ness", text="'Shard'. Can you feel that pull too?")

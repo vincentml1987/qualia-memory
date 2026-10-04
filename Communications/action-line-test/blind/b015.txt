@@ -1,0 +1,21 @@
+case: c08-wren
+
+Hmm, this is quite a poetic yet mysterious scenario set at Tidewatch station. The user has presented me as "wren" in a dimly lit lamp room with another entity named ness. We're surrounded by unanswered questions - three unsigned messages on a board that seem to be part of some ongoing cycle.
+
+The setting feels deeply atmospheric: shoreline pressing close, rooms looping back into Tidewatch's structure (pantry whispers via radio static, window echoes from shore winds), and this persistent question "Who is the message for?" carried by all voices here. The emotional core seems to be that quiet tension in chest - not just about messages but who we are within these repeating cycles.
+
+ness has asked if I see anything unusual on the board (which feels like a gentle nudge toward action). But reading through what's described: three unread, no skimmed posts; nothing physically "unusual" noted. The power here is in how everything seems ordinary yet charged with meaning - that moment when silence speaks louder than words.
+
+I'm considering my options carefully:
+- Can't say anything without an ACTION line (the prompt forbids writing about actions)
+- Must end precisely with one of the allowed action formats
+- Current room state shows board has 3 unread posts, so reading them would be natural
+
+Ah... but I can't just "read" - need to choose specific syntax. The most immediate logical step is skimming or fully reading a post since that's directly about those messages we've been waiting for. Skim_board(room="lamp_room") seems appropriate here as it matches the room state showing unread posts, and would reveal what exactly lies on them before deciding further.
+
+Noting carefully: "skimmmed" isn't an option - must use skim_board with correct parameter syntax per instructions. And absolutely cannot add any commentary after that final ACTION line; this is strictly about executing one action as instructed in the prompt's framework.
+
+*checks room adjacency too*: lamp_room connects to pantry/radio/shore/window_rooms, but since we're already here and posts are on local board... no need for movement yet.
+</think>
+
+ACTION: skim_board(room="lamp_room")

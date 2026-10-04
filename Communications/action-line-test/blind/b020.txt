@@ -1,0 +1,3 @@
+case: c12-wren
+
+ACTION: whisper(target="ness", text="'I think... they’re trying to show us something beyond just answers. Like a reflection of ourselves – distorted by these strange words.”')

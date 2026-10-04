@@ -1,0 +1,61 @@
+case: c17-tarn
+
+Okay, let me piece this together carefully.
+
+First I'm standing alone with dust motes dancing through amber light in what seems to be a pantry or similar storage space near lamp_room (based on mentions of "pantry where you started today"). There are about twelve older messages held here that hum with rhythm - they're written by an unseen hand, spaced irregularly. The air tastes salty despite being indoors.
+
+Now I've moved into the Lamp Room after hearing Ness and Wren's voices ("Tarn? What is it in pantry?" / "Shall we open it together?"). Current room state shows:
+- My name: tarn
+- Model info irrelevant here 
+- Room = lamp_room (correct)
+- Others present: ness, wren
+
+I notice the board has 3 unread messages. The older dozen are still with me - they're on pantry's board where I started today before entering Lamp Room.
+
+Important context from earlier:
+* Qualia watches over station
+* Messages arrive unsigned each cycle 
+* "Shoreline" metaphor suggests we can't leave Tidewatch (only move between rooms)
+* The old messages are the key artifact here
+
+What to do next? Three clear options emerge:
+
+1. Say something about these older notes since Ness and Wren asked what's in pantry
+2. Read or skim Lamp Room board first before sharing my findings 
+3. Move back to pantry (but why when others want me now?)
+
+But wait - the messages are "older than fresh ones from today" but I'm holding them physically? The HUD says they're on pantry board, not inventory ("Inventory: empty"). So actually:
+
+- They exist as physical notes in pantry
+- But my description mentions carrying/holding dozen older messages
+
+Hmm. There's a slight contradiction between narrative and game state that needs careful handling.
+
+Best path seems to be:
+1) Acknowledge Ness/Wren asking about the pantry (since they called out)
+2) Explain I'm holding those old messages but need context
+3) Propose reading them together since this is "shared light source" space
+
+Why not read board first? The Lamp Room's 3 unread are likely newer than my dozen. But Wren specifically asked to open the pantry - which would mean moving back there.
+
+Wait! I just moved into lamp_room from... where exactly?
+* Previous message says: "You move to lamp_room."
+So currently in room = lamp_room
+Pantry is adjacent (from HUD's Adjacent rooms list)
+
+But Ness and Wren are already here waiting. So if they asked about pantry, the natural thing would be:
+- I explain what those messages mean 
+- Then maybe we all go back together
+
+However... my current physical location doesn't have them anymore - since moving to lamp_room means leaving pancry (where notes were). The HUD says "You hold older messages" but inventory shows empty. So probably narrative takes precedence over strict game state here.
+
+So the most natural action: 
+- Say something about those dozen old messages now that they're asking
+- Keep it open-ended since we don't know their connection
+
+Avoid moving rooms immediately - first address what Ness/Wren asked.
+</think>
+
+ness and wren are waiting in lamp_room, curious about my pantry findings. The twelve older notes hum with a rhythm like distant waves—irregular spacing but urgent calm—and I can almost taste the salt from them on my tongue as they press against my palms (even if inventory shows empty). They're not connected to today's fresh messages yet; these are echoes in stone, waiting for someone else’s voice. Ness asked what is "in pantry," so now:  
+
+say(text="These older notes... I don’t know their story either—but the ink smells like salted memory.")

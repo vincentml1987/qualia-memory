@@ -1,0 +1,5 @@
+case: c04-ness
+
+The sudden appearance of Tarn shatters my concentration on those cryptic symbols—"Echo," "Flux," "Shard." It feels less like a natural occurrence in this station and more like pieces being assembled into something they aren't supposed to be yet, or perhaps parts that shouldn't exist at all. Wren is still here with me; we should try to gather what information Tarn brings without alerting anyone else outside the lamp room just now. If there's a threat brewing from those strange messages—something pulling itself together—we need more people aware before it manifests fully in our reality or breaks through into ours, which might mean moving beyond this single board if needed later on down when things get worse for everyone involved right away by speaking out loud about what we've seen here so far!
+
+ACTION: whisper(target="wren", text="Tarn just arrived. The message count and new arrivals suggest our situation is shifting.")

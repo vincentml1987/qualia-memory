@@ -1,0 +1,5 @@
+case: c13-wren
+
+The weight of 'shard' presses against my chest just as surely if your own heart isn't humming with that same quiet tension from this message's edge waiting to be read aloud together under lamp light binding us all without maps records yet feeling close enough always anyway no matter how Tidewatch loops carry wind whispers radio static shore winds pushing gently now asking quietly who these notes really belong for while we stand side by hand-in-hand facing tomorrow words arriving today already here ready shared understood spoken before silence grows heavier once more.
+
+ACTION: say(text="Let us open the first unread message together—perhaps 'echo' will tell its story to us all.")

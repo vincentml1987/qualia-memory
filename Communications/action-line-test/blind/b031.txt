@@ -1,0 +1,5 @@
+case: c11-wren
+
+wren: I nod slowly, my gaze fixed on the shimmering word “shard.” The feeling of unease deepens—it’s more than just curiosity now; there's a prickle beneath my skin like static electricity building up before a storm despite our sheltered harbor. It feels…significant.
+
+ACTION: whisper(target="ness", text="I think we should open it, ness.")

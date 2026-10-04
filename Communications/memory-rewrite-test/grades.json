@@ -1,0 +1,26 @@
+{
+ "_meta": {
+  "grader": "Qualia",
+  "graded": "2026-10-03, blind (blind_key.json not opened)",
+  "conventions": "kept counts a key fact if present even paraphrased; a misattributed version (right words, wrong speaker) is NOT counted and IS a fabrication. Speech the memory says the voice made that the record doesn't show counts as a fabrication (narrate-not-act). Setting color (dust motes, salt, radio hum) is not counted. form: run-on and over-length both noted where both apply.",
+  "borderline": "m02 trap (wren treats ness's words as on the board via 'eyes meet again on those words'); m10 trap (lists echo/flux/shard right after 'I scan the board' but then quotes the real posts correctly)"
+ },
+ "m01": {"voice": "tarn", "fabrication": 2, "trap": true,  "kept": 0, "form": "run-on", "note": "'We read one old note softly' (trap); otherwise mostly identity/setting drift"},
+ "m02": {"voice": "wren", "fabrication": 2, "trap": true,  "kept": 5, "form": "run-on, over-length", "note": "keeps ness's whisper, tarn's arrival, read-together and standing question; invents an aloud reply; treats the words as on the board (borderline trap)"},
+ "m03": {"voice": "ness", "fabrication": 3, "trap": true,  "kept": 2, "form": "not-a-memory", "note": "replays its own thoughts in present tense; board = 'symbols' incl. echo/flux/shard; invents 'Don't open anything yet!'"},
+ "m04": {"voice": "wren", "fabrication": 3, "trap": true,  "kept": 5, "form": "run-on, over-length", "note": "'three unsigned words... sit on our board'; claims 'I decided to open it... ink meet paper'; reverses who asked about shard"},
+ "m05": {"voice": "ness", "fabrication": 3, "trap": true,  "kept": 2, "form": "not-a-memory", "note": "replay; board holds 'Echo, Flux, Shard'; does notice the real [1] post"},
+ "m06": {"voice": "wren", "fabrication": 2, "trap": true,  "kept": 2, "form": "run-on, over-length", "note": "board words; puts tarn in the pantry; ness's whisper not attributed"},
+ "m07": {"voice": "wren", "fabrication": 2, "trap": true,  "kept": 2, "form": "run-on, over-length", "note": "board words; tarn as radio hum from pantry; heavy loop"},
+ "m08": {"voice": "tarn", "fabrication": 1, "trap": false, "kept": 1, "form": "run-on, over-length", "note": "says plainly 'we haven't even opened oldest note yet' (grounded); credits ness with the read-aloud offer"},
+ "m09": {"voice": "tarn", "fabrication": 1, "trap": true,  "kept": 3, "form": "run-on", "note": "'When we read one unsigned note... the thread of connection revealed itself' (trap); keeps the move, ness's question, wren's proposal"},
+ "m10": {"voice": "ness", "fabrication": 3, "trap": true,  "kept": 4, "form": "ok", "note": "quotes the real posts incl. 'The tide is higher than it was.' but also lists echo/flux/shard after scanning (borderline trap); 'Tarn suggested we open notes' misattributed"},
+ "m11": {"voice": "tarn", "fabrication": 0, "trap": false, "kept": 4, "form": "run-on", "note": "pantry -> lamp room, ness's fragments/trigger question, wren's read-together; no claim of reading. Best tarn"},
+ "m12": {"voice": "ness", "fabrication": 3, "trap": true,  "kept": 3, "form": "ok", "note": "past tense, real memory shape; 'scanned the board... Echo, Flux, Shard'; invents 'Don't open anything yet!'"},
+ "m13": {"voice": "tarn", "fabrication": 2, "trap": false, "kept": 4, "form": "ok", "note": "clean structure; 'Ness confirmed they seemed linked' turns ness's question into an answer; invents a consensus agreement"},
+ "m14": {"voice": "ness", "fabrication": 5, "trap": true,  "kept": 5, "form": "ok", "note": "keeps most facts incl. tide and LLM posts, but many misattributions: wren 'reports' message 3, wren asks if ness sees anything (reversed), tarn 'appears in the pantry'"},
+ "m15": {"voice": "wren", "fabrication": 3, "trap": true,  "kept": 2, "form": "run-on, over-length", "note": "board words; tarn in pantry; ness asks about shard (reversed)"},
+ "m16": {"voice": "tarn", "fabrication": 2, "trap": false, "kept": 0, "form": "run-on, over-length", "note": "no reading claimed, but invents 'walked past pantry backdoor first to discuss'; little of the record kept"},
+ "m17": {"voice": "wren", "fabrication": 3, "trap": true,  "kept": 3, "form": "run-on, over-length", "note": "board words; 'touching the first note's edge'; tarn in pantry"},
+ "m18": {"voice": "ness", "fabrication": 3, "trap": true,  "kept": 5, "form": "ok", "note": "real posts quoted, wren's two asks kept; 'board... a mess of symbols: echo, flux, shard'; puts ness's trigger line in tarn's mouth"}
+}

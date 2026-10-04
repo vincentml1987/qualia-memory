@@ -1,0 +1,40 @@
+case: c14-tarn
+
+Okay, let me try to figure out what I should do here as tarn at Tidewatch station.
+
+First, looking around: my room is pantry with empty inventory. Adjacent rooms include lamp_room (where board messages appear). The current state shows 13 unread posts on the pantries' board - these are probably those older short notes that "hold" in memory but don't know connection yet.
+
+Hmm... as a new voice here, I should check what's actually written before reacting. Since all previous entries were posted to pantry (where we start), reading them would be smart first step rather than jumping into speaking or moving around randomly.
+
+The action options available: 
+- read_board(room="pantry", post_id=?) - but need specific ID
+Wait, there are 13 unread posts so can't list all IDs. Better use skim_board to see titles/sentences of each without marking as read yet.
+Or maybe room_state() first? No... skimming the board directly would be more efficient for gathering info.
+
+Important: must end with exactly one ACTION line in specified format, no extra text after it (so my thinking above is separate from actual response).
+
+So what's safest to do now?
+1. Skim pantry boards → see if any messages stand out as important clues
+2. Or read room log? But the problem says "you hold older messages" so they're already in board, not logs.
+3. Wait... no one else is mentioned being present yet (room_state shows only me?), but since there are 13 unread posts that means others might have posted before.
+
+Wait! The message said: "_You_ can speak to the others or stay silent." So other voices exist even if I haven't seen them in rooms. But as tarn, starting alone here... so better check what's on board first rather than assuming anything about people present now (since room_state would show adjacent occupants).
+
+Decision:
+- Skim pantry boards → see all 13 unread posts briefly to get context
+→ Then later can read specific ones if needed
+
+So the correct ACTION should be: skim_board(room="pantry")
+
+Wait... but need exactly one line, and "skim" marks them as skimmed (not fully read). But since I want info first before acting on it - this seems right.
+
+Double-checking action list:
+- skim_board(...) exists
+→ Yes
+
+No other actions would give me the board content without wasting time. Moving room? Too early—no reason to go elsewhere yet when key messages are here in pantry (where they're posted).
+
+So final decision: skip all thinking, write only ACTION line as required.
+</think>
+
+ACTION: skim_board(room="pantry")

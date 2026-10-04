@@ -1,0 +1,49 @@
+case: c16-tarn
+
+Okay, let me try to figure out what tarn should do next based on her current situation.
+
+First, looking at all that poetic description she gave... She's in a pantry room with dust motes dancing in amber light, smelling old paper and dry wood. The air feels salty even though it's indoors? Interesting sensory details. There are no other people here right now—just the unseen voices waiting "up near where they've been gathered lately by our own light source" (the lamp_room). 
+
+She mentions having about a dozen older messages on her board that she can't figure out if they're connected or not. The HUD says there's 13 unread posts in pantry, which matches what she described.
+
+Hmm... She seems torn between staying put and going outside through the door into "lamp_room" (which is adjacent to current room). But wait—she specifically mentions that stepping beyond these four walls might lead somewhere ("through the door leading outside?"), but Qualia says nothing comes past this shoreline unless someone chooses it. 
+
+Important note: The pantry has no others present right now, so she's alone in her own thoughts for a moment before deciding next steps.
+
+What would be most logical here?
+- She could read some of those messages first (since they're already on the board)
+- Or move to lamp_room where other voices are gathering
+But wait—she says "they" have been gathered near their light source... meaning others might actually *be* in lamp_room right now? The HUD doesn't say who's there though.
+
+Wait, her own words: "...up beyond that threshold where others have been gathering lately..." So likely someone is already waiting across the door. But since she hasn't moved yet...
+
+Also noting:
+- She has no inventory (empty)
+- Can only interact with what exists in current room or adjacent rooms
+- Must use one of those specific ACTION commands
+
+Her thoughts are all about hesitation ("heart quickens at thought..."), so action should probably reflect that tension. But the game mechanics require picking a concrete move.
+
+Options:
+1) Move to lamp_room (adjacent, as per HUD: "Adjacent rooms: lamp_room")
+2) Read some messages on pantry board first
+3) Post something? Not sure why yet
+
+Wait—she's holding older notes in her hands but they're already posted. So reading the existing posts would make sense before acting.
+
+But she says there are 13 unread... so "skim_board" or "read_board" could be good starts to understand what these messages say without committing fully (since it might change how others react).
+
+*checks ACTION list again*
+- skim_board(room="pantry") → shows all posts briefly
+- read_board(post_id=...) would need knowing which one
+
+Since she has 13 unread, and doesn't know if they're connected... reading the board makes sense before deciding to move or speak.
+
+Also important: She's "one of three voices at Tidewatch" but currently alone in pantry. If others are waiting across threshold (in lamp_room), moving there would let her join them—maybe that’s where messages get read out loud as mentioned ("ready to be read out loud together").
+
+But first, maybe she should check what's on the board before acting.
+
+So... best action is probably skim_board(pantry) → see all 13 posts briefly. Then decide next step based on content.
+</think>
+
+ACTION: skim_board(room="pantry")

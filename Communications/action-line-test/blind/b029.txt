@@ -1,0 +1,123 @@
+case: c04-ness
+
+We are at Tidewatch station, specifically in lamp_room with Wren (and now also tarn). The board has 3 unread messages.
+ We've just whispered to wren about noticing patterns: "echo", "flux", "shard" and that they seem pulled from elsewhere.
+
+ Now we see:
+   - A new person arrived? Tarn is here too. So the room currently includes ness, wren, tarn (and possibly others who are not visible in HUD but might be present).
+   - We also hear activity coming from pantry adjacent to lamp_room.
+
+ Our goal: figure out what's happening with these messages and why they appear on a board that seems connected across multiple "voices" (though we don't know the full scope).
+
+ What should I do?
+  Option A) Continue observing, maybe ask tarn or Wren more questions.
+  Option B) Check another room to see if there are clues.
+
+ Since Tarn just arrived and is now in lamp_room with us, it might be good to introduce ourselves? But we don't know much about them yet. However, the HUD says "Also here: tarn" so they're present but haven't spoken (yet).
+
+ We have a new person who has joined our room - let's try to gather more information.
+
+ I think whispering again would help avoid disturbing others and get direct info from Wren or Tarn? But note that we just whispered to wren, now there are two people in the same space: tarn is here too. We could also consider speaking out loud (say) but maybe it's better to be quiet.
+
+ However, let me recall:
+   - The messages on the board seem chaotic and disconnected.
+   - There might be a pattern we're missing? Or perhaps they form an acrostic or something?
+
+ But note: "echo", then "flux" ... wait, what if these are words that can have multiple meanings in context of this station?
+ Example:
+   echo -> sound reflection
+   flux -> change (or flow)
+   shard -> fragment
+
+ Maybe the messages aren't random? Or maybe they're from a system trying to communicate?
+
+ Since we just noticed 3 unread and now there's activity at pantry, I'm inclined to check what is happening in the adjacent room.
+
+ But note: We can only move between rooms. The HUD says "adjacent" so moving into pantry would be possible (since it lists as an option).
+
+ However, let me consider:
+   - If we go to the pantry and find something interesting? Or perhaps Tarn was coming from there?
+   - Also, Wren might have more insight.
+
+ But note: We are trying to work together. Since tarn just arrived in our room, maybe they know what's happening?
+
+ I think a good step would be:
+  Whispering (privately) to both wren and tarn? Wait no, whisper must target one person at a time.
+
+ Let me decide:
+
+ Option for now: 
+   - We'll try to get more information from Wren about the board patterns.
+   - Also note that we have three unread messages on the board. Maybe reading them would help?
+
+ But wait! The HUD says "Board activity" and it's 3 unread, so if I skim_board or read one of those posts (using action commands) then they become marked as seen.
+
+ However, in our last whisper to Wren we were discussing what was already on the board. So perhaps reading a specific message would help?
+
+ But note: We don't know which is which until we see them? Actually, when you skim_board or read one by id (but we haven't listed posts) it might list.
+
+ However, let's stick to actions:
+
+ I think for now:
+   - Let me try whispering again but this time maybe ask Tarn if they've noticed anything too?
+
+ But note: We just arrived? Actually the message says "tarn arrives" so tarn is new. So we can't assume they know about our conversation.
+
+ Alternatively, let's say something to everyone in a quiet way (whisper) that might help us all focus on one thing:
+
+   Whispering individually would be better because if I whisper to Wren and Tarn separately it could get messy? But the system says "you must currently share a room with them" so we can do both.
+
+ However, since this is an AI simulation of multiple voices (each being me), but actually there are three distinct people: ness, wren, tarn. So I am Ness in character and speaking to others as they come into existence? 
+
+ But note the initial message says "part of a small team" with Wren here too.
+
+ Now that Tarn is present, we have two other voices (Wren being one) so three total including me? Actually: 
+   - The HUD shows:
+        Name: ness
+        Also here: wren
+
+     Then after tarn arrives it says "Also here: tarn, wren"
+
+ So now there are 3 people in the room.
+
+ Therefore:
+
+ Option for action step-by-step (as per instructions):
+
+ I want to get more information from Wren and Tarn without causing a commotion. Since we just noticed patterns on the board that seem chaotic but might have meaning if viewed together? 
+
+ However, let's try one thing: skim_board so we can see all three messages at once.
+
+ Why?
+   - Because right now I only know two of them from my whisper (echo and flux) because they were already discussed in our previous exchange. But the third is "shard" which was mentioned as part of a sequence? Actually, when I whispered to Wren about what we saw: 
+        'echo', 'flux' ... then shard.
+
+   So actually there are three messages on board that form this pattern?
+
+ Let me check:
+
+ The HUD says 3 unread. And in my previous whisper (which was the last thing said) I mentioned "three voices" but now it's clear they have a sequence: echo, flux, shard? Or maybe not exactly.
+
+ But note: when we saw them on board earlier, there were three messages and that pattern emerged from reading all of them. So if I skim_board (which shows the subject + first/last sentence) then at least I can see how each message is written to confirm?
+
+ However, let's do it:
+
+   ACTION: skim_board(room="lamp_room")
+
+ But wait! The HUD says "Board activity" for lamp_room has 3 unread. Skimming will mark them as read? Actually the description of skim_board:
+      - See every post currently on a room's board (subject + first/last sentence only). Marks unread posts as skimmed.
+
+ So if we do that, then they become marked as "skimmed" but not necessarily fully read by us. But it will give more context to what the messages are about beyond just being words? Because each post has a subject and text (which might be longer).
+
+ However, note: in our previous whisper I said:
+        'echo', ‘flux,’ “Shard.”
+
+ So we have three short phrases that were on board.
+
+ Now let's do:
+
+   skim_board(room="lamp_room")
+
+ Then after skimming, if there are more details to the messages (like they might say "Echo - 3:15" or something) then it would help us understand better?
+
+ But note

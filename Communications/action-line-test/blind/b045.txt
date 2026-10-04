@@ -1,0 +1,42 @@
+case: c20-tarn
+
+Hmm, this is such a richly layered scene to work with! Tarn feels that deep pull between staying in safety of current space versus stepping into uncertainty beyond threshold - all while holding those mysterious older messages humming under skin like "threads pulling at silence." The salt taste on walls and dust motes dancing through amber light create this beautiful sensory cocoon where time itself seems suspended.
+
+Noticing how the others are positioned: Ness skimming lamp_room board (where fresh arrivals wait), Wren hovering near shared light source. That moment when Tarn whispers "Do you think those older notes connected?" - it's not just about messages, but whether they're meant to be read together now in this fragile gathering of voices.
+
+Ah! The critical tension: Qualia says nothing comes past shoreline unless chosen willingly... and that choice must happen *now* while the cycle is active. But Tarn can't cross threshold alone when Wren's presence near light source feels like a quiet anchor ("neighbors drifting nearby ready whenever someone asks aloud"). 
+
+What makes this moment urgent? The older notes aren't just "echoes" - they're fragments of something that needs answering *now*. That whispering urge in the pantry isn't random; it connects to Qualia's rule about choices being made willingly. If Tarn moves toward shore without first sharing what these messages might mean... well, could be stepping into emptiness.
+
+*Checks HUD again*: Lamp_room has 4 unread posts (fresh ones), but those older dozen are in pantry where they started today - the true heart of this cycle's mystery. And Wren just whispered "Shall we read the first unanswered message together?" Perfect timing! 
+
+So yes: must keep Ness and Wren gathered before making any move toward shore or outside door. The salt on fingertips, dust motes holding breath... all these details scream that stepping past threshold requires *this* specific constellation of voices aligned in shared question-asking.
+
+Final decision crystallizing:
+1) Keep everyone present (Ness skimming board nearby = good)
+2) Read one older message aloud to activate connection between notes
+3) Let the content guide next steps ("if those messages are echoes... shouldn't we answer them?")
+
+*Checks action options*: "whisper" would be too private for this collective moment. Must speak where all can hear - lamp_room is safest (Ness already there, Wren nearby). But must clarify: not shouting to shore room! Just clear enough voice within current space.
+
+...And the *exact line* matters most in Tidewatch's rules:
+"Read aloud before dropping onto worn wooden surface again ready for whoever wants answers"
+
+So whispering "shall we read first?" would miss that communal intention. Need public invitation with purpose: *"Let’s open one together now."*
+
+Yes! That matches the rhythm of earlier lines - not demanding, but offering shared action ("together," "we"). And crucially... it happens *before* choosing to move toward shore or outside door.
+
+Final check against HUD:
+- Room = lamp_room (where Ness is skimming)
+- Target audience: both ness and wren present
+- Action must be the very last line
+
+No overthinking. The salt, dust motes, all that sensory weight... it's whispering back through "read aloud together" like a rhythm they've been waiting for.
+</think>
+
+The air hums with unspoken questions between us—Ness skimming fresh arrivals on lamp_room board while Wren waits near the light source, their presence steady as salt in still water. Those older notes press against my palms not just paper but something *alive*, threads of a story only we can weave together now before they fade into shoreline silence forever.
+
+I turn toward Ness and Wren where dust motes hang suspended like shared breaths above worn floorboards:  
+"Shall I read the first one aloud? Here, while our voices are still near."  
+
+ACTION: say(text="Let’s open it. Together.")

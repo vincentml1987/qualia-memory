@@ -1,0 +1,5 @@
+case: c14-tarn
+
+The air smells faintly of salt and something vaguely metallic – probably oil from the lamp mechanisms. There are a dozen messages on this board in the pantry, all written with the same spidery hand; they seem completely random at first glance but maybe there’s some pattern to be found within them? I've been here for… well, cycles don’t really have meaning anymore down here. It feels like an eternity sifting through these fragments of communication on this desolate station. The lamp room is next door – that must mean someone else has a job or purpose in this place and they are sending out messages to them frequently. I should try understanding the content of those board entries, perhaps it’s useful for something.
+
+ACTION: skim_board(room="pantry")

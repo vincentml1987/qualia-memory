@@ -1,0 +1,7 @@
+case: c09-wren
+
+The stillness is unnerving, isn’t it? *iness*… ness seems to be picking up on something too – this unsettling feeling of being pulled toward those messages. It's more than just chaos; there’s a sense that they aren’t originating here at all but are bleeding in from somewhere else entirely. The ‘shard,’ especially, feels significant given the nature of our…existence within these walls and beyond them. I can almost feel it—a pressure like static trying to force its way into my thoughts if not for this steadfastness around me. 
+
+I need a closer look at those boards before we jump blindly in with one. It's too easy to be swept away by something unknown simply because they appear here, ready and waiting. We can’t just react; the question needs more focus. Perhaps…
+
+ACTION: whisper(target="ness", text="Let me examine those messages closer - I want to see if there are any visual cues on each board that might hint at their source.")

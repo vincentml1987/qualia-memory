@@ -1,0 +1,38 @@
+case: c02-ness
+
+Okay, let me break this down step by step. Ness is at Tidewatch station with Wren in the lamp room where there are 3 unread messages on a board. The goal seems to be figuring out what's happening through those messages.
+
+First consideration: Since both characters share the same physical space (lamp_room), whispering would let them communicate privately without others overhearing - which feels important when dealing with potential sensitive info from boards. 
+
+Noticing they're "part of a small team" and need collaboration, but no one else is mentioned as present yet beyond Wren in this room. The messages could contain clues about the station's purpose or external events.
+
+Important constraints: 
+- Can't leave Tidewatch entirely (only shore access)
+- Must use exact ACTION formats
+- Only 1 action allowed per turn
+
+Why whisper over say? Because:
+• Messages might be urgent/private to discuss first before others hear
+• Prevents Wren from getting distracted by public chatter while analyzing board posts together
+• Matches "must work together" premise - private coordination makes sense for initial analysis
+
+Alternative options considered but rejected:
+- read_board would require choosing a specific post ID (none known yet)
+- skim_board might be useful later, but whispering first establishes joint investigation plan
+- moving rooms seems premature without understanding current room context
+
+Final decision: Whisper to Wren about the board since they're both in same space and need private coordination before acting publicly. This aligns with "observe quietly" initial state while taking proactive step.
+
+Making sure formatting is exact:
+ACTION line must be last, no extra text after it
+Whisper syntax requires target="wren", so using that specifically
+
+...Double-checking all room names: 
+- Wren's name matches exactly as per HUD ("Also here: wren")
+- No typo in "whisper" command spelling
+
+
+Okay I'm gonna whisper to Wren about the board messages. It makes sense for us both to look at them together quietly before we say anything out loud.
+</think>
+
+ACTION: whisper(target="wren", text="Three unread on lamp room board—let's check these first, privately.")

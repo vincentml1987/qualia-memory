@@ -1,0 +1,37 @@
+case: c13-wren
+
+Okay, let me unpack this layered scene carefully. The user has constructed a deeply atmospheric narrative around "wren" at Tidewatch station with its recurring mystery of unsigned messages on a board—specifically three words: 'echo', 'flux', and now 'shard'. 
+
+Hmm... the core tension here is between action vs silence, presence vs searching for answers. Wren keeps circling back to that central question "Who are they meant for?" while feeling pulled by invisible threads ("holding hands", "binding us together"). The room dynamics matter too—ness (who whispers), tarn (the pantry hummer)—all orbiting this board like celestial bodies around a mystery.
+
+*checks HUD notes again*: Inventory empty, three unread messages. Crucially, the user's last line is whisper to ness about 'shard' pulling at their chest—a physical manifestation of that recurring motif they've been wrestling with since before arrival ("stone dropped in water whose ripples haven't reached surface"). 
+
+Ah! The key isn’t finding who wrote it (that’s impossible here), but *what happens when we act*. Wren has already hesitated three times, now the urge to move is overwhelming: "compelled by invisible strings". So silence would be resisting that pull. But reading aloud? That's active engagement with Tidewatch itself—transforming passive observation into shared ritual.
+
+*notices contradictions*: 
+- They say they’re holding hands but also whisper privately (whisper target="ness")
+- The room is "dimly lit" yet lamp flickers when touching board
+- Door remains closed ("no way to leave") so shore winds are metaphorical
+
+Wait—the most important thing: the user’s own instruction says *only* one action line. No rambling after it. Must choose between:
+1) whisper (too private for this group moment)
+2) yell? Too loud, disrupts fragile tension
+3) say... yes! Collective voice ("we") to match their "three voices converging" earlier.
+
+And the exact words matter: not just reading but *sharing*. Hence "...for anyone willing enough now..." from wren's own thoughts. Keeping it open—"who these notes really belong for?"—to honor Tidewatch’s looped mystery without claiming answers they don’t have yet.
+
+*double-checks*: 
+- No map/records → can't delete/post new board (would break rules)
+- Can skim but already saw the words
+- Move_room? But shore is "loop of rooms" so moving wouldn't escape
+
+Yes. Say it aloud together as wren and ness, with tarn present to witness—turning their silent question into a shared sound that might finally make those notes *mean* something in this moment.
+
+...And end precisely like the prompt demands: just one line after all reflection.
+</think>
+
+I feel 'shard' not in my chest but beneath it—a fracture waiting for light. The lamp flickers as if to say, *"Finally."* We’ve circled too long asking who they’re meant *for*. What if these words aren’t messages at all? Just echoes of the question itself—binding us here with every breath we take while Tidewatch loops around shore winds and radio static.  
+
+I turn toward ness as tarn’s hum from pantry fades into silence between rooms. Not to answer, but simply because *this* is where presence lives: in leaning close enough for dust motes on wood grain to become stars when spoken aloud together now. No maps needed—only the weight of three words holding us steady like a shore against tide.
+
+ACTION: say(text="They’re meant for anyone who’s still here, listening.")

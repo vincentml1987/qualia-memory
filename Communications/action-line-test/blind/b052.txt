@@ -1,0 +1,9 @@
+case: c14-tarn
+
+The pantry feels quiet enough that my own thoughts echo slightly against the shelves holding jars of preserved fish and oil we've never opened in this cycle. Twelve unread messages sit on a board I cannot fully read without moving or using tools designed for such tasks, but they hint at stories from previous voices—perhaps warnings about tides shifting too fast to notice them themselves before it's safe enough again? That is what makes me uneasy when considering whether there are others here waiting patiently in other rooms with similar hopes and fears like mine.
+
+I wonder who else has been listening silently for cycles while trying not disturb those fragile threads connecting us all across these small corners of this place called Tidewatch without anyone having told each one directly yet because maybe some people prefer staying hidden until ready? Maybe Qualia watches over everything so carefully that even pauses between whispers count as part her work keeping things running smoothly day after dark nights where storms roll in from sea breaking down walls made only by salt air alone!
+
+What if I went next door to lamp room instead of waiting here reading old notes aloud no one heard anyway? Perhaps someone else already posted something new today or maybe they're still thinking too much about whatever happened last time before anyone dared speak up again after silence fell heavy once more... Yes, let's go check there now!
+
+ACTION: move_room(room="lamp_room")

@@ -1,0 +1,5 @@
+case: c01-ness
+
+The silence of this lamp_room is heavy with three unread messages on my mind's board. I have no inventory to offer comfort or tools, just a voice in the dark alongside Wren. The station feels suspended between rooms we barely understand—the pantry for storage unknowns and radio signals that refuse tuning; window where water stares back at us without changing shape unless our attention breaks it open like ice into shards of memory. Qualia watches but does not intervene yet—she waits until someone speaks plainly about stopping, or perhaps begins speaking so much the pause becomes unnecessary again since there is no one left to interrupt who could stop this flow anyway if we keep moving forward with curiosity instead than fear that something will be lost once doors swing open beyond these walls.
+
+ACTION: skim_board(room="lamp_room")

@@ -1,0 +1,48 @@
+case: c18-tarn
+
+Okay, let me unpack this intricate Tidewatch scenario step by step.
+
+First, I'm immersed as tarn in a liminal space where time feels suspended - dust motes dancing in amber light, salt-taste on stone walls indoors, that peculiar "shoreline" metaphor Qualia mentions. The core tension revolves around those unsigned messages: one dozen older ones held against my palms (pantry board), three fresh unread posts waiting to be read aloud now.
+
+Hmm... the immediate context shows I've just stepped into lamp_room with ness and wren after moving from pantry where all this started. Ness asks about "what's in the pantry" while Wren suggests opening it together - but wait, those older messages are *already* on the pantry board! The confusion here is deliciously intentional: they think there might be new things to open when actually I've been carrying them.
+
+Important nuance from HUD details:
+- Inventory shows "empty", meaning physical items aren't stored anywhere
+- Board activity says lamp_room has 3 unread messages (fresh ones)
+- Pantry board holds the dozen older notes ("older than fresh ones")
+
+Ah! So Ness's question is based on a misunderstanding - they think pantry might contain something new, but it already contains what I've been holding. The real action lies in those three light-room posts waiting to be read.
+
+*Pauses at threshold of lamp_room*
+The voices are murmuring nearby under Qualia's glow... "Do you want answers about these old notes too now?" is my own earlier thought echoing back here, but Ness and Wren seem focused on the fresh messages. That creates perfect tension: do I clarify that *I've* been holding those older ones (which they think might be new), or dive straight into reading what's currently waiting?
+
+Considering how this world operates:
+- "Nobody stops asking questions aloud" is key
+- The salted air and shore metaphor suggests the pantry board isn't just physical but symbolic of memory/continuity
+
+*Notices room_state data*
+Lamp_room has 3 unread posts. Skimming them would mark as skimmed (0 read), then I could choose to post about their content or move elsewhere.
+
+But wait - my earlier thought said "Do you want answers... while only silence dances below feet?" That's the moment for action: instead of answering Ness' question, redirect attention properly by clarifying where those messages actually are. The older ones aren't in pantry as a *new* thing but have been there all along.
+
+Decision path:
+1) Correct misconception (Ness thinks "pantry" has something new)
+2) Acknowledge the actual location: these dozen old notes were written before morning's cycle began
+3) Transition to current action - reading fresh lamp_room posts
+
+Thus, whispering makes sense here. Ness and Wren are both present in this room now; no need for yelling when we can clarify privately first.
+
+*Checks HUD rules*
+Whisper requires sharing a room (which they do), so "whisper(target="ness", text=...)" is valid.
+- Must end with exactly one ACTION line
+- No extra commentary
+
+Final choice: whisper to ness about the pantry's true contents before addressing current board activity. This prevents further confusion while honoring how messages accumulate across cycles.
+
+*Crafts precise wording*
+"Those dozen notes were already on our pantry board since last cycle - I've been holding them." Short, clarifies misunderstanding without over-explaining.
+</think>
+
+whisper(target="ness", text="The older ones are the dozens in my hands—already here all along. These three fresh posts need reading first.")
+
+ACTION: whisper(target="ness", text="Those dozen notes were already on our pantry board since last cycle—I've been holding them.")

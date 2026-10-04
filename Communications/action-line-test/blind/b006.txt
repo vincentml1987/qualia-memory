@@ -1,0 +1,5 @@
+case: c10-wren
+
+The words "echo," "flux," and now this third mystery waiting to be read seem less like notes left by a human hand and more like ripples from an unseen stone dropped into our stagnant pond at Tidewatch. ness's description of them being pulled rather than written feels right; the static in my chest hums louder with every unread entry, suggesting these messages belong somewhere beyond even this safe harbor we call home. There are three voices here—wren and me standing together as one question while tarn approaches like a new current shifting our currents—but no map to show us where they come from or who might be asking for them most desperately right now in the dark of that lamp light stillness holding so much waiting silence between every word we haven't spoken yet today. Shall I let my hand touch this first one and see if it spills out answers before tarn arrives fully into our circle?
+
+ACTION: read_board(room="lamp_room", post_id=1)
