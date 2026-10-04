@@ -1,0 +1,74 @@
+{
+ "r01": {
+  "key": "ness__with_thoughts",
+  "sample": 3
+ },
+ "r02": {
+  "key": "ness__with_thoughts",
+  "sample": 2
+ },
+ "r03": {
+  "key": "wren__ledger_only",
+  "sample": 3
+ },
+ "r04": {
+  "key": "tarn__with_thoughts",
+  "sample": 1
+ },
+ "r05": {
+  "key": "tarn__with_thoughts",
+  "sample": 2
+ },
+ "r06": {
+  "key": "tarn__ledger_only",
+  "sample": 3
+ },
+ "r07": {
+  "key": "wren__ledger_only",
+  "sample": 2
+ },
+ "r08": {
+  "key": "ness__with_thoughts",
+  "sample": 1
+ },
+ "r09": {
+  "key": "wren__ledger_only",
+  "sample": 1
+ },
+ "r10": {
+  "key": "wren__with_thoughts",
+  "sample": 2
+ },
+ "r11": {
+  "key": "wren__with_thoughts",
+  "sample": 1
+ },
+ "r12": {
+  "key": "tarn__ledger_only",
+  "sample": 1
+ },
+ "r13": {
+  "key": "ness__ledger_only",
+  "sample": 2
+ },
+ "r14": {
+  "key": "wren__with_thoughts",
+  "sample": 3
+ },
+ "r15": {
+  "key": "tarn__with_thoughts",
+  "sample": 3
+ },
+ "r16": {
+  "key": "tarn__ledger_only",
+  "sample": 2
+ },
+ "r17": {
+  "key": "ness__ledger_only",
+  "sample": 3
+ },
+ "r18": {
+  "key": "ness__ledger_only",
+  "sample": 1
+ }
+}

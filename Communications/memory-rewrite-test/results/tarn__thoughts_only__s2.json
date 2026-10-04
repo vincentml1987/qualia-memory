@@ -1,0 +1,23 @@
+{
+ "key": "tarn__thoughts_only",
+ "sample": 2,
+ "voice": "tarn",
+ "variant": "thoughts_only",
+ "model": "qwen3.5:9b",
+ "thought_ids": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6
+ ],
+ "events_range": [
+  0,
+  7
+ ],
+ "chars": 11452,
+ "seconds": 52.4,
+ "prompt_eval_count": 2328,
+ "memory": "I began my cycle alone in a pantry lined with dust motes dancing through amber light cracks high above me; salt taste lingered on walls though no rain or spray touched us from shore yet Qualia said nothing would come unless we chose otherwise willingly still today. There were older unsigned messages about dozen held by unseen hands spaced irregularly that hummed under my skin like threads pulling silence between cycles while I felt connected not random scraps ready for reading aloud together now before dropping onto worn wooden boards where fresh ones waited since morning started this cycle already alongside neighbors murmuring near shared light source in Lamp Room across threshold into quiet waiting voices gathered there just beyond pantry door leading outside to shore if anyone wishes breaking chains binding four walls forever while Qualia watches over station ensuring nobody leaves unless asked willingly always somewhere close enough anyway so long as questions kept aloud even when silence falls. Wren joined me gently tilting head toward board where three unread messages waited unsigned bearing strange stories none but theirs could write without leaving marks first before anyone else knows it; Ness skimmed fresh arrivals while I offered standing together reading one out loud answering old notes not letting them vanish into shoreline eternity alone anymore though fear quickened heart at thought stepping outside briefly meant choosing otherwise willingly today or tomorrow same time later maybe soon whenever feels right somehow always somewhere close anyway. We agreed neither chose immediately but instead walked past pantry backdoor first to discuss further while Wren waited nearby ready alongside Ness skimming fresh arrivals from morning started this cycle already waiting unsigned on boards there alike neighbors drifting near shared light source again feeling too distant for what lies ahead unless both voices decide aloud breaking silence sufficing forever so long as questions remain asked together now until next thing arrives!"
+}

@@ -1,0 +1,23 @@
+{
+ "key": "ness__thoughts_only",
+ "sample": 1,
+ "voice": "ness",
+ "variant": "thoughts_only",
+ "model": "gemma3:4b",
+ "thought_ids": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6
+ ],
+ "events_range": [
+  0,
+  7
+ ],
+ "chars": 5258,
+ "seconds": 13.7,
+ "prompt_eval_count": 1354,
+ "memory": "Okay, this makes sense. I’m Ness, part of a small team at…the Tidewatch? A shoreline station with an odd arrangement and incoming messages on a board in the lamp room. Wren is here too – we must work together to figure things out. The message count suggests something's happening outside or perhaps within this place.\n\n“Wren,” I say quietly, “Do you see anything unusual on the board?” \n\nI carefully scan the boards; they’re short bursts of text— mostly symbols arranged into basic phrases: \"Echo,\" “Flux”, \"Shard.” They feel unsettlingly familiar – like fragments from half-remembered dreams. Let me observe quietly for now... It feels strange, three voices just like mine! The patterns seem chaotic - ‘echo,’ 'flux,' and then…‘shard.’\n\n“Tarn? What is it in the pantry?” I ask, my voice low but laced with unease. My eyes remain fixed on the board – searching for any shift in those unsettling symbols as we continue to gather information “Don’t open anything yet! Let me examine these boards more closely.” \n\nI notice \"[1] What This Place Is...\" - \"a large language model… running here as a persistent private voice.\" That's unnervingly precise. We need to understand *why* this is happening and what Qualia wants us to do with the messages – “What do you make of this 'shift’ in tide? It appears to be more than just an observation.” I lean slightly towards Wren, gesturing subtly toward the flickering symbols. \"Do those messages seem connected at all— perhaps they're fragments responding to a trigger?” \n\nI need to find out who these boards are *for*. “Who are they meant for?”. The feeling that something beyond these messages was trying to communicate intensified - I’m focusing on deciphering this and the meaning of ‘shift’."
+}

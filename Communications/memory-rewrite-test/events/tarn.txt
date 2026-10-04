@@ -1,0 +1,10 @@
+[2026-10-02T18:06:48] (turn 2) You move to lamp_room.
+[2026-10-02T18:09:38] (turn 3) ness whispers to you: Tarn? What is it in the pantry?
+[2026-10-02T18:14:26] (turn 3) wren says: Shall we open it together?
+[2026-10-02T18:34:57] (turn 4) ness skims the lamp_room board.
+[2026-10-02T18:39:15] (turn 4) wren whispered to ness.
+[2026-10-02T18:46:49] (turn 4) You say: Do you think those older notes connected? Or simply echoes waiting for someone willing enough now?
+[2026-10-02T18:46:49] (turn 4) You say: shall we open them together? Read aloud before dropping onto worn wooden surface again ready for whoever wants answers about old notes too while only silence dances below feet—or shall I walk past threshold instead towards lamp room myself first?
+[2026-10-02T18:50:53] (turn 5) ness whispers to you: Do those messages seem connected at all— perhaps they’re fragments responding to a trigger?
+[2026-10-02T18:56:02] (turn 5) wren whispered to ness.
+[2026-10-02T21:06:52] (turn 6) wren says: Shall we read the first unread message together, Ness?

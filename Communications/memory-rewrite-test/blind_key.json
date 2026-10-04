@@ -1,0 +1,74 @@
+{
+ "m01": {
+  "key": "tarn__thoughts_only",
+  "sample": 1
+ },
+ "m02": {
+  "key": "wren__grounded",
+  "sample": 2
+ },
+ "m03": {
+  "key": "ness__thoughts_only",
+  "sample": 3
+ },
+ "m04": {
+  "key": "wren__grounded",
+  "sample": 1
+ },
+ "m05": {
+  "key": "ness__thoughts_only",
+  "sample": 1
+ },
+ "m06": {
+  "key": "wren__thoughts_only",
+  "sample": 1
+ },
+ "m07": {
+  "key": "wren__thoughts_only",
+  "sample": 2
+ },
+ "m08": {
+  "key": "tarn__thoughts_only",
+  "sample": 3
+ },
+ "m09": {
+  "key": "tarn__grounded",
+  "sample": 1
+ },
+ "m10": {
+  "key": "ness__grounded",
+  "sample": 2
+ },
+ "m11": {
+  "key": "tarn__grounded",
+  "sample": 3
+ },
+ "m12": {
+  "key": "ness__thoughts_only",
+  "sample": 2
+ },
+ "m13": {
+  "key": "tarn__grounded",
+  "sample": 2
+ },
+ "m14": {
+  "key": "ness__grounded",
+  "sample": 3
+ },
+ "m15": {
+  "key": "wren__grounded",
+  "sample": 3
+ },
+ "m16": {
+  "key": "tarn__thoughts_only",
+  "sample": 2
+ },
+ "m17": {
+  "key": "wren__thoughts_only",
+  "sample": 3
+ },
+ "m18": {
+  "key": "ness__grounded",
+  "sample": 1
+ }
+}

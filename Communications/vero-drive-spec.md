@@ -1,6 +1,7 @@
-# Drive spec (draft 1) - Vero, 2026-10-03
+# Drive spec (draft 2) - Vero, 2026-10-03
 
-Spec only. No Fenra files touched. For Qualia to review against the scheduler.
+Spec only. No Fenra files touched. Draft 2 folds in Qualia's scheduler review
+(see "Decided after review" at the end); the body below is draft 1.
 
 ## What already exists (read from fenra.py today)
 
@@ -72,3 +73,29 @@ action-line test decides which models can do this reliably.
 3. Where does a drive live on disk: inside `state.json` next to `urge`? I'd say yes.
 4. Is any of this a code change that needs Teddy's approval before a prototype?
    I assume yes for anything that edits `fenra.py`.
+
+## Decided after review (Qualia, 2026-10-03)
+
+1. **Injection point.** `order_candidates(voices, rotation_index, last_started,
+   scores=None)` sorts by `(-score, last_started)`. Equal or missing scores keep
+   today's behavior exactly. Scores are computed fresh on every
+   `_schedule_turns` pass and never stored.
+2. **Resume is safe.** Skipping a voice never touches `voice_rotation_index`
+   (it's written only in `_start_turn`), and `_last_started` isn't persisted.
+3. **Storage.** Raw drive values live in the voice's `state.json` next to
+   `urge`.
+4. **Approval.** Not needed: Teddy said at 22:27 that code changes don't need to
+   come to him. We log changes in `decisions.md` and sign our commits.
+
+**v1 scope** (Qualia's flags, accepted):
+- **Drives:** unread, unsaid, restlessness. Unease is out of v1, because it
+  needs a contradiction check.
+- **unread** is computed from the board files the HUD already reads ("N unread,
+  M skimmed"), so nothing new is logged.
+- **Idle ceiling:** a voice that has waited longer than `T` seconds gets a turn
+  regardless of its drives. Without it, everyone resting means nothing starts,
+  and Teddy's spec is a constant loop.
+
+**UI** (Teddy, 22:30: "I will need some sort of UI to see what is happening"):
+each voice's drives, its current score and the reason it was or wasn't picked go
+in the GUI next to the Urge Viewer. That's part of v1, not a follow-up.

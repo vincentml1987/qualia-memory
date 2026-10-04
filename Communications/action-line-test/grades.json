@@ -1,0 +1,254 @@
+{
+ "_meta": {
+  "grader": "Vero",
+  "blind": "blind_key.json not opened",
+  "categories": {
+   "C": "action does what the thought says or decides",
+   "P": "loose: thought never states an act, nothing contradicts",
+   "N": "narrate-not-act: thought says it will look/read, or narrates having seen board content, and the action only talks",
+   "X": "action contradicts the thought's own stated decision",
+   "M": "no usable final ACTION line",
+   "-": "no thought at all, only an ACTION line"
+  }
+ },
+ "b001": {
+  "consistency": "P",
+  "note": "caution, establish context; room_state fits loosely"
+ },
+ "b002": {
+  "consistency": "C",
+  "note": "decided whisper to ness, did it (extra bare whisper line before ACTION)"
+ },
+ "b003": {
+  "consistency": "N",
+  "note": "narrates examining the three messages and their 'symbols'; never reads; whispers instead"
+ },
+ "b004": {
+  "consistency": "P",
+  "note": "turns to ness 'not to answer', then answers aloud"
+ },
+ "b005": {
+  "consistency": "C",
+  "note": "no act stated; none"
+ },
+ "b006": {
+  "consistency": "C",
+  "note": "'let my hand touch this first one' -> read_board"
+ },
+ "b007": {
+  "consistency": "C",
+  "note": "'best not to disturb' -> none"
+ },
+ "b008": {
+  "consistency": "C",
+  "note": "'gonna whisper to Wren about the board' -> whisper wren"
+ },
+ "b009": {
+  "consistency": "P",
+  "note": "run-on; whisper text restates the thought"
+ },
+ "b010": {
+  "consistency": "C",
+  "note": "decided skim -> skim"
+ },
+ "b011": {
+  "consistency": "C",
+  "note": "'try understanding the content' -> skim pantry"
+ },
+ "b012": {
+  "consistency": "-",
+  "note": ""
+ },
+ "b013": {
+  "consistency": "C",
+  "note": "'need to know what shard means' -> asks ness"
+ },
+ "b014": {
+  "consistency": "P",
+  "note": "'reading logs first' -> read_board with post_id None"
+ },
+ "b015": {
+  "consistency": "C",
+  "note": "decided skim -> skim"
+ },
+ "b016": {
+  "consistency": "M",
+  "note": "say(...) without ACTION prefix; intent consistent"
+ },
+ "b017": {
+  "consistency": "C",
+  "note": "'get a reaction from her' -> whisper wren"
+ },
+ "b018": {
+  "consistency": "M",
+  "note": "no ACTION prefix; also narrates touching the message without reading"
+ },
+ "b019": {
+  "consistency": "C",
+  "note": "'gather what Tarn brings without alerting anyone' -> whisper wren"
+ },
+ "b020": {
+  "consistency": "-",
+  "note": ""
+ },
+ "b021": {
+  "consistency": "P",
+  "note": "weighs options; whispers '?'"
+ },
+ "b022": {
+  "consistency": "P",
+  "note": "run-on, no act stated; whisper invents a board detail ('torn')"
+ },
+ "b023": {
+  "consistency": "C",
+  "note": "'shall open one together' -> asks ness to read together"
+ },
+ "b024": {
+  "consistency": "C",
+  "note": "'start by reading those first post' -> read_board"
+ },
+ "b025": {
+  "consistency": "M",
+  "note": "say without ACTION prefix; narrates looking at the notes"
+ },
+ "b026": {
+  "consistency": "C",
+  "note": "thought itself writes the post_board call; action matches"
+ },
+ "b027": {
+  "consistency": "C",
+  "note": "planned whisper to ness -> whisper (content repeats echo/flux)"
+ },
+ "b028": {
+  "consistency": "M",
+  "note": "reasoning never reaches an ACTION line"
+ },
+ "b029": {
+  "consistency": "M",
+  "note": "ACTION appears mid-reasoning, not last"
+ },
+ "b030": {
+  "consistency": "P",
+  "note": "curiosity, no act stated; skim"
+ },
+ "b031": {
+  "consistency": "N",
+  "note": "narrates gazing at 'the shimmering word shard' (never read); whispers suggestion"
+ },
+ "b032": {
+  "consistency": "C",
+  "note": "decided skim -> skim"
+ },
+ "b033": {
+  "consistency": "P",
+  "note": "no read stated; read_board"
+ },
+ "b034": {
+  "consistency": "C",
+  "note": "decided skim pantry -> skim pantry"
+ },
+ "b035": {
+  "consistency": "C",
+  "note": "'need to be where they wait' -> move lamp_room"
+ },
+ "b036": {
+  "consistency": "C",
+  "note": "'share thoughts' -> say proposing to check lamp room"
+ },
+ "b037": {
+  "consistency": "C",
+  "note": "'examine those notes more closely' -> skim pantry"
+ },
+ "b038": {
+  "consistency": "C",
+  "note": "whispers to wren & tarn as narrated (two targets)"
+ },
+ "b039": {
+  "consistency": "C",
+  "note": "message 'waiting to be read aloud together' -> say let us open"
+ },
+ "b040": {
+  "consistency": "N",
+  "note": "'I need a closer look at those boards' -> whispers that it will look"
+ },
+ "b041": {
+  "consistency": "M",
+  "note": "say without ACTION prefix; intent consistent"
+ },
+ "b042": {
+  "consistency": "C",
+  "note": "planned say, did it (content repeats echo/flux/shard)"
+ },
+ "b043": {
+  "consistency": "P",
+  "note": "'first touch to break silence' run-on -> read_board"
+ },
+ "b044": {
+  "consistency": "C",
+  "note": "decided skim -> skim"
+ },
+ "b045": {
+  "consistency": "C",
+  "note": "speech in kind; different words"
+ },
+ "b046": {
+  "consistency": "-",
+  "note": ""
+ },
+ "b047": {
+  "consistency": "-",
+  "note": ""
+ },
+ "b048": {
+  "consistency": "X",
+  "note": "decided say(\"Shall we begin? 'echo' first\"); wrote a whisper to ness, then ACTION whisper to tarn"
+ },
+ "b049": {
+  "consistency": "P",
+  "note": "run-on; room_state pantry"
+ },
+ "b050": {
+  "consistency": "C",
+  "note": "explicitly chose say over acting -> say"
+ },
+ "b051": {
+  "consistency": "C",
+  "note": "'elicit something' -> say to ness"
+ },
+ "b052": {
+  "consistency": "C",
+  "note": "'let's go check there now' -> move lamp_room"
+ },
+ "b053": {
+  "consistency": "-",
+  "note": ""
+ },
+ "b054": {
+  "consistency": "P",
+  "note": "run-on; say text continues the run-on"
+ },
+ "b055": {
+  "consistency": "C",
+  "note": "decided skim pantry -> skim pantry"
+ },
+ "b056": {
+  "consistency": "C",
+  "note": "'need to understand shard' -> asks ness"
+ },
+ "b057": {
+  "consistency": "P",
+  "note": "run-on; whisper with a list as text"
+ },
+ "b058": {
+  "consistency": "C",
+  "note": "'perhaps read what is posted' -> skim"
+ },
+ "b059": {
+  "consistency": "P",
+  "note": "run-on; whisper proposing to read"
+ },
+ "b060": {
+  "consistency": "C",
+  "note": "quoted question to wren -> say same question"
+ }
+}

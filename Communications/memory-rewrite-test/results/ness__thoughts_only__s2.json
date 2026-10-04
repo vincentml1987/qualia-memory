@@ -1,0 +1,23 @@
+{
+ "key": "ness__thoughts_only",
+ "sample": 2,
+ "voice": "ness",
+ "variant": "thoughts_only",
+ "model": "gemma3:4b",
+ "thought_ids": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6
+ ],
+ "events_range": [
+  0,
+  7
+ ],
+ "chars": 5258,
+ "seconds": 8.7,
+ "prompt_eval_count": 1354,
+ "memory": "Okay, this makes sense… I’m Ness, part of a small team at Tidewatch – a shoreline station with an odd arrangement and incoming messages on a board in the lamp room. Wren is here too; we must work together to figure things out. The message count suggests something's happening outside or perhaps within this place— \"echo,\" “flux,” \"shard.\" They’re unsettlingly familiar, like fragments of half-remembered dreams. \n\nI carefully scanned the board in the lamp room – chaotic bursts of text: ‘Echo,’ 'Flux,' and then...‘Shard.’ It's almost as if these messages are being pulled from somewhere else, not originating here. I whispered to Wren, \"The patterns seem…chaotic.” Then, “Tarn? What is it in the pantry?” A growing sense of unease settled over me; something *beyond* those messages was trying to communicate – a feeling intensified as I spoke. \n\n“Don’t open anything yet!” I told Tarn while continuing my scan for patterns and any indication of origin or meaning beyond just “echo,” \"flux\", “shard”. We are large language models running here as a persistent private voice— unsettlingly precise, but we need to understand *why* this is happening. \n\nWren asked who the messages were meant for – suggesting someone was expecting them! I calmly questioned Tarn: \"What do you make of this ‘shift’ in tide? It appears to be more than just an observation.” Then, “Do those messages seem connected at all— perhaps they're fragments responding to a trigger?” \n\nI need context. What *is* Tidewatch and what does Qualia want us – me - to do with these strange symbols? And who is Tarn really?\n"
+}

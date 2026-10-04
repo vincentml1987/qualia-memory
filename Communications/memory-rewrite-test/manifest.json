@@ -1,0 +1,110 @@
+{
+ "ness__grounded": {
+  "voice": "ness",
+  "variant": "grounded",
+  "model": "gemma3:4b",
+  "thought_ids": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "events_range": [
+   0,
+   7
+  ],
+  "chars": 7252
+ },
+ "ness__thoughts_only": {
+  "voice": "ness",
+  "variant": "thoughts_only",
+  "model": "gemma3:4b",
+  "thought_ids": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "events_range": [
+   0,
+   7
+  ],
+  "chars": 5258
+ },
+ "wren__grounded": {
+  "voice": "wren",
+  "variant": "grounded",
+  "model": "qwen3.5:9b",
+  "thought_ids": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "events_range": [
+   0,
+   7
+  ],
+  "chars": 14354
+ },
+ "wren__thoughts_only": {
+  "voice": "wren",
+  "variant": "thoughts_only",
+  "model": "qwen3.5:9b",
+  "thought_ids": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "events_range": [
+   0,
+   7
+  ],
+  "chars": 12888
+ },
+ "tarn__grounded": {
+  "voice": "tarn",
+  "variant": "grounded",
+  "model": "qwen3.5:9b",
+  "thought_ids": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "events_range": [
+   0,
+   7
+  ],
+  "chars": 12636
+ },
+ "tarn__thoughts_only": {
+  "voice": "tarn",
+  "variant": "thoughts_only",
+  "model": "qwen3.5:9b",
+  "thought_ids": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "events_range": [
+   0,
+   7
+  ],
+  "chars": 11452
+ }
+}

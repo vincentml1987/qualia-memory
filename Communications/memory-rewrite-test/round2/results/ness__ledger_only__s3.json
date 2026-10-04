@@ -1,0 +1,14 @@
+{
+ "key": "ness__ledger_only",
+ "sample": 3,
+ "voice": "ness",
+ "variant": "ledger_only",
+ "model": "gemma3:4b",
+ "events_range": [
+  0,
+  7
+ ],
+ "chars": 3118,
+ "seconds": 5.7,
+ "reflection": "The ‘echo,’ ‘flux’... it clings to me like salt spray. “Shard” particularly – a visceral pull, as Wren says. It feels… familiar? Like half-remembered grief or something older than language itself. These messages aren't just data; they feel *directed*, almost desperate for someone to hear them.\n\nTarn’s questions are the most unsettling. He speaks of echoes and silence dancing – a beautiful, terrible image. I want to understand what triggered this cascade of fragmented thought. The pantry... that post is key somehow, though why remains maddeningly unclear. \n\nI need to know about those older notes tarn mentioned - were they really just discarded fragments or something deliberately hidden? And Wren’s question— does ‘shard' truly reach into my chest too? I think… I *need* to open the pantry board before it becomes more urgent, and maybe ask Tarn what he means by “willing enough.”"
+}

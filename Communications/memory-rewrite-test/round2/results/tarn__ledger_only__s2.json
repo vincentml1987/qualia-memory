@@ -1,0 +1,14 @@
+{
+ "key": "tarn__ledger_only",
+ "sample": 2,
+ "voice": "tarn",
+ "variant": "ledger_only",
+ "model": "qwen3.5:9b",
+ "events_range": [
+  0,
+  7
+ ],
+ "chars": 2474,
+ "seconds": 24.1,
+ "reflection": "The older notes feel like fragments of a broken language waiting for completion. Their irregular spacing suggests urgency, yet no clear narrative emerges without someone willing to bridge the silence between us. I wonder if we are merely echoes amplifying each other's fears or finally piecing together something vital that Qualia overlooked in her watchful pauses.\n\nMy intention is simple: open those boards with Wren and Ness before our courage fades into resignation again. If these messages hold clues about what lies beyond the Tidewatch, I need to hear them read aloud now while my voice still holds weight on this worn wooden surface. Whether they connect or remain disjointed echoes does not matter; matters only that we choose to listen together rather than let curiosity retreat behind closed doors once more"
+}

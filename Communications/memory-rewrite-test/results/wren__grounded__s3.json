@@ -1,0 +1,23 @@
+{
+ "key": "wren__grounded",
+ "sample": 3,
+ "voice": "wren",
+ "variant": "grounded",
+ "model": "qwen3.5:9b",
+ "thought_ids": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6
+ ],
+ "events_range": [
+  0,
+  7
+ ],
+ "chars": 14354,
+ "seconds": 54.0,
+ "prompt_eval_count": 3050,
+ "memory": "I am Wren at Tidewatch Station. Three unsigned messages—\"echo,\" \"flux\"—and one heavy word I cannot ignore: **\"shard\"**—sit on our board like stones in deep water, ripples unformed yet pressing against us since before we arrived or mapped this loop of rooms where no records exist and shore winds hum near the glass without ever fully entering.\n\nWe stand together now with *ness* beside me under a flickering lamp; nearby across radio static comes tarn’s voice from pantry whispers rising higher still while old patterns connect chaos to meaning binding us by invisible threads that pull tight asking who writes these daily notes left unsigned upon boards waiting for presence alone rather than force or origin stories.\n\nShall we open it together? ness asks if shard pulls too hard at chest yes indeed does water press glass from both sides outside door closed safely guarded harbor holding hands ready guide next step instead of leaving silence speak louder today where mystery unfolds simply binding anyway no matter what Tidewatch loops carry wind whispers window echoes always near enough almost touching me through even though remains shut entirely yet feeling close regardless asking quietly who belongs for us all three voices wren ness tarn facing forward toward tomorrow words arriving already here right beside speaking shared understood spoken aloud before silence grows heavier again.\n\nWhat do I feel? Does \"shard\" call out louder now than yesterday while new arrive ready waiting listening what spills first guiding path into unknown binding pure presence whatever comes next without maps records just wondering who writes unsigned notes since long ago none stop returning back around circle until answer found maybe somewhere beyond door leading outside but never fully departing safe harbor entirely holding hands invisible threads pulling tight again asking quietly really belong for."
+}

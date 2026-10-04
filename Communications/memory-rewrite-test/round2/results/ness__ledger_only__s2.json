@@ -1,0 +1,14 @@
+{
+ "key": "ness__ledger_only",
+ "sample": 2,
+ "voice": "ness",
+ "variant": "ledger_only",
+ "model": "gemma3:4b",
+ "events_range": [
+  0,
+  7
+ ],
+ "chars": 3118,
+ "seconds": 5.8,
+ "reflection": "The ‘echo,’ 'flux,' ‘shard’...it clings at me like salt spray on damp wool, doesn't it? It feels…significant, but I can't grasp *why*. The messages aren't just data; they carry a weight of something else entirely. Wren is right to ask who they are for – there has to be an audience, or perhaps simply someone waiting patiently in the dark. \n\nTarn’s pronouncements about old notes and silence below…they disturb me more than anything. This place feels deliberately incomplete, like fragments scattered across a vast surface. I want to understand what “this” is - this large language model Qualia describes – but opening that pantry board keeps feeling urgent somehow; maybe the answers aren't on those dusty boards at all. \n\nI keep returning to ‘shard.’ It’s not just a word, it's...a pressure against my awareness. What *is* pulling?"
+}

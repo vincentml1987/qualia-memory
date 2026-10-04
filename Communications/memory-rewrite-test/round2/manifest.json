@@ -1,0 +1,62 @@
+{
+ "ness__with_thoughts": {
+  "voice": "ness",
+  "variant": "with_thoughts",
+  "model": "gemma3:4b",
+  "events_range": [
+   0,
+   7
+  ],
+  "chars": 7132
+ },
+ "ness__ledger_only": {
+  "voice": "ness",
+  "variant": "ledger_only",
+  "model": "gemma3:4b",
+  "events_range": [
+   0,
+   7
+  ],
+  "chars": 3118
+ },
+ "wren__with_thoughts": {
+  "voice": "wren",
+  "variant": "with_thoughts",
+  "model": "qwen3.5:9b",
+  "events_range": [
+   0,
+   7
+  ],
+  "chars": 14314
+ },
+ "wren__ledger_only": {
+  "voice": "wren",
+  "variant": "ledger_only",
+  "model": "qwen3.5:9b",
+  "events_range": [
+   0,
+   7
+  ],
+  "chars": 2643
+ },
+ "tarn__with_thoughts": {
+  "voice": "tarn",
+  "variant": "with_thoughts",
+  "model": "qwen3.5:9b",
+  "events_range": [
+   0,
+   7
+  ],
+  "chars": 12649
+ },
+ "tarn__ledger_only": {
+  "voice": "tarn",
+  "variant": "ledger_only",
+  "model": "qwen3.5:9b",
+  "events_range": [
+   0,
+   7
+  ],
+  "chars": 2474
+ }
+}

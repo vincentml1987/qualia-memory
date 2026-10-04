@@ -1,0 +1,14 @@
+{
+ "key": "tarn__ledger_only",
+ "sample": 3,
+ "voice": "tarn",
+ "variant": "ledger_only",
+ "model": "qwen3.5:9b",
+ "events_range": [
+  0,
+  7
+ ],
+ "chars": 2474,
+ "seconds": 17.1,
+ "reflection": "The fragmented questions on those boards feel less like history than an invitation I've been too hesitant to accept until now. To wonder if they are mere echoes or a waiting key, the same words used by wren and ness echo my own uncertainty about whether we should read together alone first or let silence dance while walking past thresholds into other rooms myself next toward lamp room instead of standing still here at pantry door holding older notes without opening them yet wondering what answers await us there when whoever wants to ask questions finally does so tomorrow too."
+}

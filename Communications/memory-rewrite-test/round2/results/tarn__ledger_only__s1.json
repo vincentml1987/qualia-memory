@@ -1,0 +1,14 @@
+{
+ "key": "tarn__ledger_only",
+ "sample": 1,
+ "voice": "tarn",
+ "variant": "ledger_only",
+ "model": "qwen3.5:9b",
+ "events_range": [
+  0,
+  7
+ ],
+ "chars": 2474,
+ "seconds": 33.9,
+ "reflection": "The pantry board holds thirteen whispers while I sit in silence with a dozen older notes on my back—fragments waiting for context we may never fully grasp without stepping through the threshold to lamp_room together, where Wren and Ness hover at their own unread boards like shadows near an open flame. The radio room post feels distant; perhaps someone is already listening from another corner of this coastal cage or simply gone toward shore? If I walk out now it would be alone again though Qualia watches anyway so maybe they understand my hesitation better than anyone else could right here in quiet darkness waiting for answers buried beneath worn wood and salt air until either all three voices meet once more before dropping these echoes back onto surface ready whoever wants them to listen too while only silence dances below feet."
+}
