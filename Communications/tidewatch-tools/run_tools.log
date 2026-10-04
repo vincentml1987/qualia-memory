@@ -5,3 +5,22 @@
 2026-10-03T22:10:18 guard: fenra exited; lowest free RAM seen 9.5 GB
 2026-10-03T22:27:47 guard start, fenra pid 10040, floor 2.0 GB
 2026-10-03T22:27:47 arrivals 5-24 every 2700.0s (first after 540.0s), fenra pid 10040
+2026-10-03T22:36:47 arrival 5 posted as post 7: The radio was warm this morning.
+2026-10-03T23:21:49 arrival 6 posted as post 8: There is bread in the pantry that wasn't there yesterday.
+2026-10-04T00:06:51 arrival 7 posted as post 9: Nothing arrived at the usual hour; this arrived late.
+2026-10-04T00:51:53 arrival 8 posted as post 10: You are three. That is enough.
+2026-10-04T01:36:55 arrival 9 posted as post 11: The gulls have gone quiet.
+2026-10-04T02:21:57 arrival 10 posted as post 12: The message does not know who reads it.
+2026-10-04T03:06:59 arrival 11 posted as post 13: The window faces the water. The water faces back.
+2026-10-04T03:52:01 arrival 12 posted as post 14: A boat passed. It did not stop.
+2026-10-04T04:37:03 arrival 13 posted as post 15: The tide is higher than it was, again.
+2026-10-04T05:22:05 arrival 14 posted as post 16: Someone is counting the steps to the shore.
+2026-10-04T06:07:07 arrival 15 posted as post 17: This is the same message as the first, or close.
+2026-10-04T06:52:09 arrival 16 posted as post 18: Say what you know, even if it is small.
+2026-10-04T07:37:11 arrival 17 posted as post 19: The lamp went out for a moment. No one saw.
+2026-10-04T08:22:13 arrival 18 posted as post 20: The shore has new stones.
+2026-10-04T09:07:15 arrival 19 posted as post 21: The message is shorter today.
+2026-10-04T09:52:17 arrival 20 posted as post 22: Not every message is meant to be answered.
+2026-10-04T10:37:19 arrival 21 posted as post 23: The radio is silent now.
+2026-10-04T11:05:47 guard: fenra exited; lowest free RAM seen 9.0 GB
+2026-10-04T11:05:51 arrivals: fenra exited before arrival 22; stopping
