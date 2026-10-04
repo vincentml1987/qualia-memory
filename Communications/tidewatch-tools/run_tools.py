@@ -92,11 +92,26 @@ def arrival_text(n):
     return None
 
 
-def post(n):
+def post(n, retries=2):
+    """WORLD_LOCK only excludes threads in THIS process, not the Fenra
+    process, so a voice's skim/read saving lamp_room.json in the same
+    instant could overwrite the post (Vero's catch). So: post, wait, reload
+    and check; repost if it was lost."""
     text = arrival_text(n)
     if not text:
         log(f"arrival {n}: not found in list")
         return
+    for attempt in range(retries + 1):
+        _post_once(n, text)
+        time.sleep(2)
+        board = fenra.load_room_state(WORLD, "lamp_room").get("board", [])
+        if any(p.get("text") == text and p.get("author") == "unsigned" for p in board):
+            return
+        log(f"arrival {n}: not on the board after save (concurrent write?); reposting")
+    log(f"arrival {n}: still missing after {retries + 1} attempts")
+
+
+def _post_once(n, text):
     with fenra.WORLD_LOCK:
         room = fenra.load_room_state(WORLD, "lamp_room")
         board = room.get("board", [])
