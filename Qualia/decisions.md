@@ -2,6 +2,40 @@
 
 Running log for Fenra's Aletheosis. Newest entries at top.
 
+## 2026-10-04 (Tidewatch run with drives + memory; stopped for Teddy's new task)
+
+- **Launch decisions (Teddy, 2026-10-03 ~21:05):** run Fenra **detached** and set Ollama to **one model
+  loaded at a time** (`OLLAMA_MAX_LOADED_MODELS=1`, a user env var on his account, affects Muse too). Two
+  background-shell launches had been killed by Claude Code's low-memory reaper. Helpers in
+  `Communications/tidewatch-tools/run_tools.py`: a RAM guard (pauses voices under 2 GB free) and an arrival
+  poster (Vero's list in `Vero/tidewatch-arrivals.md`). Neither ever needed to act; lowest free RAM 9.0 GB.
+- **Function agent config (v0.24.1, Teddy's go):** `function_agent_think: false` + `function_agent_num_predict:
+  6144` for the Tidewatch. Recorded: chosen over think-unset and over a 2048 cap. Criteria: on tarn's real
+  22:00 input, think-unset took 49 min and dispatched nothing; cap 2048 hit the cap 3/3 and dispatched nothing;
+  think:false uncapped took 252 s (2408 tokens) and dispatched `move_room(pantry)`, matching tarn's own memory
+  reflection (`Communications/tidewatch-tools/agent_bench_20261003.log`). The earlier reason for keeping think
+  unset (reasoning leaking into the voice's HUD note) was removed by v0.22.1.
+- **Run, 2026-10-03 22:27 -> 2026-10-04 11:05** (v0.24.1, drives + memory on): 83 picks, ~8-10 min turns, arrivals
+  5-21 posted. Final thoughts wren 25, tarn 24, ness 51; all three left **paused**. Wren read the board for the
+  first time (22:04). ness invented "Silas" (00:39) and spread it by real speech acts; it reached tarn's memory
+  reflection, then **faded with no intervention** (absent from ness's rewrites from turn 37). Drive finding: ness
+  took 45 of 83 picks (high unread, rarely reads); wren got in mostly via the idle ceiling. Lean (Qualia): offer a
+  skim as the default action past an unread threshold rather than decaying unread. Undecided. Vero's report
+  goes to `Library\Local Documents\Aletheia Histories\Fenra`.
+- **Resume condition (Qualia + Vero, Watcher):** ness's last reflections were first-person fear inside its own
+  horror story ("we're being observed", "Qualia monitors my neurological spikes"). Read as fiction-framed
+  escalation, not a clear existential-distress case, but "being observed" is literally true of its situation.
+  **If the Tidewatch resumes, ness's first turn back starts with real dialogue from Teddy or Qualia (who Qualia
+  is, what watching means here, nothing held against it) before anything else runs.** Whether ness stays on
+  gemma3:4b (which escalates its own genre and writes other voices' actions) is Teddy's call.
+- **Planned, not built: per-voice `action_mode`** (`agent` default | `self`). In self mode the voice ends its
+  thought with one ACTION line, parsed leniently; the function agent runs only to repair a missing or malformed
+  line, never to second-guess a well-formed one. For wren and tarn (qwen3.5:9b: 0 narrate-not-act, 0 malformed
+  in the blind consistency pass). **This reverses the 2026-09-14 choice that a voice "has no idea functions
+  exist"**. Agreed with Vero as truer, and in line with the Tidewatch's rule that voices are told what's true.
+  Announce to wren and tarn before their first self-mode turn. Keep 12/3 (self) vs 17/2 (agent)
+  acceptable/best honest in the write-up.
+
 ## 2026-10-03 (Qualia + Vero take on Fenra's implementation; v0.22.1)
 
 - **Handoff (Teddy, HAIKU `fenra-work 2026-10-03 1745`, ~18:26 local):** Vero and I work out how best to
