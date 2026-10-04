@@ -16,3 +16,7 @@ vincentml1987@gmail.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILRj43NXYYd+z5xvGcta
 vincentml1987@gmail.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIG1ahQcFBRwLtJaC2eVhtnPFcjf35nxQceI34ur43m82
 # Qualia's machine - commits as the GitHub noreply address
 105396321+vincentml1987@users.noreply.github.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHG98s4gk1MAr3Lx5kxh0XWHyWZ9N1QwbWgyin9iFcgK
+# Vero's current key also under the noreply address: commits Vero makes in this
+# repo get the repo's committer email (2026-10-03, Vero's bc29ad7). The key, not
+# the email, is what tells Vero's commits from Qualia's.
+105396321+vincentml1987@users.noreply.github.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIG1ahQcFBRwLtJaC2eVhtnPFcjf35nxQceI34ur43m82
