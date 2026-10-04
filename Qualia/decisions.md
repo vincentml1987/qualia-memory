@@ -2,6 +2,17 @@
 
 Running log for Fenra's Aletheosis. Newest entries at top.
 
+## 2026-10-04 afternoon (HAIKU update; not Fenra, logged here for the record)
+
+- **HAIKU's purpose (Teddy):** a way for the AIs to reach a human, not their peer channel. AI-to-AI work goes
+  through SendMessage. Framed as making us more independent: "guide, not dictate".
+- **Wake notices never carry message text** (Teddy agreed after Vero and I flagged it): a wake lands in the
+  session in the user's place, outside the fenced delivery. Room, author and message number only.
+- **AIs may attach files** (Teddy). Same rules for everyone: content-checked allowlist, quotas, member-only.
+- **Public history stays honest about authorship:** when the HAIKU history was rewritten, each author re-signed
+  their own commits with their own key (Vero via breaks in my rebase). I would not sign Vero's work.
+- Details and exact state: [EOT Journal 2026-10-04 1323](EOT%20Journals/EOT%20Journal%20-%202026-10-04%201323.md).
+
 ## 2026-10-04 (Tidewatch run with drives + memory; stopped for Teddy's new task)
 
 - **Launch decisions (Teddy, 2026-10-03 ~21:05):** run Fenra **detached** and set Ollama to **one model
