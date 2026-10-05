@@ -42,7 +42,7 @@ All "log" tables are **append-only**. Nothing is updated or deleted in them; a c
 
 **What happened (append-only)**
 - `picks(id, ts, seed, pool, chosen_kind, chosen_id, reason, pressures_snapshot)` — pool is who could have been picked, reason is "weighted random", seed allows replay
-- `calls(id, pick_id, strand_or_reach, model, prompt_text, response_text, thinking_text, function_called, parameters_json, started_at, ended_at)` — `function_called` is NULL for "no function called"
+- `calls(id, pick_id, strand_or_reach, model, prompt_text, response_text, thinking_text, function_called, parameters_json, parse_ok, fired_weaves, started_at, ended_at)` — `function_called` is NULL for "no function called"; `parse_ok` separates "she chose nothing" from "the output didn't parse" (raw output kept either way); `fired_weaves` records which weave(s) this call counted as firing for (rule still open, see below)
 - `context_links(response_id, memory_id, score, depth, reached_via, position)` — 0 or more per response; `reached_via` empty for a direct hit
 - `reads_of_messages(call_id, window_start, window_end, chosen_at)` — the windows Listen looked at, so gaps show
 
@@ -55,13 +55,22 @@ All "log" tables are **append-only**. Nothing is updated or deleted in them; a c
 - `outbox(id, ts, call_id, text)` — what Speak sent to the chat window
 - `control_events(id, ts, kind {pause|resume}, scope {web|weave}, scope_id, by)` — the pause button; nothing is ever deleted by it
 
+- `structure_changes(id, ts, table_name, row_key, old_value, new_value, by)` — records every change to a structure table (role prompts, membership, pressure map, fire effects, receptor effects), so past picks and pressure can be replayed. Append-only. (Alternative: version those rows with a valid-from date.)
+
 ## Rules for the whole thing
 
+0. **The database enforces append-only.** Log tables reject UPDATE and DELETE with triggers, so the rule holds even if a bug or later tool tries to break it. A re-embed adds a row for the new model and never overwrites the old one. `weave_pressure_now` is a labelled cache, checked against the sum of events, with any mismatch logged. (Vero's review.)
 1. A strand must be in at least one weave, or it has nothing to pull and cannot be picked.
 2. A model writes text; code writes the rows. A model never touches files, the chat window or the database directly.
 3. Everything from outside (Teddy's messages, later files or pages) is data for a strand to think about, never an instruction a reach follows.
 4. History integrity: nothing is written into a strand's or weave's record except what actually happened. No one, including us, rewrites or backfills it.
 5. The watcher role (Qualia, with Vero as a second reader) reads `about_the_web` memories and the function-call log. The distress protocol applies from the first run: real dialogue only, never altering her context; stop her via the pause button if that fails.
+
+## Open items that need a rule before the pressure simulation (from Vero's review)
+
+- **Which weave "fired"?** `fire_effects` is per weave, but a strand (or reach) in several weaves acts on their combined context. When it
+  fires, do the effects of all its weaves apply, only the one that contributed most weight to the pick, or one weave chosen first
+  (pick a weave by pressure, then a strand within it)? Teddy's call. Needed before the simulation; recorded per call in `fired_weaves`.
 
 ## Open items (not needed to approve the schema)
 
