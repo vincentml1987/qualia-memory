@@ -81,7 +81,7 @@ distress protocol applies from the first run (real dialogue only, never altering
 ## 7. Order of work
 
 1. You review this draft and mark it up.
-2. Vero writes the pressure simulation as a throwaway script; we read the results and set starting numbers. In parallel, Formica's tiny retrieval test (30 to 50 memories, 10 questions) to see whether the lookup finds the right memory at all.
+2. Vero writes the pressure simulation as a throwaway script; we read the results and set starting numbers. In parallel, a tiny retrieval test (Formica's suggestion; 30 to 50 memories, 10 questions) to see whether the lookup finds the right memory at all. Who runs it, and when, is to be assigned by you.
 3. Schema draft 5 with the simulation's numbers, then agreed.
 4. New repo; you build the strands and weaves in the UI yourself first so you understand it, with Vero's prompts as a starting point.
 5. A first run, with you and me watching.
