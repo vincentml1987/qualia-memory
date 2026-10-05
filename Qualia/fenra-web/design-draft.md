@@ -81,7 +81,7 @@ distress protocol applies from the first run (real dialogue only, never altering
 ## 7. Order of work
 
 1. You review this draft and mark it up.
-2. Vero writes the pressure simulation as a throwaway script; we read the results and set starting numbers. In parallel, a tiny retrieval test (Formica's suggestion; 30 to 50 memories, 10 questions) to see whether the lookup finds the right memory at all. Who runs it, and when, is to be assigned by you.
+2. Once you say go, Vero writes the pressure simulation as a throwaway script (nothing is started until then); we read the results and set starting numbers. In parallel, a tiny retrieval test (Formica's suggestion; 30 to 50 memories, 10 questions) to see whether the lookup finds the right memory at all. Who runs it, and when, is to be assigned by you.
 3. Schema draft 5 with the simulation's numbers, then agreed.
 4. New repo; you build the strands and weaves in the UI yourself first so you understand it, with Vero's prompts as a starting point.
 5. A first run, with you and me watching.
@@ -97,7 +97,7 @@ Collected from all three of us; each has a lean.
 5. **Repo name and place.**
 6. **The size of the small inflow into Realign** and the fire-effect amounts. Not decisions; the simulation sets them.
 7. **"Recursive layers" (Formica).** Did you mean memories *similar to a hit* (her assumption, needs no extra data) or *explicitly linked* memories (each memory pointing to what it replied to, which needs its own table)? Lean: similarity first.
-8. **Realign's standing message: always included, or found by lookup?** Formica suggests always including it at the top of the context, because a lookup could miss it exactly when it matters. That departs from "context by lookup" and is yours to decide. Open sub-question: included for every strand, or only strands in Realign?
+8. **Realign's standing message: always included, or found by lookup?** Formica suggests always including it at the top of the context, because a lookup could miss it exactly when it matters. That departs from "context by lookup" and is yours to decide. Open sub-question: included for every strand, or only strands in Realign? If it is included for every strand it takes a fixed share of a small context on every call, so the text needs a stated length budget (Vero's note).
 9. **Crowding by weave size (Formica).** When a strand is in several weaves, should a large weave be allowed to crowd out a small one, or should scores be evened out by weave size? Lean: start without the fix, and run the test.
 10. **Small embedding model first, tested, instead of choosing the best up front (Formica).** Agree? Lean: yes.
 11. **Her logging suggestion:** record the top 20 candidates with a `kept` flag, so a wrong cut-off shows later. Lean: yes; it adds one column or a sibling table to the schema.
