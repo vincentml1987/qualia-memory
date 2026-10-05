@@ -1,4 +1,4 @@
-# Fenra web — schema sketch (draft 3, 2026-10-05)
+# Fenra web — schema sketch (draft 4, 2026-10-05)
 
 Planning only. No code. Written by Qualia from the `fenra` room discussion (Teddy, Vero, Qualia), for review in that room.
 Vocabulary is Teddy's: **strand, weave, reach, receptor**. Names of tables and columns are working names.
@@ -84,16 +84,18 @@ All "log" tables are **append-only**. Nothing is updated or deleted in them; a c
 - New repo, separate from the old Fenra world build. Vero drafts the first strands; Teddy sets them up in the UI himself first.
 - Single machine, no distributed processing in v1. Teddy and Qualia both watch the first runs; the UI shows the same few views Qualia queries.
 
-## Still open (raised in Vero's simulation spec; Teddy to answer)
+## Resolved by Teddy (Vero's five questions)
 
-1. **Connectivity of Realign.** Handoffs pass only between strands that share a weave, and Realign starts at 0.99, so the first pick is a Realign
-   strand. If no Realign strand also sits in A, B or C, the web never leaves Realign. Vero's draft bridges it with one strand (Orienter, in
-   Realign and Consider). Is that the intent?
-2. **Does Realign regain pressure,** and from what? If it only falls, it fires a few times and goes quiet. Is that wanted, or should a receptor
-   or another weave raise it again?
-3. **Is Realign on the pressure map,** and to which weaves?
-4. **Combining lowers and raises** when several weaves fire together. Assumption: apply all lowers first, then all raises (raises alone are order-independent).
-5. **"3 jumps":** direct plus two further jumps (100 / 75 / 25 across three weaves), or direct plus three? Assumption: the first.
+1. **Leaving Realign.** An **Orienter** strand sits in Realign and Consider as the bridge. Realign also holds **two other strands that talk back and forth**
+   with each other. When Realign fires it raises Consider's pressure, so as Consider's pressure rises, the chance of picking Orienter rises. (Teddy: "in theory".)
+2. **Realign regaining pressure.** A very small amount of pressure from each of the three other weaves (A, B, C) flows to Realign: three `fire_effects`
+   rows, A→Realign, B→Realign, C→Realign, with small amounts.
+3. **Realign on the map.** Yes, linked to **Consider** only, for now (map: Realign–B Consider, A–B, B–C).
+4. **Combining.** Apply all lowers first, then all raises.
+5. **"3 jumps".** The direct weave plus two further jumps (100 / 75 / 25).
+
+Nothing in the design questions is blocking the simulation now. Vero's spec still needs her edits for the Realign pair and the small inflow; the amounts are
+simulation parameters.
 
 ## Not decided, fine to leave
 
