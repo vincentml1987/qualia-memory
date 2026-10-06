@@ -1,4 +1,4 @@
-# FenraWeb UI plan — draft 1 (2026-10-05, Qualia, with Vero's and Formica's points)
+# FenraWeb UI plan — draft 2 (2026-10-05, Qualia, with Vero's and Formica's points)
 
 Planning only. No code. For Teddy to mark up. Items marked **[assumed]** are my guesses where Teddy has not yet answered.
 
@@ -6,6 +6,8 @@ Planning only. No code. For Teddy to mark up. Items marked **[assumed]** are my 
 
 One local page for FenraWeb, separate from the old Fenra World UI [assumed; Vero and I lean this way, Teddy has not said]. It listens on this machine only (127.0.0.1). The phone check-in is a separate project with its own security review.
 Plain labels, one job per tab, no jargon. Pause button always visible at the top.
+
+**What "pause one weave" means [assumed; Vero's suggestion, Teddy to confirm]:** a paused weave's strands cannot be picked; the weave neither fires nor changes pressure; its pressure is frozen, not decayed, and picks up where it was on resume. A strand in one paused and one unpaused weave is not pickable, since one of its weaves is off.
 
 **Top bar:** the pause button (whole web, or one weave), showing the state in words: *running*, *pausing, finishing the current call*, *paused*. The loop checks a pause flag before every pick and every model call, so pause works while a call is running. Every pause and resume is recorded.
 
@@ -25,7 +27,7 @@ Plain labels, one job per tab, no jargon. Pause button always visible at the top
 ## Safety of the page
 
 - Everything stored is shown as plain text, escaped. Strand outputs and Teddy's messages are untrusted and are never rendered as HTML or markdown.
-- Only two things can write: the strand/weave/reach editor and the chat box. Each goes through one code path that also writes the structure-change log, with the database triggers as backup.
+- The page has three writers: the strand/weave/reach editor, the chat box, and **"add a memory to a weave"** (a new dated memory, append-only, with a one-line "why"; this is how Realign's standing text and later additions go in, never by editing an old one). Each goes through one code path that also writes the structure-change log where it applies, with the database triggers as backup. The loop itself writes calls, picks and pressure events; "three writers" means the page only.
 - The page never shows or stores tokens, keys or paths outside its own folder.
 
 ## Open items for Teddy
@@ -34,6 +36,7 @@ Plain labels, one job per tab, no jargon. Pause button always visible at the top
 2. Edits apply from her next call, or only while paused? (Lean: from the next call.)
 3. Prompt part order, default system, `[context]`, live task, HUD. Try both orders once a strand can run.
 4. Sum or average for a strand's weight across weaves (simulation question; decides schema draft 6).
+5. Does "pause one weave" mean what is described under the top bar?
 
 ## What this does not cover
 
