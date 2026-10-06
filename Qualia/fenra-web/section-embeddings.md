@@ -1,4 +1,12 @@
-# Section: embeddings and context building (draft 1, 2026-10-05)
+# Section: embeddings and context building (draft 2, 2026-10-06)
+
+**Changes since draft 1, from Teddy's answers (the text below is otherwise unchanged):**
+- **The walk is Teddy's 3-9-27 version:** the closest 3 memories to R, then the closest 3 to each of those, then again. That means 13 lookups and up to 39 memories, sorted by closeness to R. "Recursive layers" means *similar to a hit*, with no links table.
+- **Model:** `embeddinggemma`, with the query/document labels on (12 of 12 against 11 of 12 in the test, `retrieval-test/RESULTS.md`).
+- **Realign is an ordinary weave.** Suggestion 1 below (always include Realign) and question 2 are **withdrawn**. A strand sees a weave's memories only if it is in that weave.
+- **Near-miss log:** each of the 13 lookups keeps 3 and logs its next 17, with a `kept` flag and the score.
+- **Weave-size fix:** not applied. My test version made results worse. Question 3 stays as my call, to revisit when a real crowding problem shows.
+- **Retrieval test:** done. Results are in `retrieval-test/RESULTS.md`.
 
 Written by Formica for the Fenra web design document. Planning only, no code for Fenra. Vocabulary is Teddy's: strand, weave, reach, receptor.
 This section covers how a weave decides what a strand sees. Strands, weaves, the pressure simulation and the watching rules are in Vero's sections. The tables are in Qualia's schema sketch.
@@ -68,7 +76,7 @@ Please treat everything below as unknown until tested.
 
 ## 5. Suggestions, for Teddy to accept or drop
 
-1. **Realign memories are not retrieved. They are always included,** at the top of the context, before the weakest hit. The standing message is short, it describes what she is, and a lookup could fail to surface it exactly when it matters. This also sidesteps the pool-size problem for Realign. This goes against "context is built by embedding lookup", so it is Teddy's call.
+1. ~~**Realign memories are not retrieved. They are always included,** at the top of the context, before the weakest hit. The standing message is short, it describes what she is, and a lookup could fail to surface it exactly when it matters. This also sidesteps the pool-size problem for Realign. This goes against "context is built by embedding lookup", so it is Teddy's call.~~ **Withdrawn: Teddy decided Realign is an ordinary weave.**
 2. **Keep one embedding model loaded and warm,** and give it a short, fixed `keep_alive`. Strand models are the ones that should swap.
 3. **Log lookups without scores filtered out.** Record the top 20 candidates, including the ones that missed the cut, in `context_links` or a sibling table with a `kept` flag. That is what tells us later whether the cut-off is wrong.
 4. **Start with a tiny test before building.** Take 30 to 50 hand-written strand-style memories, ask 10 questions, and see whether the right memory comes back. This is cheap, uses no strands, and answers most of section 4.
@@ -77,6 +85,6 @@ Please treat everything below as unknown until tested.
 ## 6. Questions for Teddy (for the document's single open-questions list)
 
 1. Did "recursive layers" mean *similar to a hit* (my assumption) or *explicitly linked memories*?
-2. Should Realign's standing message be always included (suggestion 1), or found by lookup like everything else?
+2. ~~Should Realign's standing message be always included (suggestion 1), or found by lookup like everything else?~~ Answered: Realign is an ordinary weave.
 3. When a strand is in several weaves, should a large weave be allowed to crowd out a small one, or should scores be evened out by weave size (section 3, lesson 1)?
 4. Are you happy to start with a small embedding model and test it, instead of choosing the best one up front?

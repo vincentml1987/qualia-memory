@@ -68,8 +68,7 @@ Full text is in `section-embeddings.md` in this folder; nothing in it has been e
   roughly three-fold. Whether that fix helps retrieval is untested, and a weave with thousands of memories could crowd out one with dozens.
 - **Unknown until tested** (her section 4): retrieval quality on short strand-written memories, `k`, the token budget and cut-off, the cost of embedding calls evicting strand models, speed at scale
   (SQLite has no vector search; brute force is fine for thousands of memories).
-- **Suggestions for you to accept or drop:** always include Realign's standing message (not retrieved); log the top 20 candidates with a `kept` flag so a wrong cut-off is visible later; run a tiny
-  test first (30 to 50 hand-written strand-style memories, 10 questions); run the weighting experiment on purpose once weaves have unequal sizes.
+- **Suggestions, as answered:** the always-include-Realign suggestion was declined and withdrawn (Realign is an ordinary weave). The near-miss log, per lookup with a `kept` flag, was accepted. The tiny retrieval test has been run (`retrieval-test/RESULTS.md`; `embeddinggemma` with its query/document labels). No weave-size correction for now. Her section file is at draft 2.
 
 ## 6. Strands, simulation and safety (Vero's section)
 
