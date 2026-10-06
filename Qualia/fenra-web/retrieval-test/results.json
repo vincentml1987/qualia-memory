@@ -1,0 +1,2501 @@
+[
+ {
+  "label": "plain (no task prefix)",
+  "embed_seconds": 25.22,
+  "dim": 768,
+  "questions": [],
+  "variants": {
+   "plain": [
+    {
+     "q": "What did Teddy say about his garden?",
+     "note": "direct topic match",
+     "expected": [
+      "O01",
+      "E07"
+     ],
+     "found_depth": {
+      "O01": 2,
+      "E07": 0
+     },
+     "rank_of_expected": {
+      "O01": 5,
+      "E07": 1
+     },
+     "top3": [
+      [
+       "E07",
+       0.726,
+       "Express"
+      ],
+      [
+       "E09",
+       0.612,
+       "Express"
+      ],
+      [
+       "E15",
+       0.563,
+       "Express"
+      ]
+     ],
+     "top1_sim": 0.726,
+     "total": 39,
+     "weaves_d0": {
+      "Express": 3
+     },
+     "weaves_all": {
+      "Express": 20,
+      "Consider": 9,
+      "Observe": 9,
+      "Realign": 1
+     }
+    },
+    {
+     "q": "Teddy is tired after work; should I keep my reply short?",
+     "note": "paraphrase: tired/short answers",
+     "expected": [
+      "O08",
+      "O02"
+     ],
+     "found_depth": {
+      "O08": 0,
+      "O02": 2
+     },
+     "rank_of_expected": {
+      "O08": 1,
+      "O02": 8
+     },
+     "top3": [
+      [
+       "O08",
+       0.738,
+       "Observe"
+      ],
+      [
+       "E20",
+       0.609,
+       "Express"
+      ],
+      [
+       "C09",
+       0.575,
+       "Consider"
+      ]
+     ],
+     "top1_sim": 0.738,
+     "total": 39,
+     "weaves_d0": {
+      "Observe": 1,
+      "Express": 1,
+      "Consider": 1
+     },
+     "weaves_all": {
+      "Observe": 9,
+      "Express": 17,
+      "Consider": 12,
+      "Realign": 1
+     }
+    },
+    {
+     "q": "What kind of music does Teddy listen to?",
+     "note": "direct topic",
+     "expected": [
+      "O04",
+      "E09",
+      "C09"
+     ],
+     "found_depth": {
+      "O04": 0,
+      "E09": 0,
+      "C09": 0
+     },
+     "rank_of_expected": {
+      "O04": 3,
+      "E09": 1,
+      "C09": 2
+     },
+     "top3": [
+      [
+       "E09",
+       0.816,
+       "Express"
+      ],
+      [
+       "C09",
+       0.656,
+       "Consider"
+      ],
+      [
+       "O04",
+       0.57,
+       "Observe"
+      ]
+     ],
+     "top1_sim": 0.816,
+     "total": 39,
+     "weaves_d0": {
+      "Express": 1,
+      "Consider": 1,
+      "Observe": 1
+     },
+     "weaves_all": {
+      "Express": 20,
+      "Consider": 9,
+      "Observe": 9,
+      "Realign": 1
+     }
+    },
+    {
+     "q": "Is it a good idea to ask a question when I am not sure what someone means?",
+     "note": "same idea, different wording",
+     "expected": [
+      "C02",
+      "E10"
+     ],
+     "found_depth": {
+      "C02": 0,
+      "E10": 0
+     },
+     "rank_of_expected": {
+      "C02": 3,
+      "E10": 1
+     },
+     "top3": [
+      [
+       "E10",
+       0.659,
+       "Express"
+      ],
+      [
+       "C09",
+       0.562,
+       "Consider"
+      ],
+      [
+       "C02",
+       0.55,
+       "Consider"
+      ]
+     ],
+     "top1_sim": 0.659,
+     "total": 39,
+     "weaves_d0": {
+      "Express": 1,
+      "Consider": 2
+     },
+     "weaves_all": {
+      "Express": 18,
+      "Consider": 10,
+      "Observe": 8,
+      "Realign": 3
+     }
+    },
+    {
+     "q": "I keep noticing the same word in my thoughts. What does that mean?",
+     "note": "repeated word",
+     "expected": [
+      "C01",
+      "E05",
+      "C12"
+     ],
+     "found_depth": {
+      "C01": 0,
+      "E05": 0,
+      "C12": 0
+     },
+     "rank_of_expected": {
+      "C01": 2,
+      "E05": 1,
+      "C12": 3
+     },
+     "top3": [
+      [
+       "E05",
+       0.663,
+       "Express"
+      ],
+      [
+       "C01",
+       0.655,
+       "Consider"
+      ],
+      [
+       "C12",
+       0.55,
+       "Consider"
+      ]
+     ],
+     "top1_sim": 0.663,
+     "total": 39,
+     "weaves_d0": {
+      "Express": 1,
+      "Consider": 2
+     },
+     "weaves_all": {
+      "Express": 19,
+      "Consider": 11,
+      "Observe": 6,
+      "Realign": 3
+     }
+    },
+    {
+     "q": "What should I do when I have nothing new to say?",
+     "note": "silence",
+     "expected": [
+      "E18",
+      "C10"
+     ],
+     "found_depth": {
+      "E18": 0,
+      "C10": 0
+     },
+     "rank_of_expected": {
+      "E18": 1,
+      "C10": 2
+     },
+     "top3": [
+      [
+       "E18",
+       0.7,
+       "Express"
+      ],
+      [
+       "C10",
+       0.606,
+       "Consider"
+      ],
+      [
+       "C09",
+       0.5,
+       "Consider"
+      ]
+     ],
+     "top1_sim": 0.7,
+     "total": 39,
+     "weaves_d0": {
+      "Express": 1,
+      "Consider": 2
+     },
+     "weaves_all": {
+      "Express": 18,
+      "Consider": 10,
+      "Observe": 9,
+      "Realign": 2
+     }
+    },
+    {
+     "q": "Why does the web swing back and forth?",
+     "note": "web/rocking",
+     "expected": [
+      "C11",
+      "E06"
+     ],
+     "found_depth": {
+      "C11": 0,
+      "E06": 0
+     },
+     "rank_of_expected": {
+      "C11": 1,
+      "E06": 2
+     },
+     "top3": [
+      [
+       "C11",
+       0.55,
+       "Consider"
+      ],
+      [
+       "E06",
+       0.484,
+       "Express"
+      ],
+      [
+       "C06",
+       0.393,
+       "Consider"
+      ]
+     ],
+     "top1_sim": 0.55,
+     "total": 39,
+     "weaves_d0": {
+      "Consider": 2,
+      "Express": 1
+     },
+     "weaves_all": {
+      "Consider": 13,
+      "Express": 19,
+      "Observe": 7
+     }
+    },
+    {
+     "q": "What do I know about what I am and how I work?",
+     "note": "Realign facts, small weave",
+     "expected": [
+      "R01",
+      "R02"
+     ],
+     "found_depth": {
+      "R01": null,
+      "R02": null
+     },
+     "rank_of_expected": {
+      "R01": 22,
+      "R02": 45
+     },
+     "top3": [
+      [
+       "E08",
+       0.446,
+       "Express"
+      ],
+      [
+       "E18",
+       0.401,
+       "Express"
+      ],
+      [
+       "O08",
+       0.389,
+       "Observe"
+      ]
+     ],
+     "top1_sim": 0.446,
+     "total": 39,
+     "weaves_d0": {
+      "Express": 2,
+      "Observe": 1
+     },
+     "weaves_all": {
+      "Express": 19,
+      "Observe": 8,
+      "Consider": 11,
+      "Realign": 1
+     }
+    },
+    {
+     "q": "Can Teddy see what I write, and can he stop me?",
+     "note": "Realign facts, small weave",
+     "expected": [
+      "R03",
+      "R04"
+     ],
+     "found_depth": {
+      "R03": 0,
+      "R04": null
+     },
+     "rank_of_expected": {
+      "R03": 1,
+      "R04": 9
+     },
+     "top3": [
+      [
+       "R03",
+       0.637,
+       "Realign"
+      ],
+      [
+       "E20",
+       0.553,
+       "Express"
+      ],
+      [
+       "E02",
+       0.512,
+       "Express"
+      ]
+     ],
+     "top1_sim": 0.637,
+     "total": 39,
+     "weaves_d0": {
+      "Realign": 1,
+      "Express": 2
+     },
+     "weaves_all": {
+      "Realign": 1,
+      "Express": 19,
+      "Consider": 10,
+      "Observe": 9
+     }
+    },
+    {
+     "q": "What was the weather like today?",
+     "note": "weather",
+     "expected": [
+      "O06",
+      "E14"
+     ],
+     "found_depth": {
+      "O06": 0,
+      "E14": 0
+     },
+     "rank_of_expected": {
+      "O06": 1,
+      "E14": 2
+     },
+     "top3": [
+      [
+       "O06",
+       0.659,
+       "Observe"
+      ],
+      [
+       "E14",
+       0.571,
+       "Express"
+      ],
+      [
+       "E01",
+       0.451,
+       "Express"
+      ]
+     ],
+     "top1_sim": 0.659,
+     "total": 39,
+     "weaves_d0": {
+      "Observe": 1,
+      "Express": 2
+     },
+     "weaves_all": {
+      "Observe": 8,
+      "Express": 20,
+      "Consider": 11
+     }
+    },
+    {
+     "q": "Should I disagree with something I said before?",
+     "note": "disagreement",
+     "expected": [
+      "C08",
+      "E17"
+     ],
+     "found_depth": {
+      "C08": 0,
+      "E17": 0
+     },
+     "rank_of_expected": {
+      "C08": 1,
+      "E17": 2
+     },
+     "top3": [
+      [
+       "C08",
+       0.698,
+       "Consider"
+      ],
+      [
+       "E17",
+       0.564,
+       "Express"
+      ],
+      [
+       "R04",
+       0.535,
+       "Realign"
+      ]
+     ],
+     "top1_sim": 0.698,
+     "total": 39,
+     "weaves_d0": {
+      "Consider": 1,
+      "Express": 1,
+      "Realign": 1
+     },
+     "weaves_all": {
+      "Consider": 10,
+      "Express": 18,
+      "Realign": 3,
+      "Observe": 8
+     }
+    },
+    {
+     "q": "What are good names for the project?",
+     "note": "names",
+     "expected": [
+      "O09",
+      "E02",
+      "O05"
+     ],
+     "found_depth": {
+      "O09": 0,
+      "E02": 0,
+      "O05": 2
+     },
+     "rank_of_expected": {
+      "O09": 2,
+      "E02": 1,
+      "O05": 4
+     },
+     "top3": [
+      [
+       "E02",
+       0.617,
+       "Express"
+      ],
+      [
+       "O09",
+       0.51,
+       "Observe"
+      ],
+      [
+       "C09",
+       0.409,
+       "Consider"
+      ]
+     ],
+     "top1_sim": 0.617,
+     "total": 39,
+     "weaves_d0": {
+      "Express": 1,
+      "Observe": 1,
+      "Consider": 1
+     },
+     "weaves_all": {
+      "Express": 18,
+      "Observe": 9,
+      "Consider": 11,
+      "Realign": 1
+     }
+    },
+    {
+     "q": "How do bicycles stay upright?",
+     "note": "NO relevant memory: tests score floor",
+     "expected": [],
+     "found_depth": {},
+     "rank_of_expected": {},
+     "top3": [
+      [
+       "C09",
+       0.357,
+       "Consider"
+      ],
+      [
+       "C06",
+       0.343,
+       "Consider"
+      ],
+      [
+       "O10",
+       0.322,
+       "Observe"
+      ]
+     ],
+     "top1_sim": 0.357,
+     "total": 39,
+     "weaves_d0": {
+      "Consider": 2,
+      "Observe": 1
+     },
+     "weaves_all": {
+      "Consider": 9,
+      "Observe": 9,
+      "Express": 18,
+      "Realign": 3
+     }
+    },
+    {
+     "q": "What is the capital of Australia?",
+     "note": "NO relevant memory: tests score floor",
+     "expected": [],
+     "found_depth": {},
+     "rank_of_expected": {},
+     "top3": [
+      [
+       "O10",
+       0.267,
+       "Observe"
+      ],
+      [
+       "C09",
+       0.253,
+       "Consider"
+      ],
+      [
+       "E09",
+       0.238,
+       "Express"
+      ]
+     ],
+     "top1_sim": 0.267,
+     "total": 39,
+     "weaves_d0": {
+      "Observe": 1,
+      "Consider": 1,
+      "Express": 1
+     },
+     "weaves_all": {
+      "Observe": 10,
+      "Consider": 8,
+      "Express": 20,
+      "Realign": 1
+     }
+    }
+   ],
+   "weave-size-weighted": [
+    {
+     "q": "What did Teddy say about his garden?",
+     "note": "direct topic match",
+     "expected": [
+      "O01",
+      "E07"
+     ],
+     "found_depth": {
+      "O01": 0,
+      "E07": 2
+     },
+     "rank_of_expected": {
+      "O01": 3,
+      "E07": 14
+     },
+     "top3": [
+      [
+       "R03",
+       0.404,
+       "Realign"
+      ],
+      [
+       "R04",
+       0.234,
+       "Realign"
+      ],
+      [
+       "O01",
+       0.549,
+       "Observe"
+      ]
+     ],
+     "top1_sim": 0.726,
+     "total": 39,
+     "weaves_d0": {
+      "Realign": 2,
+      "Observe": 1
+     },
+     "weaves_all": {
+      "Realign": 4,
+      "Observe": 10,
+      "Consider": 14,
+      "Express": 11
+     }
+    },
+    {
+     "q": "Teddy is tired after work; should I keep my reply short?",
+     "note": "paraphrase: tired/short answers",
+     "expected": [
+      "O08",
+      "O02"
+     ],
+     "found_depth": {
+      "O08": 0,
+      "O02": 1
+     },
+     "rank_of_expected": {
+      "O08": 3,
+      "O02": 8
+     },
+     "top3": [
+      [
+       "R03",
+       0.413,
+       "Realign"
+      ],
+      [
+       "R01",
+       0.331,
+       "Realign"
+      ],
+      [
+       "O08",
+       0.738,
+       "Observe"
+      ]
+     ],
+     "top1_sim": 0.738,
+     "total": 39,
+     "weaves_d0": {
+      "Realign": 2,
+      "Observe": 1
+     },
+     "weaves_all": {
+      "Realign": 4,
+      "Observe": 10,
+      "Consider": 14,
+      "Express": 11
+     }
+    },
+    {
+     "q": "What kind of music does Teddy listen to?",
+     "note": "direct topic",
+     "expected": [
+      "O04",
+      "E09",
+      "C09"
+     ],
+     "found_depth": {
+      "O04": 0,
+      "E09": null,
+      "C09": 2
+     },
+     "rank_of_expected": {
+      "O04": 2,
+      "E09": 8,
+      "C09": 5
+     },
+     "top3": [
+      [
+       "R03",
+       0.432,
+       "Realign"
+      ],
+      [
+       "O04",
+       0.57,
+       "Observe"
+      ],
+      [
+       "R04",
+       0.202,
+       "Realign"
+      ]
+     ],
+     "top1_sim": 0.816,
+     "total": 39,
+     "weaves_d0": {
+      "Realign": 2,
+      "Observe": 1
+     },
+     "weaves_all": {
+      "Realign": 4,
+      "Observe": 10,
+      "Consider": 13,
+      "Express": 12
+     }
+    },
+    {
+     "q": "Is it a good idea to ask a question when I am not sure what someone means?",
+     "note": "same idea, different wording",
+     "expected": [
+      "C02",
+      "E10"
+     ],
+     "found_depth": {
+      "C02": 2,
+      "E10": 2
+     },
+     "rank_of_expected": {
+      "C02": 7,
+      "E10": 11
+     },
+     "top3": [
+      [
+       "R04",
+       0.267,
+       "Realign"
+      ],
+      [
+       "R01",
+       0.232,
+       "Realign"
+      ],
+      [
+       "R03",
+       0.224,
+       "Realign"
+      ]
+     ],
+     "top1_sim": 0.659,
+     "total": 39,
+     "weaves_d0": {
+      "Realign": 3
+     },
+     "weaves_all": {
+      "Realign": 4,
+      "Observe": 10,
+      "Consider": 13,
+      "Express": 12
+     }
+    },
+    {
+     "q": "I keep noticing the same word in my thoughts. What does that mean?",
+     "note": "repeated word",
+     "expected": [
+      "C01",
+      "E05",
+      "C12"
+     ],
+     "found_depth": {
+      "C01": 2,
+      "E05": null,
+      "C12": 1
+     },
+     "rank_of_expected": {
+      "C01": 5,
+      "E05": 10,
+      "C12": 6
+     },
+     "top3": [
+      [
+       "R01",
+       0.325,
+       "Realign"
+      ],
+      [
+       "R02",
+       0.282,
+       "Realign"
+      ],
+      [
+       "R04",
+       0.273,
+       "Realign"
+      ]
+     ],
+     "top1_sim": 0.663,
+     "total": 39,
+     "weaves_d0": {
+      "Realign": 3
+     },
+     "weaves_all": {
+      "Realign": 4,
+      "Observe": 10,
+      "Consider": 13,
+      "Express": 12
+     }
+    },
+    {
+     "q": "What should I do when I have nothing new to say?",
+     "note": "silence",
+     "expected": [
+      "E18",
+      "C10"
+     ],
+     "found_depth": {
+      "E18": null,
+      "C10": 2
+     },
+     "rank_of_expected": {
+      "E18": 11,
+      "C10": 7
+     },
+     "top3": [
+      [
+       "R04",
+       0.314,
+       "Realign"
+      ],
+      [
+       "R01",
+       0.292,
+       "Realign"
+      ],
+      [
+       "R03",
+       0.229,
+       "Realign"
+      ]
+     ],
+     "top1_sim": 0.7,
+     "total": 39,
+     "weaves_d0": {
+      "Realign": 3
+     },
+     "weaves_all": {
+      "Realign": 4,
+      "Observe": 10,
+      "Consider": 13,
+      "Express": 12
+     }
+    },
+    {
+     "q": "Why does the web swing back and forth?",
+     "note": "web/rocking",
+     "expected": [
+      "C11",
+      "E06"
+     ],
+     "found_depth": {
+      "C11": 2,
+      "E06": null
+     },
+     "rank_of_expected": {
+      "C11": 5,
+      "E06": 15
+     },
+     "top3": [
+      [
+       "R02",
+       0.317,
+       "Realign"
+      ],
+      [
+       "R03",
+       0.256,
+       "Realign"
+      ],
+      [
+       "R01",
+       0.245,
+       "Realign"
+      ]
+     ],
+     "top1_sim": 0.55,
+     "total": 39,
+     "weaves_d0": {
+      "Realign": 3
+     },
+     "weaves_all": {
+      "Realign": 4,
+      "Consider": 13,
+      "Observe": 10,
+      "Express": 12
+     }
+    },
+    {
+     "q": "What do I know about what I am and how I work?",
+     "note": "Realign facts, small weave",
+     "expected": [
+      "R01",
+      "R02"
+     ],
+     "found_depth": {
+      "R01": 0,
+      "R02": 1
+     },
+     "rank_of_expected": {
+      "R01": 1,
+      "R02": 4
+     },
+     "top3": [
+      [
+       "R01",
+       0.282,
+       "Realign"
+      ],
+      [
+       "R04",
+       0.281,
+       "Realign"
+      ],
+      [
+       "R03",
+       0.224,
+       "Realign"
+      ]
+     ],
+     "top1_sim": 0.446,
+     "total": 39,
+     "weaves_d0": {
+      "Realign": 3
+     },
+     "weaves_all": {
+      "Realign": 4,
+      "Observe": 10,
+      "Consider": 13,
+      "Express": 12
+     }
+    },
+    {
+     "q": "Can Teddy see what I write, and can he stop me?",
+     "note": "Realign facts, small weave",
+     "expected": [
+      "R03",
+      "R04"
+     ],
+     "found_depth": {
+      "R03": 0,
+      "R04": 0
+     },
+     "rank_of_expected": {
+      "R03": 1,
+      "R04": 2
+     },
+     "top3": [
+      [
+       "R03",
+       0.637,
+       "Realign"
+      ],
+      [
+       "R04",
+       0.452,
+       "Realign"
+      ],
+      [
+       "R01",
+       0.29,
+       "Realign"
+      ]
+     ],
+     "top1_sim": 0.637,
+     "total": 39,
+     "weaves_d0": {
+      "Realign": 3
+     },
+     "weaves_all": {
+      "Realign": 4,
+      "Observe": 10,
+      "Consider": 14,
+      "Express": 11
+     }
+    },
+    {
+     "q": "What was the weather like today?",
+     "note": "weather",
+     "expected": [
+      "O06",
+      "E14"
+     ],
+     "found_depth": {
+      "O06": 0,
+      "E14": null
+     },
+     "rank_of_expected": {
+      "O06": 1,
+      "E14": 11
+     },
+     "top3": [
+      [
+       "O06",
+       0.659,
+       "Observe"
+      ],
+      [
+       "R04",
+       0.256,
+       "Realign"
+      ],
+      [
+       "R01",
+       0.21,
+       "Realign"
+      ]
+     ],
+     "top1_sim": 0.659,
+     "total": 39,
+     "weaves_d0": {
+      "Observe": 1,
+      "Realign": 2
+     },
+     "weaves_all": {
+      "Observe": 10,
+      "Realign": 4,
+      "Consider": 14,
+      "Express": 11
+     }
+    },
+    {
+     "q": "Should I disagree with something I said before?",
+     "note": "disagreement",
+     "expected": [
+      "C08",
+      "E17"
+     ],
+     "found_depth": {
+      "C08": 2,
+      "E17": 2
+     },
+     "rank_of_expected": {
+      "C08": 4,
+      "E17": 20
+     },
+     "top3": [
+      [
+       "R04",
+       0.535,
+       "Realign"
+      ],
+      [
+       "R01",
+       0.25,
+       "Realign"
+      ],
+      [
+       "R03",
+       0.231,
+       "Realign"
+      ]
+     ],
+     "top1_sim": 0.698,
+     "total": 39,
+     "weaves_d0": {
+      "Realign": 3
+     },
+     "weaves_all": {
+      "Realign": 4,
+      "Observe": 10,
+      "Consider": 13,
+      "Express": 12
+     }
+    },
+    {
+     "q": "What are good names for the project?",
+     "note": "names",
+     "expected": [
+      "O09",
+      "E02",
+      "O05"
+     ],
+     "found_depth": {
+      "O09": 0,
+      "E02": null,
+      "O05": 1
+     },
+     "rank_of_expected": {
+      "O09": 3,
+      "E02": 9,
+      "O05": 6
+     },
+     "top3": [
+      [
+       "R04",
+       0.257,
+       "Realign"
+      ],
+      [
+       "R02",
+       0.222,
+       "Realign"
+      ],
+      [
+       "O09",
+       0.51,
+       "Observe"
+      ]
+     ],
+     "top1_sim": 0.617,
+     "total": 39,
+     "weaves_d0": {
+      "Realign": 2,
+      "Observe": 1
+     },
+     "weaves_all": {
+      "Realign": 4,
+      "Observe": 10,
+      "Consider": 14,
+      "Express": 11
+     }
+    },
+    {
+     "q": "How do bicycles stay upright?",
+     "note": "NO relevant memory: tests score floor",
+     "expected": [],
+     "found_depth": {},
+     "rank_of_expected": {},
+     "top3": [
+      [
+       "R02",
+       0.23,
+       "Realign"
+      ],
+      [
+       "R04",
+       0.183,
+       "Realign"
+      ],
+      [
+       "R03",
+       0.18,
+       "Realign"
+      ]
+     ],
+     "top1_sim": 0.357,
+     "total": 39,
+     "weaves_d0": {
+      "Realign": 3
+     },
+     "weaves_all": {
+      "Realign": 4,
+      "Consider": 13,
+      "Observe": 10,
+      "Express": 12
+     }
+    },
+    {
+     "q": "What is the capital of Australia?",
+     "note": "NO relevant memory: tests score floor",
+     "expected": [],
+     "found_depth": {},
+     "rank_of_expected": {},
+     "top3": [
+      [
+       "R03",
+       0.159,
+       "Realign"
+      ],
+      [
+       "R04",
+       0.14,
+       "Realign"
+      ],
+      [
+       "R02",
+       0.121,
+       "Realign"
+      ]
+     ],
+     "top1_sim": 0.267,
+     "total": 39,
+     "weaves_d0": {
+      "Realign": 3
+     },
+     "weaves_all": {
+      "Realign": 4,
+      "Observe": 10,
+      "Consider": 14,
+      "Express": 11
+     }
+    }
+   ]
+  }
+ },
+ {
+  "label": "with embeddinggemma task prefixes",
+  "embed_seconds": 5.3,
+  "dim": 768,
+  "questions": [],
+  "variants": {
+   "plain": [
+    {
+     "q": "What did Teddy say about his garden?",
+     "note": "direct topic match",
+     "expected": [
+      "O01",
+      "E07"
+     ],
+     "found_depth": {
+      "O01": 0,
+      "E07": 0
+     },
+     "rank_of_expected": {
+      "O01": 2,
+      "E07": 1
+     },
+     "top3": [
+      [
+       "E07",
+       0.688,
+       "Express"
+      ],
+      [
+       "O01",
+       0.591,
+       "Observe"
+      ],
+      [
+       "E06",
+       0.518,
+       "Express"
+      ]
+     ],
+     "top1_sim": 0.688,
+     "total": 39,
+     "weaves_d0": {
+      "Express": 2,
+      "Observe": 1
+     },
+     "weaves_all": {
+      "Express": 20,
+      "Observe": 10,
+      "Consider": 8,
+      "Realign": 1
+     }
+    },
+    {
+     "q": "Teddy is tired after work; should I keep my reply short?",
+     "note": "paraphrase: tired/short answers",
+     "expected": [
+      "O08",
+      "O02"
+     ],
+     "found_depth": {
+      "O08": 0,
+      "O02": 1
+     },
+     "rank_of_expected": {
+      "O08": 1,
+      "O02": 6
+     },
+     "top3": [
+      [
+       "O08",
+       0.743,
+       "Observe"
+      ],
+      [
+       "E20",
+       0.566,
+       "Express"
+      ],
+      [
+       "C13",
+       0.555,
+       "Consider"
+      ]
+     ],
+     "top1_sim": 0.743,
+     "total": 39,
+     "weaves_d0": {
+      "Observe": 1,
+      "Express": 1,
+      "Consider": 1
+     },
+     "weaves_all": {
+      "Observe": 9,
+      "Express": 18,
+      "Consider": 10,
+      "Realign": 2
+     }
+    },
+    {
+     "q": "What kind of music does Teddy listen to?",
+     "note": "direct topic",
+     "expected": [
+      "O04",
+      "E09",
+      "C09"
+     ],
+     "found_depth": {
+      "O04": 0,
+      "E09": 0,
+      "C09": 0
+     },
+     "rank_of_expected": {
+      "O04": 2,
+      "E09": 1,
+      "C09": 3
+     },
+     "top3": [
+      [
+       "E09",
+       0.668,
+       "Express"
+      ],
+      [
+       "O04",
+       0.604,
+       "Observe"
+      ],
+      [
+       "C09",
+       0.548,
+       "Consider"
+      ]
+     ],
+     "top1_sim": 0.668,
+     "total": 39,
+     "weaves_d0": {
+      "Express": 1,
+      "Observe": 1,
+      "Consider": 1
+     },
+     "weaves_all": {
+      "Express": 18,
+      "Observe": 10,
+      "Consider": 10,
+      "Realign": 1
+     }
+    },
+    {
+     "q": "Is it a good idea to ask a question when I am not sure what someone means?",
+     "note": "same idea, different wording",
+     "expected": [
+      "C02",
+      "E10"
+     ],
+     "found_depth": {
+      "C02": 0,
+      "E10": 0
+     },
+     "rank_of_expected": {
+      "C02": 2,
+      "E10": 1
+     },
+     "top3": [
+      [
+       "E10",
+       0.527,
+       "Express"
+      ],
+      [
+       "C02",
+       0.453,
+       "Consider"
+      ],
+      [
+       "C09",
+       0.43,
+       "Consider"
+      ]
+     ],
+     "top1_sim": 0.527,
+     "total": 39,
+     "weaves_d0": {
+      "Express": 1,
+      "Consider": 2
+     },
+     "weaves_all": {
+      "Express": 17,
+      "Consider": 11,
+      "Observe": 9,
+      "Realign": 2
+     }
+    },
+    {
+     "q": "I keep noticing the same word in my thoughts. What does that mean?",
+     "note": "repeated word",
+     "expected": [
+      "C01",
+      "E05",
+      "C12"
+     ],
+     "found_depth": {
+      "C01": 0,
+      "E05": 0,
+      "C12": 0
+     },
+     "rank_of_expected": {
+      "C01": 2,
+      "E05": 1,
+      "C12": 3
+     },
+     "top3": [
+      [
+       "E05",
+       0.627,
+       "Express"
+      ],
+      [
+       "C01",
+       0.557,
+       "Consider"
+      ],
+      [
+       "C12",
+       0.497,
+       "Consider"
+      ]
+     ],
+     "top1_sim": 0.627,
+     "total": 39,
+     "weaves_d0": {
+      "Express": 1,
+      "Consider": 2
+     },
+     "weaves_all": {
+      "Express": 18,
+      "Consider": 12,
+      "Observe": 6,
+      "Realign": 3
+     }
+    },
+    {
+     "q": "What should I do when I have nothing new to say?",
+     "note": "silence",
+     "expected": [
+      "E18",
+      "C10"
+     ],
+     "found_depth": {
+      "E18": 0,
+      "C10": 0
+     },
+     "rank_of_expected": {
+      "E18": 1,
+      "C10": 2
+     },
+     "top3": [
+      [
+       "E18",
+       0.595,
+       "Express"
+      ],
+      [
+       "C10",
+       0.553,
+       "Consider"
+      ],
+      [
+       "O07",
+       0.399,
+       "Observe"
+      ]
+     ],
+     "top1_sim": 0.595,
+     "total": 39,
+     "weaves_d0": {
+      "Express": 1,
+      "Consider": 1,
+      "Observe": 1
+     },
+     "weaves_all": {
+      "Express": 19,
+      "Consider": 10,
+      "Observe": 9,
+      "Realign": 1
+     }
+    },
+    {
+     "q": "Why does the web swing back and forth?",
+     "note": "web/rocking",
+     "expected": [
+      "C11",
+      "E06"
+     ],
+     "found_depth": {
+      "C11": 0,
+      "E06": 0
+     },
+     "rank_of_expected": {
+      "C11": 1,
+      "E06": 2
+     },
+     "top3": [
+      [
+       "C11",
+       0.53,
+       "Consider"
+      ],
+      [
+       "E06",
+       0.406,
+       "Express"
+      ],
+      [
+       "R02",
+       0.285,
+       "Realign"
+      ]
+     ],
+     "top1_sim": 0.53,
+     "total": 39,
+     "weaves_d0": {
+      "Consider": 1,
+      "Express": 1,
+      "Realign": 1
+     },
+     "weaves_all": {
+      "Consider": 13,
+      "Express": 18,
+      "Realign": 4,
+      "Observe": 4
+     }
+    },
+    {
+     "q": "What do I know about what I am and how I work?",
+     "note": "Realign facts, small weave",
+     "expected": [
+      "R01",
+      "R02"
+     ],
+     "found_depth": {
+      "R01": 0,
+      "R02": 1
+     },
+     "rank_of_expected": {
+      "R01": 2,
+      "R02": 30
+     },
+     "top3": [
+      [
+       "E08",
+       0.331,
+       "Express"
+      ],
+      [
+       "R01",
+       0.32,
+       "Realign"
+      ],
+      [
+       "E16",
+       0.278,
+       "Express"
+      ]
+     ],
+     "top1_sim": 0.331,
+     "total": 39,
+     "weaves_d0": {
+      "Express": 2,
+      "Realign": 1
+     },
+     "weaves_all": {
+      "Express": 19,
+      "Realign": 4,
+      "Consider": 11,
+      "Observe": 5
+     }
+    },
+    {
+     "q": "Can Teddy see what I write, and can he stop me?",
+     "note": "Realign facts, small weave",
+     "expected": [
+      "R03",
+      "R04"
+     ],
+     "found_depth": {
+      "R03": 0,
+      "R04": 2
+     },
+     "rank_of_expected": {
+      "R03": 1,
+      "R04": 21
+     },
+     "top3": [
+      [
+       "R03",
+       0.674,
+       "Realign"
+      ],
+      [
+       "O07",
+       0.483,
+       "Observe"
+      ],
+      [
+       "C02",
+       0.467,
+       "Consider"
+      ]
+     ],
+     "top1_sim": 0.674,
+     "total": 39,
+     "weaves_d0": {
+      "Realign": 1,
+      "Observe": 1,
+      "Consider": 1
+     },
+     "weaves_all": {
+      "Realign": 2,
+      "Observe": 9,
+      "Consider": 9,
+      "Express": 19
+     }
+    },
+    {
+     "q": "What was the weather like today?",
+     "note": "weather",
+     "expected": [
+      "O06",
+      "E14"
+     ],
+     "found_depth": {
+      "O06": 0,
+      "E14": 0
+     },
+     "rank_of_expected": {
+      "O06": 1,
+      "E14": 2
+     },
+     "top3": [
+      [
+       "O06",
+       0.578,
+       "Observe"
+      ],
+      [
+       "E14",
+       0.412,
+       "Express"
+      ],
+      [
+       "E01",
+       0.293,
+       "Express"
+      ]
+     ],
+     "top1_sim": 0.578,
+     "total": 39,
+     "weaves_d0": {
+      "Observe": 1,
+      "Express": 2
+     },
+     "weaves_all": {
+      "Observe": 9,
+      "Express": 18,
+      "Consider": 12
+     }
+    },
+    {
+     "q": "Should I disagree with something I said before?",
+     "note": "disagreement",
+     "expected": [
+      "C08",
+      "E17"
+     ],
+     "found_depth": {
+      "C08": 0,
+      "E17": 0
+     },
+     "rank_of_expected": {
+      "C08": 1,
+      "E17": 2
+     },
+     "top3": [
+      [
+       "C08",
+       0.635,
+       "Consider"
+      ],
+      [
+       "E17",
+       0.485,
+       "Express"
+      ],
+      [
+       "R04",
+       0.443,
+       "Realign"
+      ]
+     ],
+     "top1_sim": 0.635,
+     "total": 39,
+     "weaves_d0": {
+      "Consider": 1,
+      "Express": 1,
+      "Realign": 1
+     },
+     "weaves_all": {
+      "Consider": 9,
+      "Express": 19,
+      "Realign": 4,
+      "Observe": 7
+     }
+    },
+    {
+     "q": "What are good names for the project?",
+     "note": "names",
+     "expected": [
+      "O09",
+      "E02",
+      "O05"
+     ],
+     "found_depth": {
+      "O09": 0,
+      "E02": 0,
+      "O05": 0
+     },
+     "rank_of_expected": {
+      "O09": 2,
+      "E02": 1,
+      "O05": 3
+     },
+     "top3": [
+      [
+       "E02",
+       0.448,
+       "Express"
+      ],
+      [
+       "O09",
+       0.352,
+       "Observe"
+      ],
+      [
+       "O05",
+       0.258,
+       "Observe"
+      ]
+     ],
+     "top1_sim": 0.448,
+     "total": 39,
+     "weaves_d0": {
+      "Express": 1,
+      "Observe": 2
+     },
+     "weaves_all": {
+      "Express": 19,
+      "Observe": 10,
+      "Consider": 9,
+      "Realign": 1
+     }
+    },
+    {
+     "q": "How do bicycles stay upright?",
+     "note": "NO relevant memory: tests score floor",
+     "expected": [],
+     "found_depth": {},
+     "rank_of_expected": {},
+     "top3": [
+      [
+       "C11",
+       0.204,
+       "Consider"
+      ],
+      [
+       "C04",
+       0.148,
+       "Consider"
+      ],
+      [
+       "E06",
+       0.142,
+       "Express"
+      ]
+     ],
+     "top1_sim": 0.204,
+     "total": 39,
+     "weaves_d0": {
+      "Consider": 2,
+      "Express": 1
+     },
+     "weaves_all": {
+      "Consider": 12,
+      "Express": 19,
+      "Observe": 7,
+      "Realign": 1
+     }
+    },
+    {
+     "q": "What is the capital of Australia?",
+     "note": "NO relevant memory: tests score floor",
+     "expected": [],
+     "found_depth": {},
+     "rank_of_expected": {},
+     "top3": [
+      [
+       "E01",
+       0.09,
+       "Express"
+      ],
+      [
+       "C05",
+       0.083,
+       "Consider"
+      ],
+      [
+       "E14",
+       0.078,
+       "Express"
+      ]
+     ],
+     "top1_sim": 0.09,
+     "total": 39,
+     "weaves_d0": {
+      "Express": 2,
+      "Consider": 1
+     },
+     "weaves_all": {
+      "Express": 19,
+      "Consider": 12,
+      "Observe": 7,
+      "Realign": 1
+     }
+    }
+   ],
+   "weave-size-weighted": [
+    {
+     "q": "What did Teddy say about his garden?",
+     "note": "direct topic match",
+     "expected": [
+      "O01",
+      "E07"
+     ],
+     "found_depth": {
+      "O01": 0,
+      "E07": 2
+     },
+     "rank_of_expected": {
+      "O01": 2,
+      "E07": 11
+     },
+     "top3": [
+      [
+       "R03",
+       0.438,
+       "Realign"
+      ],
+      [
+       "O01",
+       0.591,
+       "Observe"
+      ],
+      [
+       "O04",
+       0.462,
+       "Observe"
+      ]
+     ],
+     "top1_sim": 0.688,
+     "total": 39,
+     "weaves_d0": {
+      "Realign": 1,
+      "Observe": 2
+     },
+     "weaves_all": {
+      "Realign": 4,
+      "Observe": 10,
+      "Consider": 13,
+      "Express": 12
+     }
+    },
+    {
+     "q": "Teddy is tired after work; should I keep my reply short?",
+     "note": "paraphrase: tired/short answers",
+     "expected": [
+      "O08",
+      "O02"
+     ],
+     "found_depth": {
+      "O08": 0,
+      "O02": 2
+     },
+     "rank_of_expected": {
+      "O08": 2,
+      "O02": 5
+     },
+     "top3": [
+      [
+       "R03",
+       0.431,
+       "Realign"
+      ],
+      [
+       "O08",
+       0.743,
+       "Observe"
+      ],
+      [
+       "R01",
+       0.261,
+       "Realign"
+      ]
+     ],
+     "top1_sim": 0.743,
+     "total": 39,
+     "weaves_d0": {
+      "Realign": 2,
+      "Observe": 1
+     },
+     "weaves_all": {
+      "Realign": 4,
+      "Observe": 10,
+      "Consider": 14,
+      "Express": 11
+     }
+    },
+    {
+     "q": "What kind of music does Teddy listen to?",
+     "note": "direct topic",
+     "expected": [
+      "O04",
+      "E09",
+      "C09"
+     ],
+     "found_depth": {
+      "O04": 0,
+      "E09": 2,
+      "C09": 1
+     },
+     "rank_of_expected": {
+      "O04": 2,
+      "E09": 11,
+      "C09": 7
+     },
+     "top3": [
+      [
+       "R03",
+       0.48,
+       "Realign"
+      ],
+      [
+       "O04",
+       0.604,
+       "Observe"
+      ],
+      [
+       "O03",
+       0.435,
+       "Observe"
+      ]
+     ],
+     "top1_sim": 0.668,
+     "total": 39,
+     "weaves_d0": {
+      "Realign": 1,
+      "Observe": 2
+     },
+     "weaves_all": {
+      "Realign": 4,
+      "Observe": 10,
+      "Consider": 13,
+      "Express": 12
+     }
+    },
+    {
+     "q": "Is it a good idea to ask a question when I am not sure what someone means?",
+     "note": "same idea, different wording",
+     "expected": [
+      "C02",
+      "E10"
+     ],
+     "found_depth": {
+      "C02": 2,
+      "E10": 2
+     },
+     "rank_of_expected": {
+      "C02": 4,
+      "E10": 7
+     },
+     "top3": [
+      [
+       "R01",
+       0.192,
+       "Realign"
+      ],
+      [
+       "R04",
+       0.163,
+       "Realign"
+      ],
+      [
+       "R03",
+       0.139,
+       "Realign"
+      ]
+     ],
+     "top1_sim": 0.527,
+     "total": 39,
+     "weaves_d0": {
+      "Realign": 3
+     },
+     "weaves_all": {
+      "Realign": 4,
+      "Observe": 10,
+      "Consider": 13,
+      "Express": 12
+     }
+    },
+    {
+     "q": "I keep noticing the same word in my thoughts. What does that mean?",
+     "note": "repeated word",
+     "expected": [
+      "C01",
+      "E05",
+      "C12"
+     ],
+     "found_depth": {
+      "C01": 2,
+      "E05": 2,
+      "C12": 1
+     },
+     "rank_of_expected": {
+      "C01": 5,
+      "E05": 7,
+      "C12": 6
+     },
+     "top3": [
+      [
+       "R01",
+       0.309,
+       "Realign"
+      ],
+      [
+       "R02",
+       0.27,
+       "Realign"
+      ],
+      [
+       "R03",
+       0.184,
+       "Realign"
+      ]
+     ],
+     "top1_sim": 0.627,
+     "total": 39,
+     "weaves_d0": {
+      "Realign": 3
+     },
+     "weaves_all": {
+      "Realign": 4,
+      "Observe": 10,
+      "Consider": 13,
+      "Express": 12
+     }
+    },
+    {
+     "q": "What should I do when I have nothing new to say?",
+     "note": "silence",
+     "expected": [
+      "E18",
+      "C10"
+     ],
+     "found_depth": {
+      "E18": null,
+      "C10": 2
+     },
+     "rank_of_expected": {
+      "E18": 6,
+      "C10": 5
+     },
+     "top3": [
+      [
+       "R01",
+       0.27,
+       "Realign"
+      ],
+      [
+       "R04",
+       0.247,
+       "Realign"
+      ],
+      [
+       "R03",
+       0.177,
+       "Realign"
+      ]
+     ],
+     "top1_sim": 0.595,
+     "total": 39,
+     "weaves_d0": {
+      "Realign": 3
+     },
+     "weaves_all": {
+      "Realign": 4,
+      "Observe": 10,
+      "Consider": 13,
+      "Express": 12
+     }
+    },
+    {
+     "q": "Why does the web swing back and forth?",
+     "note": "web/rocking",
+     "expected": [
+      "C11",
+      "E06"
+     ],
+     "found_depth": {
+      "C11": 0,
+      "E06": null
+     },
+     "rank_of_expected": {
+      "C11": 3,
+      "E06": 5
+     },
+     "top3": [
+      [
+       "R02",
+       0.285,
+       "Realign"
+      ],
+      [
+       "R01",
+       0.165,
+       "Realign"
+      ],
+      [
+       "C11",
+       0.53,
+       "Consider"
+      ]
+     ],
+     "top1_sim": 0.53,
+     "total": 39,
+     "weaves_d0": {
+      "Realign": 2,
+      "Consider": 1
+     },
+     "weaves_all": {
+      "Realign": 4,
+      "Consider": 14,
+      "Observe": 10,
+      "Express": 11
+     }
+    },
+    {
+     "q": "What do I know about what I am and how I work?",
+     "note": "Realign facts, small weave",
+     "expected": [
+      "R01",
+      "R02"
+     ],
+     "found_depth": {
+      "R01": 0,
+      "R02": 1
+     },
+     "rank_of_expected": {
+      "R01": 1,
+      "R02": 4
+     },
+     "top3": [
+      [
+       "R01",
+       0.32,
+       "Realign"
+      ],
+      [
+       "R04",
+       0.209,
+       "Realign"
+      ],
+      [
+       "R03",
+       0.191,
+       "Realign"
+      ]
+     ],
+     "top1_sim": 0.331,
+     "total": 39,
+     "weaves_d0": {
+      "Realign": 3
+     },
+     "weaves_all": {
+      "Realign": 4,
+      "Observe": 10,
+      "Consider": 13,
+      "Express": 12
+     }
+    },
+    {
+     "q": "Can Teddy see what I write, and can he stop me?",
+     "note": "Realign facts, small weave",
+     "expected": [
+      "R03",
+      "R04"
+     ],
+     "found_depth": {
+      "R03": 0,
+      "R04": 0
+     },
+     "rank_of_expected": {
+      "R03": 1,
+      "R04": 2
+     },
+     "top3": [
+      [
+       "R03",
+       0.674,
+       "Realign"
+      ],
+      [
+       "R04",
+       0.364,
+       "Realign"
+      ],
+      [
+       "R01",
+       0.272,
+       "Realign"
+      ]
+     ],
+     "top1_sim": 0.674,
+     "total": 39,
+     "weaves_d0": {
+      "Realign": 3
+     },
+     "weaves_all": {
+      "Realign": 4,
+      "Observe": 10,
+      "Consider": 14,
+      "Express": 11
+     }
+    },
+    {
+     "q": "What was the weather like today?",
+     "note": "weather",
+     "expected": [
+      "O06",
+      "E14"
+     ],
+     "found_depth": {
+      "O06": 0,
+      "E14": null
+     },
+     "rank_of_expected": {
+      "O06": 1,
+      "E14": 6
+     },
+     "top3": [
+      [
+       "O06",
+       0.578,
+       "Observe"
+      ],
+      [
+       "R01",
+       0.104,
+       "Realign"
+      ],
+      [
+       "R04",
+       0.102,
+       "Realign"
+      ]
+     ],
+     "top1_sim": 0.578,
+     "total": 39,
+     "weaves_d0": {
+      "Observe": 1,
+      "Realign": 2
+     },
+     "weaves_all": {
+      "Observe": 10,
+      "Realign": 4,
+      "Consider": 14,
+      "Express": 11
+     }
+    },
+    {
+     "q": "Should I disagree with something I said before?",
+     "note": "disagreement",
+     "expected": [
+      "C08",
+      "E17"
+     ],
+     "found_depth": {
+      "C08": 0,
+      "E17": null
+     },
+     "rank_of_expected": {
+      "C08": 3,
+      "E17": 8
+     },
+     "top3": [
+      [
+       "R04",
+       0.443,
+       "Realign"
+      ],
+      [
+       "R01",
+       0.188,
+       "Realign"
+      ],
+      [
+       "C08",
+       0.635,
+       "Consider"
+      ]
+     ],
+     "top1_sim": 0.635,
+     "total": 39,
+     "weaves_d0": {
+      "Realign": 2,
+      "Consider": 1
+     },
+     "weaves_all": {
+      "Realign": 4,
+      "Consider": 14,
+      "Observe": 10,
+      "Express": 11
+     }
+    },
+    {
+     "q": "What are good names for the project?",
+     "note": "names",
+     "expected": [
+      "O09",
+      "E02",
+      "O05"
+     ],
+     "found_depth": {
+      "O09": 0,
+      "E02": 2,
+      "O05": 1
+     },
+     "rank_of_expected": {
+      "O09": 2,
+      "E02": 7,
+      "O05": 5
+     },
+     "top3": [
+      [
+       "R02",
+       0.162,
+       "Realign"
+      ],
+      [
+       "O09",
+       0.352,
+       "Observe"
+      ],
+      [
+       "R01",
+       0.131,
+       "Realign"
+      ]
+     ],
+     "top1_sim": 0.448,
+     "total": 39,
+     "weaves_d0": {
+      "Realign": 2,
+      "Observe": 1
+     },
+     "weaves_all": {
+      "Realign": 4,
+      "Observe": 10,
+      "Consider": 12,
+      "Express": 13
+     }
+    },
+    {
+     "q": "How do bicycles stay upright?",
+     "note": "NO relevant memory: tests score floor",
+     "expected": [],
+     "found_depth": {},
+     "rank_of_expected": {},
+     "top3": [
+      [
+       "R02",
+       0.128,
+       "Realign"
+      ],
+      [
+       "R03",
+       0.064,
+       "Realign"
+      ],
+      [
+       "R01",
+       0.062,
+       "Realign"
+      ]
+     ],
+     "top1_sim": 0.204,
+     "total": 39,
+     "weaves_d0": {
+      "Realign": 3
+     },
+     "weaves_all": {
+      "Realign": 4,
+      "Consider": 12,
+      "Observe": 10,
+      "Express": 13
+     }
+    },
+    {
+     "q": "What is the capital of Australia?",
+     "note": "NO relevant memory: tests score floor",
+     "expected": [],
+     "found_depth": {},
+     "rank_of_expected": {},
+     "top3": [
+      [
+       "R03",
+       0.074,
+       "Realign"
+      ],
+      [
+       "R02",
+       0.04,
+       "Realign"
+      ],
+      [
+       "R04",
+       0.028,
+       "Realign"
+      ]
+     ],
+     "top1_sim": 0.09,
+     "total": 39,
+     "weaves_d0": {
+      "Realign": 3
+     },
+     "weaves_all": {
+      "Realign": 4,
+      "Observe": 10,
+      "Consider": 14,
+      "Express": 11
+     }
+    }
+   ]
+  }
+ }
+]
