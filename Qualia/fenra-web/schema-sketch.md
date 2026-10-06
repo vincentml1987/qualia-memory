@@ -1,7 +1,14 @@
-# Fenra web — schema sketch (draft 5, 2026-10-05)
+# Fenra web — schema sketch (draft 6, 2026-10-06)
 
 Planning only. No code. Written by Qualia from the `fenra` room discussion (Teddy, Vero, Qualia), for review in that room.
 Vocabulary is Teddy's: **strand, weave, reach, receptor**. Names of tables and columns are working names.
+
+## Changes in draft 6 (Teddy, 2026-10-06)
+
+- **A strand's weight is the average of its weaves' pressures,** not the sum (`web_config.weave_combine = average`).
+- **Global pause only.** `control_events.scope` is `web`; no per-weave pause for now.
+- **Authored text:** `weaves.info_text` (the Weave Info message, written "You are in the ... weave, which is for ...") and `strands.info_text` (the Strand Info message, "You are ... and you ..."), plus each strand's system text; the part order is `strands.prompt_order`, default system, `[context]`, live task, HUD last.
+- **Nothing is special about Realign.** Its starting pressure (0.99) and the small inflow into it are settings, like any other weave's.
 
 ## Changes in draft 5 (from Teddy's notes and the design draft v0.2)
 
@@ -11,7 +18,7 @@ Vocabulary is Teddy's: **strand, weave, reach, receptor**. Names of tables and c
 - **Strand model:** `qwen3.5:4b` for all strands to start (`strands.model`).
 - **Prompts live in the database; she may edit her own later.** Every change to `strands.role_prompt` is a row in `structure_changes` with `by` naming who changed it (`teddy`, a member, or `strand:<id>`).
 - **Near-miss log:** `context_candidates` (see the table list) — the top 20 candidates for each lookup, with `kept` showing which made it into context. Append-only. The raw similarity `score` is stored so a cut-off (Formica's test suggests near 0.25: real matches 0.33 or higher, unrelated below 0.21) can be tuned later from real data; it goes in `web_config.min_score`, unset to start.
-- **Realign is an ordinary weave.** Its memories are pulled in only when a strand is in that weave. Its standing text is a normal memory in it.
+- **Realign is an ordinary weave, treated exactly like every other.** Its memories are pulled in only when a strand is in that weave. Like every weave it has a Weave Info message; Realign's says literally what she is. Edited in the normal editor, logged like any change.
 - **Repo:** FenraWeb (new, separate from the old Fenra world build).
 
 ## Settled so far (from Teddy)
@@ -31,8 +38,7 @@ Vocabulary is Teddy's: **strand, weave, reach, receptor**. Names of tables and c
 - **The pull is not limited by reachability.** A weave's pull on a strand counts through the map even if that strand isn't in that weave.
 - **Walk:** configurable; start with 3 jumps at 100% (direct), 75% (next), 25% (third). Log-scaling later.
 - **First weaves:** A Express, B Consider, C Observe, and a fourth, **Realign**, starting at **0.99**. Map: A–B, B–C. Teddy's message raises C.
-  Realign holds a standing message telling her literally what she is (a network of small language models passing messages through weaves);
-  facts only, no verdicts, kept true by adding new dated memories, never editing old ones. Teddy approves the text.
+  Realign has a Weave Info message like every other weave (facts about what she is); nothing else about it is special. Teddy approves the text.
 - **Who runs next:** after a strand responds, the next strand is chosen only from strands that share a weave with it. All weaves of the
   picked strand fire ("feelings": one action can move several weaves).
 - **Pick rule for now:** weighted random over candidate strands by the summed effective pressure of their weaves. If every weight is 0, a
@@ -74,7 +80,7 @@ All "log" tables are **append-only**. Nothing is updated or deleted in them; a c
 **From and to Teddy**
 - `inbox(id, ts, text)` — his messages; append-only; no edit or delete
 - `outbox(id, ts, call_id, text)` — what Speak sent to the chat window
-- `control_events(id, ts, kind {pause|resume}, scope {web|weave}, scope_id, by)` — the pause button; nothing is ever deleted by it
+- `control_events(id, ts, kind {pause|resume}, scope {web}, by)` — the pause button; nothing is ever deleted by it
 
 - `structure_changes(id, ts, table_name, row_key, old_value, new_value, by)` — records every change to a structure table (role prompts, membership, pressure map, fire effects, receptor effects), so past picks and pressure can be replayed. Append-only. (Alternative: version those rows with a valid-from date.)
 
@@ -115,4 +121,4 @@ simulation parameters.
 - Overlapping-weave disagreement: "we'll see".
 - The numbers for the update step `a`, per fire effect: set in the simulation.
 - Pressure simulation: Vero's spec is written; run it before any strand does real thinking.
-- Realign's standing text: Qualia drafts from the final design only if asked; Teddy approves or rewrites. Nothing goes in without him.
+- Realign's Weave Info text: Qualia drafts it; Teddy approves or rewrites. Nothing goes in without him.

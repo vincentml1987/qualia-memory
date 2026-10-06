@@ -19,8 +19,9 @@ simulation spec). This section is the summary plus the safety rules.
   performs. Unparseable output counts as "no function called" and is logged with a `parse_ok` flag.
 - **Handoff rule:** the next strand comes only from strands that share a weave with the one that just ran.
   The drafted bridges make every weave reachable from every other within two handoffs.
-- **Who writes what:** Vero drafts strand prompts, Teddy approves and builds them himself first. The Realign standing
-  message is Teddy's to write: facts only, no verdicts, dated additions never edits.
+- **Who writes what:** Vero drafts strand prompts, Teddy approves and builds them himself first. Realign is an ordinary weave: its Weave Info
+  is the literal, factual explanation of what the process is (Qualia drafted it, Teddy edits), with no verdicts. Nothing else
+  about Realign is special (Teddy, 2026-10-06).
 
 ## 2. The pressure simulation (before any strand runs)
 
@@ -70,9 +71,9 @@ The sweep results are saved with the config that produced them. The first real r
    happened.
 8. **No hard-coded self.** The web gets a place to write about itself (the open `about_the_web` tag, any strand may use
    it). If a self emerges, it shows as a pattern in what is written and retrieved. We read it later and see.
-9. **What she's told is true.** The Realign text states the architecture, who is outside her (Teddy, the pause button,
+9. **What she's told is true.** The Realign Weave Info states the architecture, who is outside her (Teddy, the pause button,
    people reading her records), and nothing about whether she is conscious or a person. When the architecture changes,
-   add a new dated memory. Never edit the old one.
+   Teddy updates that message, and the change is recorded in the structure-change log with a "why".
 
 ## 4. Open questions for Teddy (from my parts)
 

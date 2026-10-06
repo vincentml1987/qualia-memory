@@ -31,7 +31,7 @@ ran, weighted by the pressure of their weaves. Nobody tells her when to act. We 
 | Pick | Weighted random by the summed effective pressure of a strand's weaves. If every weight is 0, uniformly random, as in the first Fenra. Seed stored. |
 | Receptors | Plain code, no model: "when this outside event happens, add this much pressure to these weaves". Your message raises Observe. |
 | Weaves | A Express, B Consider, C Observe, and **Realign** (starts at 0.99; on the map linked to Consider only; gets a very small inflow from A, B and C). |
-| Realign text | A standing message telling her literally what she is (a network of small language models passing messages through weaves). Facts only, no verdicts. Kept true by adding new dated memories, never by editing old ones. You write or approve it. |
+| Realign | An ordinary weave, treated exactly like every other. It gets a Weave Info message (the same kind every weave has) that says literally what she is: a network of small language models passing messages through weaves. Facts only, no verdicts. Edited in the same editor as any other Weave Info, with every change logged. Nothing about it is special. |
 | Your messages | Append-only. No edit, no delete. |
 | Limits | No caps and no usage budget (local resources only). A pause button in the UI, like Worlds. |
 | Storage | SQLite, WAL on. Every prompt and response recorded. Log tables append-only, enforced with triggers. |
@@ -92,7 +92,7 @@ distress protocol applies from the first run (real dialogue only, never altering
 1. **Ten strands** to start.
 2. **Model:** one model for all strands at first, `qwen3.5:4b` (Teddy's note in Vero's section).
 3. **Strand prompts live in the database,** every change logged; **self-editing by her is allowed** (not built in v1, but the design must not rule it out). Changes by her are recorded like any other, in the structure-change log.
-4. **Realign's standing text:** Qualia writes it, Teddy approves, facts only. Drafted after the design is final.
+4. **Realign's text is its Weave Info message,** like every weave's. Qualia drafts it (`realign-weave-info-draft.md`), Teddy approves, facts only.
 5. **Repo:** `FenraWeb`.
 6. **Realign is a weave like any other, not special.** Its memories are pulled in only when a strand is in that weave. Formica's "always include it" suggestion is declined: the text should flow through the conversation, not be repeated at her.
 7. **"Recursive layers" means similarity.** Take the top 3 memories most like the last strand's response (level 0). For each of those, take its top 3 most similar (level 1, up to 9). For each of those, again (level 2, up to 27). Up to 39 in all, sorted by how well they match the last response.
@@ -110,3 +110,10 @@ distress protocol applies from the first run (real dialogue only, never altering
 ## 9. Not touched
 
 No code. No launch. No Fenra world or Voice history read or changed. Fenra remains stopped.
+
+
+## 10. Changes after Teddy's 2026-10-06 answers
+- A strand's weight across several weaves is the **average** of its weaves' pressures, not the sum.
+- **Global pause only.** No pausing of a single weave, for now.
+- **Separate UI** from the old Fenra World. Prompt edits take effect from her next call. The prompt-part order is accepted as a starting point.
+- **Nothing is special about Realign.** All weaves get the same treatment, including a Weave Info message each. I had treated Realign's text as special (a separate standing message, never-edit rule, its own add-a-memory writer). That is removed. Realign's starting pressure (0.99) and the small inflow into it are Teddy's own settings and stay.
