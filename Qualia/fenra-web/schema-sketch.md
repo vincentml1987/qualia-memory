@@ -10,7 +10,7 @@ Vocabulary is Teddy's: **strand, weave, reach, receptor**. Names of tables and c
 - **Embedding model:** `embeddinggemma` to start (`web_config.embed_model`), with the model's own query/document labels on (`web_config.embed_use_labels = true`; Formica's retrieval test: 12 of 12 with labels against 11 of 12 without, and a clearer gap between real and unrelated scores). Backfilled with new rows if a better model is chosen later; vectors from different models are never compared.
 - **Strand model:** `qwen3.5:4b` for all strands to start (`strands.model`).
 - **Prompts live in the database; she may edit her own later.** Every change to `strands.role_prompt` is a row in `structure_changes` with `by` naming who changed it (`teddy`, a member, or `strand:<id>`).
-- **Near-miss log:** `context_candidates(response_id, memory_id, score, depth, rank, kept)` — the top 20 candidates for each lookup, with `kept` showing which made it into context. Append-only. The raw similarity `score` is stored so a cut-off (Formica's test suggests near 0.25: real matches 0.33 or higher, unrelated below 0.21) can be tuned later from real data; it goes in `web_config.min_score`, unset to start.
+- **Near-miss log:** `context_candidates` (see the table list) — the top 20 candidates for each lookup, with `kept` showing which made it into context. Append-only. The raw similarity `score` is stored so a cut-off (Formica's test suggests near 0.25: real matches 0.33 or higher, unrelated below 0.21) can be tuned later from real data; it goes in `web_config.min_score`, unset to start.
 - **Realign is an ordinary weave.** Its memories are pulled in only when a strand is in that weave. Its standing text is a normal memory in it.
 - **Repo:** FenraWeb (new, separate from the old Fenra world build).
 
@@ -63,7 +63,7 @@ All "log" tables are **append-only**. Nothing is updated or deleted in them; a c
 **What happened (append-only)**
 - `picks(id, ts, seed, pool, chosen_kind, chosen_id, reason, pressures_snapshot)` — pool is who could have been picked, reason is "weighted random", seed allows replay
 - `calls(id, pick_id, strand_or_reach, model, prompt_text, response_text, thinking_text, function_called, parameters_json, parse_ok, fired_weaves, started_at, ended_at)` — `function_called` is NULL for "no function called"; `parse_ok` separates "she chose nothing" from "the output didn't parse" (raw output kept either way); `fired_weaves` records which weave(s) this call counted as firing for (rule still open, see below)
-- `context_candidates(response_id, memory_id, score, depth, rank, kept)` — the top 20 candidates per lookup, kept or not
+- `context_candidates(response_id, lookup_no, level, from_memory_id, memory_id, score, rank, kept)` — the top 20 candidates for each lookup, kept or not. The 3-9-27 walk makes up to 13 lookups per call (1 at level 0, 3 at level 1, 9 at level 2), each with its own runners-up; `from_memory_id` is empty at level 0
 - `context_links(response_id, memory_id, score, depth, reached_via, position)` — 0 or more per response; `reached_via` empty for a direct hit
 - `reads_of_messages(call_id, window_start, window_end, chosen_at)` — the windows Listen looked at, so gaps show
 
