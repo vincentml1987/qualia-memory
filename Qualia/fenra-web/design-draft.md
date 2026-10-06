@@ -104,7 +104,7 @@ distress protocol applies from the first run (real dialogue only, never altering
 
 **Open**
 - **Which embedding model exactly.** Teddy wrote both "the one we determined for ANTS" and "the most capable under 9B". They can differ. Formica's measurements found a bigger model no better, and on this GPU a bigger embedding model can push the strand model out of memory. One decision is needed, and it is his.
-- **Precomputing neighbours.** Teddy asks whether the "closest 3" data is already calculated. Embeddings are calculated once when a memory is written. The comparison itself is cheap arithmetic done at lookup, but each memory's 3 nearest neighbours can also be stored when it is written, which makes levels 1 and 2 plain lookups. Proposal: store them (a `neighbours` table, rebuilt in the background), and note that a new memory does not appear in older neighbour lists until they are refreshed. Needs a go-ahead.
+- **Precomputing neighbours (answer to Teddy's question).** Yes, the numbers are already saved: a memory's embedding is calculated once when it is written, and finding the closest 3 is only comparing saved numbers, with no model call (Formica's reading and mine agree). Overlaps can make the total fewer than 39, and the weakest are trimmed to fit a small model. Storing each memory's 3 nearest neighbours in advance is an optional speed-up for later, not needed for thousands of memories.
 - Realign text length budget: moot while Realign is not always included.
 
 ## 9. Not touched
