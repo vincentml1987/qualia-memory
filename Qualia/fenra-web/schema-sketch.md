@@ -7,10 +7,10 @@ Vocabulary is Teddy's: **strand, weave, reach, receptor**. Names of tables and c
 
 - **Context walk:** top 3 memories closest to the last strand's response (level 0), then the top 3 closest to each of those (level 1, up to 9), then again (level 2, up to 27); up to 39,
   fewer with overlaps, sorted by closeness to the last response, trimmed to fit the strand's budget. `web_config` holds `walk_fanout = 3`, `walk_levels = 3`.
-- **Embedding model:** `embeddinggemma` to start (`web_config.embed_model`). Backfilled with new rows if a better model is chosen later; vectors from different models are never compared.
+- **Embedding model:** `embeddinggemma` to start (`web_config.embed_model`), with the model's own query/document labels on (`web_config.embed_use_labels = true`; Formica's retrieval test: 12 of 12 with labels against 11 of 12 without, and a clearer gap between real and unrelated scores). Backfilled with new rows if a better model is chosen later; vectors from different models are never compared.
 - **Strand model:** `qwen3.5:4b` for all strands to start (`strands.model`).
 - **Prompts live in the database; she may edit her own later.** Every change to `strands.role_prompt` is a row in `structure_changes` with `by` naming who changed it (`teddy`, a member, or `strand:<id>`).
-- **Near-miss log:** `context_candidates(response_id, memory_id, score, depth, rank, kept)` — the top 20 candidates for each lookup, with `kept` showing which made it into context. Append-only.
+- **Near-miss log:** `context_candidates(response_id, memory_id, score, depth, rank, kept)` — the top 20 candidates for each lookup, with `kept` showing which made it into context. Append-only. The raw similarity `score` is stored so a cut-off (Formica's test suggests near 0.25: real matches 0.33 or higher, unrelated below 0.21) can be tuned later from real data; it goes in `web_config.min_score`, unset to start.
 - **Realign is an ordinary weave.** Its memories are pulled in only when a strand is in that weave. Its standing text is a normal memory in it.
 - **Repo:** FenraWeb (new, separate from the old Fenra world build).
 
