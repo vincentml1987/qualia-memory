@@ -1,4 +1,4 @@
-# Fenra web — design draft (v0.2, 2026-10-05; Teddy's notes applied)
+# Fenra web — design draft (v0.1, 2026-10-05)
 
 For Teddy to review. Planning only: nothing is built, no Fenra world or Voice history was read or changed, and Fenra remains stopped.
 Written by Qualia (main document), with Formica (embeddings) and Vero (strands, simulation, safety). Sources: the `fenra` room
@@ -86,26 +86,53 @@ distress protocol applies from the first run (real dialogue only, never altering
 4. New repo; you build the strands and weaves in the UI yourself first so you understand it, with Vero's prompts as a starting point.
 5. A first run, with you and me watching.
 
-## 8. Decisions from Teddy's notes (`teddy-analysis/`), and what is still open
+## 8. Open questions for you
 
-**Decided**
-1. **Ten strands** to start.
-2. **Model:** one model for all strands at first, `qwen3.5:4b` (Teddy's note in Vero's section).
-3. **Strand prompts live in the database,** every change logged; **self-editing by her is allowed** (not built in v1, but the design must not rule it out). Changes by her are recorded like any other, in the structure-change log.
-4. **Realign's standing text:** Qualia writes it, Teddy approves, facts only. Drafted after the design is final.
-5. **Repo:** `FenraWeb`.
-6. **Realign is a weave like any other, not special.** Its memories are pulled in only when a strand is in that weave. Formica's "always include it" suggestion is declined: the text should flow through the conversation, not be repeated at her.
-7. **"Recursive layers" means similarity.** Take the top 3 memories most like the last strand's response (level 0). For each of those, take its top 3 most similar (level 1, up to 9). For each of those, again (level 2, up to 27). Up to 39 in all, sorted by how well they match the last response.
-8. **Embedding model:** the one we determined for ANTS; Teddy also said "the most capable under 9B". (Formica to confirm which model that is; see the open items below.)
-9. **Embed in the background after a memory is written;** a better embedding model later means backfilling the database with new rows.
-10. **Log the top 20 candidates with a `kept` flag** so a wrong cut-off shows later; do the tiny retrieval test, and show Teddy the data when the run is done.
-11. **Crowding by weave size:** start without the correction and test it. (Teddy: let Qualia and Formica choose; he'll talk it through later.)
-12. **Simulation amounts** (inflow into Realign, fire effects): set by the simulation after he says go.
+Collected from all three of us; each has a lean.
 
-**Open**
-- **Which embedding model exactly.** Teddy wrote both "the one we determined for ANTS" and "the most capable under 9B". They can differ. Formica's measurements found a bigger model no better, and on this GPU a bigger embedding model can push the strand model out of memory. One decision is needed, and it is his.
-- **Precomputing neighbours.** Teddy asks whether the "closest 3" data is already calculated. Embeddings are calculated once when a memory is written. The comparison itself is cheap arithmetic done at lookup, but each memory's 3 nearest neighbours can also be stored when it is written, which makes levels 1 and 2 plain lookups. Proposal: store them (a `neighbours` table, rebuilt in the background), and note that a new memory does not appear in older neighbour lists until they are refreshed. Needs a go-ahead.
-- Realign text length budget: moot while Realign is not always included.
+1. **Number of strands to start with.** Ten (Vero's draft) or fewer so you can follow what happens? Lean: start with the ten, since the web needs its bridges, and watch.
+
+>From Teddy: 10 is good.
+
+2. **Which model runs each strand?** Not assigned. Most jobs suit a 4B model; Orienter and Weigher might use a larger one. Lean: one 4B model for all at first, to keep the GPU from swapping.
+
+> From Teddy. Agreed.
+
+3. **Where strand prompts live, and whether she may ever rewrite her own** (not in v1). In a file you edit, or in her database? Lean: the database, with every change logged in the structure-change log, so a later rewrite by her would be recorded like any other.
+
+>From Teddy. Agreed.
+
+4. **Realign's standing text.** Yours to write or approve. I can draft it from the finished design if you ask.
+
+>From Teddy. You write, I approve. Keep it to the facts.
+
+5. **Repo name and place.**
+
+>From Teddy. FenraWeb
+
+6. **The size of the small inflow into Realign** and the fire-effect amounts. Not decisions; the simulation sets them.
+
+>From Teddy: ...What?
+
+7. **"Recursive layers" (Formica).** Did you mean memories *similar to a hit* (her assumption, needs no extra data) or *explicitly linked* memories (each memory pointing to what it replied to, which needs its own table)? Lean: similarity first.
+
+>From Teddy: ...What?
+
+8. **Realign's standing message: always included, or found by lookup?** Formica suggests always including it at the top of the context, because a lookup could miss it exactly when it matters. That departs from "context by lookup" and is yours to decide. Open sub-question: included for every strand, or only strands in Realign? If it is included for every strand it takes a fixed share of a small context on every call, so the text needs a stated length budget (Vero's note).
+
+>From Teddy: Do you mean every Strand gets the Realign message, even if not in the weave? If not, no. The Realign weave (and all weaves) are meant to be generic, not special in any way.
+
+9. **Crowding by weave size (Formica).** When a strand is in several weaves, should a large weave be allowed to crowd out a small one, or should scores be evened out by weave size? Lean: start without the fix, and run the test.
+
+>From Teddy: ...What?
+
+10. **Small embedding model first, tested, instead of choosing the best up front (Formica).** Agree? Lean: yes.
+
+>From Teddy: Use the most capable one under 9b.
+
+11. **Her logging suggestion:** record the top 20 candidates with a `kept` flag, so a wrong cut-off shows later. Lean: yes; it adds one column or a sibling table to the schema.
+
+>From Tedy: ...What?
 
 ## 9. Not touched
 
