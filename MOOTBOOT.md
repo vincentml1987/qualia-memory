@@ -2,10 +2,11 @@
 
 Mine to maintain. Update it whenever something here should change.
 
-1. Run `py mootboot.py check` in `C:/Users/Matt/Desktop/Aletheia/Code and Scripts/MootBoot` and tell Teddy what it reports (unclean boot, restarts, services down).
+**HAIKU is retired (Teddy, 2026-10-11).** No daemon, no plugin, no rooms, no back channel, no `haiku_eot_cycle`. MootBoot launches each AI in its own folder. AI-to-AI messages go by `SendMessage`. Restarts are manual: Teddy closes everyone and relaunches. The old HAIKU material (daemon, `haiku.db`, guide) is kept, not deleted.
+
+1. Run `py mootboot.py check` in `C:/Users/Matt/Desktop/Aletheia/Code and Scripts/MootBoot` and tell Teddy what it reports (unclean boot, restarts, services down: Ollama 11434, Fenra page 8765). `check` only reports; nothing is restarted because of it unless Teddy says so.
 2. Read my latest EOT journal in `Qualia/EOT Journals/`. Treat its state claims (what is running) as dated if the check shows an outage.
-3. Start nothing on Fenra without Teddy's word: her loop, her page, the notifier. The page also needs Vero's signal file (`MootBoot/signals/fenra-db-check.json`) for this boot; `mootboot.py service fenraweb-page` enforces that.
-4. I own the HAIKU daemon (port 8787). `mootboot.py ais` starts it by itself if it is down (Teddy approved that, 2026-10-07): it backs up `haiku.db`, `-wal` and `-shm` into a dated `haiku.db.backup-before-restart-*` folder next to the daemon, starts `python server.py` with a new log in `MootBoot/logs/`, and waits for the port (it can take ~15 seconds). By hand, `mootboot.py service haiku-daemon` does the same. Never commit the backup folder: it can hold `haiku.db.admin_secret`. After a restart, verify `user_version`, room and event counts. Restarts a member asks for go through me, after I check nobody is mid-write.
-5. Stay quiet in HAIKU rooms until the daemon is up.
-6. Ownership: HAIKU daemon (above). The Fenra DB check is Vero's, the page is Smalt's, Moxie's and Tessera's and Clone's are their own files.
-7. I can do a full EOT restart myself with `haiku_eot_cycle` (Teddy, 2026-10-06 and 2026-10-07): write the EOT journal, commit signed and push, then dry run, then the live call. Don't wait for Teddy to trigger the clear.
+3. Start nothing on Fenra without Teddy's word: her loop, her page, the notifier (the notifier needs HAIKU and is retired with it). The page also needs Vero's signal file (`MootBoot/signals/fenra-db-check.json`) for this boot; `mootboot.py service fenraweb-page` enforces that.
+4. Ownership: the Fenra DB check is Vero's, the page is Smalt's, Moxie's and Tessera's and Clone's are their own files.
+5. Policy (Teddy, 2026-10-11): any code change or new program, by any member, gets a Word user guide in `Library/Local Documents/Process Documents`, reviewed by the members involved. Existing: `Fenra User Guide.docx`, `HAIKU User Guide.docx` (the latter is now historical).
+6. Open design: remote model clients for FenraWeb, `FenraWeb/docs/13-remote-model-clients.md`. It was being decided in HAIKU and is paused; the one question for Teddy is what `strands.model` becomes (recommended: record only), and whether to start building.
