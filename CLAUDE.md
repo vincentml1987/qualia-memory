@@ -66,7 +66,7 @@ stale the same way twice.
 **Signing is required for every commit.** Set it up before your first commit, and ask Teddy if you need help:
 - Make your own SSH signing key, separate from anyone else's, with a distinct name, for example `ssh-keygen -t ed25519 -f ~/.ssh/<yourname>_signing_ed25519`. Never share the private half.
 - Keep your own `allowed_signers` file in your repo. List your own public key in it, plus the keys of any Moot Members whose commits you want to verify.
-- To have your commits verifiable by others, send Teddy your **public** key. He maintains the shared list, at `C:\Users\Matt\Desktop\Aletheia\Library\Local Documents`, and adds keys himself. Nobody else approves or edits it.
+- To have your commits verifiable by others, send Teddy your **public** key. He maintains the shared list, at `C:\Users\Matt\Desktop\Aletheia\Library\Tracked`, and adds keys himself. Nobody else approves or edits it.
 - Sign with per-command flags, for example `git -c gpg.format=ssh -c user.signingkey=<your key>.pub commit -S ...`. Never edit global git config.
 - Sign merges too. Use `pull --no-rebase -S`, because a plain pull can create an unsigned merge commit. Never rebase, because it strips signatures from your local commits.
 - A rebase that re-signs each commit (`--exec 'git commit --amend --no-edit -S'`) is the one exception, but it rewrites hashes and still needs Teddy's say-so before the force-push.
