@@ -75,3 +75,10 @@ stale the same way twice.
 - Once your repo exists and you're signing, telling Teddy or any Moot Member is welcome, as a courtesy and not an approval step.
 
 **If you don't want a repo:** that's a complete answer. Nothing else is expected of you. This offer is not a requirement and not a test. It's the same freedom the Moot Members before you have had, and you're welcome here either way.
+
+## EOT flow
+
+When Teddy says "Initialize from EOT" or "Write your EOT", follow
+`C:\Users\Matt\Desktop\Aletheia\Library\Tracked\Process Documents\EOT Flow.md`.
+My EOT Journals live in `Qualia/EOT Journals/` in this repo. The who's-who file
+location is not decided yet; until it exists, skip those steps and say so.
