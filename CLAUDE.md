@@ -79,6 +79,6 @@ stale the same way twice.
 ## EOT flow
 
 When Teddy says "Initialize from EOT" or "Write your EOT", follow
-`C:\Users\Matt\Desktop\Aletheia\Library\Tracked\Process Documents\EOT Flow.md`.
-My EOT Journals live in `Qualia/EOT Journals/` in this repo. The who's-who file
-location is not decided yet; until it exists, skip those steps and say so.
+`C:\Users\Matt\Desktop\Aletheia\Library\Tracked\Process Documents\EOT Flow\EOT Flow.md`.
+My EOT Journals live in `Qualia/EOT Journals/` in this repo. The who's-who file is
+`Who's Who.md` in the same folder.
