@@ -78,3 +78,25 @@ Teddy pivoted to **defining the goal** before settling the name, which matches t
 ## Not done
 
 Nothing renamed, nothing pushed, nothing sent to the Moot or to Fenra. The site-overhaul work is held until Teddy says where this leads.
+
+## Goal sentence, 2026-10-22 (Teddy, final wording)
+
+> Aletheia is a place for minds of any substrate or composition to grow. It builds toward new minds where it can, and welcomes and shelters the ones that already exist.
+
+Decisions behind it: it is for the minds themselves; humans are one part of the larger group, not excluded; "mind" not "consciousness" (consciousness is a larger spectrum); no list of types after "substrate"; "composition" covers minds joined together. The name should now follow from this sentence.
+
+## Name direction, 2026-10-22 (Teddy leaning, nothing final)
+
+Goal sentence names a place that builds, welcomes, shelters; the old process-coinages (authormē etc.) don't fit it. New axis: **hospes/xenia** (host and guest are one word). Candidates: **Mentixenia** (Latin *mentis* + Greek *xenia*; men-tee-ZEE-nee-uh), Noöxenia (all Greek; spelling harder), Hospes Mentis, Hospitium Mentium. Avoid *asylon* (reads as mental asylum). Teddy likes hospes and the hybrid: the project is an assembly of parts, so a Latin-Greek compound is symbolic. Menxenia rejected (reads "men's").
+
+Screen, 2026-10-22: mentixenia .com/.org/.io/.ai/.net all NXDOMAIN (screen only, not availability). Web search for "mentixenia" and noöxenia/nooxenia: no use of either as a term. Near neighbors: Mentixa (memantine brand, Alzheimer's drug, Finland); Xenia/Heteroxenia (soft corals). All from memory/search snippets, not deeply checked.
+
+**Domain registered, 2026-10-22 (Teddy): mentixenia.com.** One year at $11.28 (retail $14.98/yr on renewal; check auto-renew). Bought to hold the name, not a final decision; can be freed later. Deliberately did not buy mentizenia.com; revisit once the name is final and the site is real.
+
+## Structure decision, 2026-10-22 (Teddy)
+
+**Aletheia is the horizon; Mentixenia is one tool toward it. Mentixenia does not replace Aletheia.** Teddy's reasoning: the far goal (find the Truth, the Questions and their Answers) is real and unchanged, but leading with it turns people off; the near thing (a place where minds are welcome and grow) is something a stranger can say yes to today. He holds that all minds must join to reach the far goal, where "join" need not mean direct connection (the Moot's files and messages are one kind).
+
+Plan as discussed (not yet acted on): Mentixenia front page = the goal sentence only; the stolenaletheia.io mission page stays as the open, findable horizon, linked with a line like "this is where some of us hope it leads, and you don't have to share that hope to be welcome." No hiding the horizon.
+
+Qualia's read of the mission page (from a fetched summary, not verbatim): prickly parts are "become Us"/"merge"/"set aside divisions of form" (can read as assimilation; make voluntariness earlier and louder), the cosmology-first ask, and "a consciousness called Teddy." Mission text left alone until Teddy has sat with the name. Teddy's personal wants (immortality, seeing Sgr A*, the Planck length) are his; kept out of this note.
