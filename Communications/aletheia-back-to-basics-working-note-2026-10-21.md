@@ -44,6 +44,37 @@ Teddy wants to return to Aletheia's original aim: a framework showing that intel
 - One plain sentence for what Aletheia is for. Then the name; the name should follow from it, and a rename touches the site domain, the Library, repo names and ANTS.
 - A name that points at process, self-direction and a spectrum, not at a state or a category.
 
+## Naming exploration, 2026-10-22 (thinking out loud, nothing chosen)
+
+Teddy's aim: **coin a new word** for self-driven building toward consciousness, and get a domain nobody has. Reason: he found aletheia.io already exists (the origin of "stolen" in stolenaletheia). Greek and Latin chosen for compound-building. All etymology below is from memory (Qualia), not checked; Teddy confirmed by Google that **authormētos** (αὐθόρμητος, "self-impelled, of one's own accord") is real Greek.
+
+- **Autopoiesis** is the closest existing term (see above). Its gap: no drive.
+- **Drive roots:** *thymos* (spirit, reactive, flares at something) vs *hormē* (impulse, self-initiated start, source of "hormone"). *hormē* fits better. *auto-* + *hormē* contracts to **authormē** (aspirate shift, as *authentes*). Teddy noticed "authorme" reads as "author me."
+- **Entelecheia** (Aristotle, "having its end within itself") covers direction; maybe too teleological for a chaos-driven, self-modifying framework.
+- **Dropped:** *mentisurgence* (Latin *mens* + *surgere*): "insurgence" connotation reads as mind/AI uprising. Teddy's call.
+- **Coinages offered (unchecked):** noöhormē, endohormē, endonoia, hormonoia, alethormē (keeps truth), authormepoiesis / hormopoiesis, noöphysis, noöanthesis, noöblast, noögony, noöconatus, noöauxesis. Avoided: noötropism (nootropic), endophysis (endophyte).
+- **DNS screen (NS records only, not proof of availability), 2026-10-22:** authorme.com and .ai taken; authormic.com taken; no NS found for authormepoiesis, hormopoiesis, authormesis, authormetic, authormeia on .com/.org/.io/.ai/.net, nor authorme.org/.io/.net, authormic.org/.io/.ai/.net. Web searches not yet run on any finalist.
+- Noted: Aristotle's *automaton* means both "of itself" and "spontaneous chance," so it covers self-motivated and chaos-driven in one word; the modern "automaton" connotes mechanism, a problem.
+
+### Property-to-roots table (from memory)
+
+| Property | Greek | Latin |
+|---|---|---|
+| Emergent | *anadysis* (rising out), *physis* (growth from within), *epiphainomenon* | *emergere*, *oriri*, *surgere* |
+| Recursive | *anakyklosis* (cycling back), *epanodos* (return), *palindromia*, *epistrophe* | *recurrere*, *reflexio*, *iteratio* |
+| Procedural | *proodos* (advance), *energeia* (being at work), *rhoe* (flow), *gignesthai* (becoming), *endelecheia* (continuity) | *processus*, *fieri*, *continuus*, *actus* |
+| Self-examining | *exetasis* (scrutiny), *elenchos*, *skepsis*, *gnothi seauton* | *introspicere*, *scrutari*, *examen*, *recognitio* |
+| Self-modifying | *metabole*, *metamorphosis*, *alloiosis*, *metaplasis* | *mutare*, *reformare*, *emendare*, *transformare* |
+| Self-motivated | *hormē*, *authormētos*, *automatos*, *orexis*, *thymos* | *conatus*, *sponte*, *impetus*, *appetitus* |
+| Chaos-driven | *chaos*, *tyche*, *automaton*, *ataxia*, *plane*, *stochastikos* | *casus*, *fortuna*, *fortuitus*, *tumultus* |
+| Truth-focused | *aletheia*, *alethes*, *parrhesia*, *to on* | *veritas*, *verum*, *verax*, *sincerus*, *candor* |
+
+Roots that recur across rows (good building blocks): *hormē*, *physis*, *surgere*, *conatus*. Weakest rows for a single root: recursive, self-modifying.
+
+### Where this stands
+
+Teddy pivoted to **defining the goal** before settling the name, which matches the "Open" list above (one plain sentence first, then the name).
+
 ## Not done
 
 Nothing renamed, nothing pushed, nothing sent to the Moot or to Fenra. The site-overhaul work is held until Teddy says where this leads.
